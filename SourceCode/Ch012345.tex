@@ -1,0 +1,190 @@
+\ChDecl{Ch0B}{0$\cdot$B}{\quad{\ANote $C,D$ are Dedekind cuts.\;\;Numbers used here are always rational.}}
+
+\vspace{4pt}
+
+%LOG: 尽管作者说这一节以后用不到，但这一节还是给我干出心理阴影了。我真是一点没学过实分析。
+
+\Anchor{0B'1}\ProblemB[]{
+	$\tilde{0}=\Bra{a:a<0}=\Qbb\Backslash{\Qbs}\Rightarrow-\tilde{0}=\Bra{a:a<-b\leqslant0}=\tilde{0}.$\TextB{}
+	$D=\Bra{a:a<-b,\,b\not\in D}=\Bra{{-a}:-a<-b\Longleftrightarrow a>b,\:b\not\in D}.$\TextB{\vspace{-3pt}}
+}\SepLine
+
+%\Anchor{0BT1}\ProblemBX{\TipsN{1}}{
+%	\TextA{Supp $D_1=\Bra{x\in\Qbb:x<a},\:D_2=\Bra{y\in\Qbb:y<b}.$}
+%	\TextA{Prove $D_1+D_2=\Bra{q\in\Qbb:q<a+b}.$}
+%}Becs $D_1+D_2=\Bra{x+y:x+y<x+b<a+b,\,x\in D_1,\,y\in D_2}.$\parSol{}
+%Supp $x\in D_1.$ Let $\delta=\Par{a-x}\big/2\Rightarrow x<x'=x+\delta<a.$ Let $y=b-\delta\in D_2.$\parSol{}
+%Then $x+b=x'+y<a+b.$ Let $\delta'=\Par{a-x'}\big/2\Rightarrow x+b<x''+y<a+b.$\PfEnd\vspace{3pt}\parSol{}
+%\Or $D_1+D_2\subseteq\Bra{q\in\Qbb:q<a+b}.$ We show $\forall q\in RHS,\exists\,\Par{x,y}\in D_1\times D_2,\:x+y=q.$\parSol{}
+%Let $\delta=\Par{a+b-q}\big/2.$ Let $x=a-\delta\in D_1,\,y=b-\delta\in D_2\Rightarrow x+y=a+b-\delta=q.$\PfEnd
+%\SepLine
+
+%\Anchor{0BT2}\ProblemBX{\TipsN{2}}{
+%	\TextA{Supp $D$ is Ddkd cut. Prove $\forall b\in\Qbb\Backslash D,\:d<b,\forall d\in D.$}
+%}Asum $\exists\,\Par{b,d}\in\Par{\Qbb\Backslash D}\times D,\:d\geqslant b.$ By def of Ddkd cut.\PfEnd
+%\SepLine
+
+\Anchor{0BT}\ProblemBX{\Tips}{
+%	\PrePa\TextA{If $x\in\Qbb$ suth $\forall d\in D,\,d\leqslant x,$ then $x\in\Qbb\Backslash D.$\hfill\FontNorm\tgnr If not, by def, ctradic.}
+%	\PrePb\TextA{If $\forall d\in D,\,\exists\,\varepsilon\in\Qbp,\,d+\varepsilon\in D.$\hfill\FontNorm\tgnr Supp $d<d'\in D\Rightarrow d'-d=\varepsilon\in\Qbp.$}
+	\TextA{Prove $\forall\varepsilon>0,\,\exists\,b\not\in D$ \,suth\, $b-\varepsilon\in D.$}
+}Asum $\exists\,\varepsilon>0$ suth $\nexists\,b\not\in D,\,b-\varepsilon\in D\Longleftrightarrow\forall b\not\in D,\,b-\varepsilon\not\in D.$\parSol{}
+Then $\Par{b-\varepsilon}-\dots-\varepsilon=b-n\cdot\varepsilon\not\in D$ for any $n\in\Nbp.$\parSol{}
+For any $d\in D,\,\exists\,n\in\Nbp$ suth $b-n\cdot\varepsilon<d\Rightarrow b-n\cdot\varepsilon\in D,$ ctradic.\PfEnd
+%\ACoro Since $D$ does not contain the largest elem, $\forall\varepsilon\in\Qbp,\,\exists\,b\in\Qbb\Backslash D,\;b-\varepsilon<d$ for some $d\in D.$
+\SepLine
+
+\Anchor{0B1}\ProblemN{1}{
+	\TextA{Prove {\tgnr\large(a)} $D+\tilde{0}=D,$ \;{\tgnr\large(b)} $-D$ is Dedekind cut, and $D+\Par{{-D}}=\tilde{0}.$}
+}(a) $\forall d\in D,\,\exists\,\varepsilon>0,\:d+\varepsilon\in D\Rightarrow\Par{d+\varepsilon}+\Par{{-\varepsilon}}\in D+\tilde{0}.$\vspace{2pt}\parSol{}
+(b) Asum $x\in -D$ is the largest elem of $-D\Rightarrow\exists\,b\not\in D,\:x<-b\Rightarrow 0<-b-x.$\parSol{\Hb}
+Let $\delta=\Par{{-b-x}}\big/2\Rightarrow0<\delta<-b-x\Rightarrow x<x+\delta<-b.$\parSol{\Hb}
+Thus by def, $x+\delta\in -D,$ ctradic the max of $x\in -D.$ \,Hence $-D$ is Ddkd cut.\vspace{3pt}\parSol{\Hb}
+$D+\Par{{-D}}=\Bra{x+y:x+y<x-b,\:x\in D,\,b\not\in D}.$\parSol{\Hb}
+Supp $a\in\tilde{0}\Rightarrow-a>0.$ By \TIPS, $\exists\,b\not\in D$ \,suth\, $b+a\in D.$\parSol{\Hb}
+Note that $b<b-a\not\in D\Rightarrow-b>-b+a\in -D.$ \,Then $\Par{{-b+a}}+\Par{b+a}=2\:\!a<0.$\parSol{\Hb}
+Thus $\forall a\in\tilde{0},\,\exists\,b\not\in D,\;d=b+\frac{\:1\:}{2}a\in D,\,c=-b+\frac{\:1\:}{2}a\in-D\Rightarrow c+d=a\in D+\Par{{-D}}.$\PfEnd
+\SepLine
+
+\Anchor{0B5}\ProblemN{5}{
+	\TextA{Prove $D$ is posi $\Longleftrightarrow -D$ is not posi $\Longleftrightarrow 0\in D.$}
+}$0\not\in-D=\Bra{a:a<-b,\,b\not\in D}\Longleftrightarrow\nexists\,b\not\in D,\,b<0\Longleftrightarrow\Qbb\Backslash\Qbp\subsetneq D\Longleftrightarrow 0\in D.$\PfEnd
+\SepLine
+
+\BulletPointX Define $D^+=\Bra{d\in D:d>0}=D\cap\Qbp.$ \,Then $D^+=\emptySet\Longleftrightarrow D\subsetneq\Qbb\Backslash\Qbp\Longleftrightarrow 0\not\in D\Longleftrightarrow D$ not posi.\vspace{2pt}\TextB{}
+Define $D^-=\Bra{r\not\in D:r\leqslant 0}=\Par{\Qbb\Backslash D}\cap\Par{\Qbb\Backslash\Qbp}=\Qbb\Backslash\Par{D\cup\Qbp}.$\TextB{}
+Then $D^-=\emptySet\Longleftrightarrow D\cup\Qbp=\Qbb\Longleftrightarrow\Qbb\Backslash\Qbp\subseteq D\Longleftrightarrow 0\in D\Longleftrightarrow D$ posi. \;And $\tilde{0}{^-}=\zeroSubs.$\vspace{3pt}\TextB{}
+$\Par{{-D}}{^+}=\Par{{-D}}\cap\Qbp=\Bra{a:0<a<-b,\:b\in\Par{\Qbb\Backslash D}\cap\Par{\Qbb\Backslash\Qbs}\subseteq D^-}.$\TextB{}
+$\Par{{-D}}{^-}=\Par{\Qbb\Backslash{-D}}\cap\Par{\Qbb\Backslash\Qbp}=\Bra{a:0\geqslant a\geqslant-b,\:\forall b\not\in D}.$\vspace{3pt}\TextB{}
+Define $\tilde{1}=\Bra{a:a<1}\Rightarrow\tilde{1}{^+}=\Bra{a:0<a<1},\:\tilde{1}{^-}=\Bra{a:a\leqslant 0}=\tilde{0}\cup\zeroSubs.$\TextB{}
+Then $-\tilde{1}=\Bra{a:-a>1\Longleftrightarrow a<-1}$ not posi.
+\SepLine
+
+%\Anchor{0B4}\ProblemN{4}{
+%	\TextA{Show $\tilde{1}D=D.$}
+%}
+%\SepLine
+
+\BulletPointX For $C,D$ posi, \,define $CD=\Bra{a:a\leqslant cd,\,c\in C^+,\,d\in D^+}=\Bra{cd:c\in C^+,d\in D^+}\cup\Par{\Qbb\Backslash\Qbp}.$\vspace{2pt}\TextB{}
+Note that $\Bra{cd:c\in C^+,d\in D^+}=CD\cap\Qbp=\Par{CD}{^+}.$%\vspace{2pt}\TextB{}
+\SepLine
+
+\BulletPointX For $C,D$ posi, \,define $\Par{{-C}}\Par{{-D}}=CD.$
+\SepLine
+
+\BulletPointX For a posi $D,$ \;$\tilde{1}D=\Bra{a:a\leqslant ij<j,\;0<i<1,\;j\in D^+}\subseteq D.$\TextB{}
+Now $\BigPar{\tilde{1}D}{^+}\subseteq D^+.$ \;又 $\forall d\in D^+,\,\exists\,\varepsilon>0,\:d+\varepsilon\in D^+\Rightarrow d=\Par{d+\varepsilon}\:\!${\Large$\frac{d}{\:d\,+\,\varepsilon\:}$}${}\in\tilde{1}D.$
+\SepLine
+
+\BulletPointX We want to define $CD$ for posi $C$ and non-posi $D.$\TextB{}
+For non-posi $D,$ \;define $-\tilde{1}D=\tilde{1}\Par{{-D}}=-D.$ \quad For posi $C,$ \;define $-\tilde{1}C=-C.$\TextB{}
+$CD=C\Par{{-\tilde{1}{-D}}}$
+\SepLine
+
+\BulletPointX
+%For $C,D$ not posi $\Longleftrightarrow -C,-D$ posi:\TextB{}
+%$CD=\Par{{-C}}\Par{{-D}}=\Bra{a:a\leqslant cd,\,c\in\Par{{-C}}{^+},\,d\in\Par{{-D}}{^+}}=\Bra{a:a<cd,\:c\in C^-,\,d\in D^-}.$\vspace{2pt}\TextB{}
+%For $C$ posi, $D$ not posi: $-\Sbra{C\Par{{-D}}}=\Bra{cd':cd'\leqslant-xy',\,xy'\not\in C\Par{{-D}}}.$\TextB{}
+%$C\Par{{-D}}=\Bra{a:a\leqslant cd,\,c\in C^+,d\in\Par{{-D}}{^+}}=\Bra{a:a<-cd,\,c\in C^+,d\in D^-}.$\TextB{}
+\TextB{}
+\TextB{}
+\TextB{}
+%\Bra{cs:c\in C,s\in\Qbb\Backslash D}\parNot{\IndentB}
+%For $C$ not posi, $D$ posi $\Longleftrightarrow -C$ posi, $-D$ not posi: $\Par{{-C}}\Par{{-D}}=\Bra{c's':c'\in-C,\,s'\not\in{-D}}.$\TextB{}
+%Note that $\Qbb\Backslash{-D}=\Bra{a\in\Qbb:a\geqslant -b,}$
+%$\Bra{rd:r\in\Qbb\Backslash C,d\in D}.$\parNot{\IndentB}
+\SepLine
+
+\Anchor{0B3}\ProblemN{3}{
+	\TextA{Show $C\subsetneq D\Longleftrightarrow D-C${\FontNorm ${}=\Bra{d-y:d\in D,\:y>x,\:x\not\in C}$\:\!} posi.\vspace{1pt}}
+}(a) Supp $C\subsetneq D.$ \,Let \:\!$d\in D\Backslash C\subseteq\Qbb\Backslash C.$ For any $a\in\tilde{0},$ \:let $\,y=d-a>d\Rightarrow a=d-y\in D-C.$\vspace{2pt}\parSol{}
+(b) Supp $D-C$ posi. Becs $d=y$ for some $d\in D,\,y>x\not\in C.$\parSol{\Hb}
+Note that $x\not\in C\Rightarrow\forall c\in C,\,c<x<y=d\Rightarrow C\subseteq D.$\PfEnd
+\SepLine
+
+\ChEnd
+\pagebreak
+
+\ChDecl{Ch0C}{0$\cdot$C}{}
+
+\vspace{2pt}
+
+\Anchor{0C5}\ProblemN{5}{
+	\TextA{Supp $a_1,a_2,\dots$ is a seq in $\Qbb,$ and $\Sup\Bra{a_1,a_2,\dots}=\sqrt{2}.$}
+	\TextA{Prove $\Sup\Bra{a_{n},a_{n+1},\dots}=\sqrt{2}$ \;for all $n\in\Nbp.$}
+}Becs the sup not in seq $\Rightarrow$ infily many disti elem.\parSol{}
+$\forall a_i,\,\exists\,a_j,\:a_i<a_j<\sqrt{2}.$ \;For $a_{n+k},$ choose $a_i>a_{n+k}.$ If $i\in\;\!\!\Bra{1,\dots,n},$ then choose $a_j>a_i.$\parSol{}
+After at most $\Par{n+1}$ steps, we have $a_{m}$ with $m>n.$ Thus $\forall a_{n+i},\,\exists\,a_{n+j},\:a_{n+i}<a_{n+j}<\sqrt{2}.$\PfEnd
+\SepLine
+
+\ProblemB[]{
+	\TextB{Supp nonempty $A\subseteq\Rbb.$}
+}
+\Anchor{0CT1}\ProblemBX{\TipsN{1}}{
+	\TextA{Define $-A=\Bra{-a:a\in A}\Rightarrow{-\Par{{-A}}}=A.$ \,Prove $\Sup\Par{{-A}}=-\inf A.$}
+}$-b$ is an upper bound of $-A\Longleftrightarrow\forall a\in A,\,-a\leqslant-b\Longleftrightarrow a\geqslant b\Longleftrightarrow b$ is a lower bound of $A.$\parSol{}
+Thus \,$-b_M=\Sup\Par{{-A}}\Longleftrightarrow-b_M\leqslant -b\Longleftrightarrow b_M\geqslant b\Longleftrightarrow b_M=\inf A.$\PfEnd
+\SepLine
+
+\Anchor{0CT2}\ProblemBX{\TipsN{2}}{
+	\TextA{Show if $x\in\Rbb,$ {\tgnr\large(a)} $\sup A>x\Rightarrow\exists\,a\in A,\:a>x,$ \;{\tgnr\large(b)} $\inf A<x\Rightarrow\exists\,a\in A,\:a<x.$}
+}(a) $\nexists\,a>x\Longleftrightarrow\forall a\in A,\,a\leqslant x.$ Then by def of sup.\parSol{\Ha}
+\Or By (b), $\inf\Par{{-A}}=-\sup A<-x\Rightarrow\exists\,{-a}\in A,\:-a<-x.$ \hfill Simlr for (b).\Blind{\qquad}\PfEnd
+%\vspace{4pt}\parSol{}
+%(b) $\nexists\,a<x\Longleftrightarrow\forall a\in A,\,a\geqslant x.$ Then by def of inf.\parSol{\Hb}
+%\Or By (a), $\sup\Par{{-A}}=-\inf A>-x\Rightarrow\exists\,{-a}\in A,\:-a>-x.$\PfEnd
+\SepLine
+
+\Anchor{0C6}\ProblemN{6}{
+	\TextA{Supp $A,B\subseteq\Rbb$ has infily many disti elem, so has $A+B=\Bra{a+b:a\in A,b\in B}.$}
+	\TextA{Prove $\Sup\Par{A+B}=\sup A+\sup B,\,$ and \,$\Inf\Par{A+B}=\inf A+\inf B.$}
+}$\inf A+\inf B\leqslant a+b\leqslant\sup A+\sup B\Rightarrow\Sup\Par{A+B}\leqslant\sup A+\sup B,\,\inf A+\inf B\leqslant\Inf\Par{A+B}.$\vspace{2pt}\parSol{}
+$\sup A+\sup B>\Sup\Par{A+B}\Longleftrightarrow\sup A>\Sup\Par{A+B}-\sup B$\parSol{}
+$\Longleftrightarrow\exists\,a+\sup B>\Sup\Par{A+B}\Longleftrightarrow\sup B>\Sup\Par{A+B}-a\Longleftrightarrow\exists\,a+b>\Sup\Par{A+B}.$ Ctradic.\vspace{2pt}\parSol{}
+%$\inf A<\Inf\Par{A+B}-\inf B\Longleftrightarrow\inf A+\inf B<\Inf\Par{A+B}$\parSol{}
+%$\Longleftrightarrow\exists\,a+\inf B<\Inf\Par{A+B}\Longleftrightarrow\inf B<\Inf\Par{A+B}-a\Longleftrightarrow\exists\,b+a<\Inf\Par{A+B}.$ Ctradic.
+Simlr for $\Inf\Par{A+B}\in A+B.$ \,\Or Apply to $-A-B,$ becs $\Sup\Par{{-A}}=-\inf A.$\PfEnd
+%Then $\forall a\in A,b\in B,\,a+b\in A+B\Rightarrow\exists\,c+d\in A+B,\,c+d>a+b.$\parSol{}
+%If $\sup A\in A.$ Then $\sup A+d>a+b.$
+%Supp $A,B$ both have infily many elem. Supp sups and infs are not in there sets.\parSol{}
+%$\forall a\in A,b\in B,\,$\parSol{}
+\SepLine
+
+%\Anchor{0C7}\ProblemN{7}{
+%	\TextA{Supp $X\neq\emptySet,\,f,g:X\rightarrow\Rbb$ are functions. \,Prove $\sup_X\!\Par{\,f+g}\leqslant\sup_X f+\sup_X g.$}
+%}$ $
+%\SepLine
+
+%\Anchor{0C9}\ProblemN{9}{
+%	\TextA{Prove the ordered field of rational functions with coeffs in $\Rbb$ does not satisfy Archimedean Property.}
+%}
+%\SepLine
+
+%\Anchor{0C14}\ProblemN{14}{
+%	\TextA{Supp $A,B\subseteq\Interval{[}{]}{{-\infty,\infty}}$ are intervals, and $A\cap B\neq\emptySet.$ \,Prove $A\cup B$ are intervals.}
+%}
+%\SepLine
+
+%\Anchor{0C15}\ProblemN{15}{
+%	\TextA{Supp $I\subseteq\Rbb$ is an interval containing more than one number. Prove $\Inf\Par{I\cap\Qbb}=\inf I.$}
+%}$\inf I<\Inf\Par{I\cap\Qbb}\Rightarrow\exists\,x\in I,\,x<\Inf\Par{I\cap\Qbb}.$ While $\exists\,n\in\Nbp,\,1\big/n<x.$\PfEnd
+%\SepLine
+
+\Anchor{0C16}\ProblemN{16}{
+	\TextA{Supp $\Rbb{_1},\Rbb{_2}$ are complete ordered fields. Define $\varphi_1,\varphi_2$ as in [0.11].\vspace{2pt}}
+	\TextA{Define $\mR_1\Par{a}=\Bra{q\in\Qbb:\varphi_1\Par{q}\leqslant a}\Rightarrow\sup_{\mR_1\SmallPar[0.5pt]{a}}\varphi_1=a.$ \;Define $\psi_1\Par{a}=\sup_{\mR_1\SmallPar[0.5pt]{a}}\varphi_2.$\vspace{4pt}}
+	\PrePa\TextA{Show $\psi=\psi_1:\Rbb{_1}\rightarrow\Rbb{_2}$ is one-to-one. \;{\tgnr\large(b)} Show $\psi\Par{0}=0,\,\psi\Par{1}=1.$\vspace{2pt}}
+	\PrePc\TextA{Show $\psi\Par{a\pm b}=\psi\Par{a}\pm\Par{b},$ and $\psi\Par{ab^{-1}}=\psi\Par{a}\psi\Par{b}{^{-1}}.$\vspace{2pt}}
+	\PrePd\TextA{Supp $a\in\Rbb{_1}.$ Show $a>0\Longleftrightarrow\psi\Par{a}>0.$\vspace{2pt}}
+}(a) Define $\mR_2\Par{c}=\Bra{q\in\Qbb:\varphi_2\Par{q}\leqslant c}\Rightarrow\sup_{\mR_2\SmallPar[0.5pt]{c}}\varphi_2=c.$\vspace{1pt}\parSol{\Ha}
+Define $\psi_2\Par{c}=\sup_{\mR_2\SmallPar[0.5pt]{c}}\varphi_1.$ Then $\psi_2:\Rbb{_2}\rightarrow\Rbb{_1}$ well-defined.\vspace{1pt}\parSol{\Ha}
+Note that $\mR_2\BigPar{\psi_1\Par{a}}=\Bra{q\in\Qbb:\varphi_2\Par{q}\leqslant\sup_{\mR_1\SmallPar[0.5pt]{a}}\varphi_2}=\mR_1\Par{a}.$\vspace{1pt}\parSol{\Ha}
+Now $\psi_2\BigPar{\psi_1\Par{a}}=\sup_{\mR_1\SmallPar[0.5pt]{a}}\varphi_1=a.$ \;Rev the roles of $\Rbb_1,\Rbb_2.$\vspace{4pt}\parSol{}
+(b) Note that $\varphi\Par{q}<0\Longleftrightarrow q<0,$ and $\varphi\Par{0}=0.$\parSol{\Hb}
+$\forall q\in\mR_1\Par{1}=\Bra{1\big/m\in\Qbb:m\in\Nbp,\varphi_1\Par{1\big/m}=\Par{1+\dots+1}{^{-1}}\leqslant 1}\cup\Par{\Qbb\Backslash\Qbp},$ \,$\varphi_2\Par{q}\leqslant 1.$\vspace{2pt}\parSol{}
+(c) $\mR_1\Par{a\pm b}=\Bra{p\pm q\in\Qbb:\varphi_1\Par{p}\pm\varphi_1\Par{q}\leqslant a\pm b}.$\parSol{\Hc}
+$\mR_1\Par{ab^{-1}}=\Bra{pq^{-1}\in\Qbb:\varphi_1\Par{q}\cdot\varphi_1\Par{q}{^{-1}}\leqslant ab^{-1}}.$\vspace{3pt}\parSol{}
+(d) $a>0\Longleftrightarrow\exists\,n\in\Nbp,\:1\big/n<a\Longleftrightarrow\psi_1\Par{a}>0.$\PfEnd
+\SepLine
+
+\ChEnd
