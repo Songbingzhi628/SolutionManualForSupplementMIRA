@@ -6,7 +6,8 @@
 
 \BulletPointX Define $\tilde{q}=\Bra{a:a<q},$ and $-\tilde{q}=\widetilde{-q}=\Bra{a:a<-q}.$\TextB{}
 Then $\tilde{0}=\Bra{a:a<0}=\Qbb\Backslash{\Qbs}\Rightarrow-\tilde{0}=\Bra{a:a<-b\leqslant0}=\tilde{0}.$\par\vspace{3pt}
-\BulletPointX Define $-D=\Bra{a:a<-b,\,b\not\in D}=\Bra{{-a}:-a<-b\Longleftrightarrow a>b,\:b\not\in D}.$
+\BulletPointX Define $-D=\Bra{a:a<-b,\,b\not\in D}=\Bra{{-a}:-a<-b\Longleftrightarrow a>b,\:b\not\in D}.$\TextB{}
+$-\Par{{-D}}=-\Bra{a:a<-b,\,b\notin D}=\Bra{c:c<-a,\,a\geqslant -b,\,\forall b\notin D}=\Bra{c:c<b,\,\forall b\notin D}=D.$
 \SepLine
 
 %\Anchor{0BT1}\ProblemBX{\TipsN{1}}{
@@ -70,71 +71,75 @@ $\Par{{-D}}{^-}=\Par{\Qbb\Backslash{-D}}\cap\Par{\Qbb\Backslash\Qbp}=\Bra{a:0\ge
 %Then $-\tilde{1}=\Bra{a:-a>1\Longleftrightarrow a<-1}$ not posi.
 \SepLine
 
-%\Anchor{0B4}\ProblemN{4}{
-%	\TextA{Show $\tilde{1}D=D.$}
-%}
-%\SepLine
-
 \BulletPointX For $C,D$ posi, \,define $CD=\Bra{a:a\leqslant cd,\,c\in C^+,\,d\in D^+}=\Bra{cd:c\in C^+,d\in D^+}\cup\Par{\Qbb\Backslash\Qbp}.$\vspace{2pt}\TextB{}
-Note that $\Bra{cd:c\in C^+,d\in D^+}=CD\cap\Qbp=\Par{CD}{^+}.$\vspace{4pt}\par
-\BulletPointX For $C,D$ not posi, \,define $CD=\Par{{-C}}\Par{{-D}}=\Bra{cd:c\in\Par{{-C}}{^+},d\in\Par{{-D}}{^+}}\cup\Par{\Qbb\Backslash\Qbp}.$\TextB{}
-$CD=\Bra{0<cd<\Par{{-r}}\Par{{-s}}:r\in C^-\nonzero,\,s\in D^-\nonzero}\cup\Par{\Qbb\Backslash\Qbp}=\Bra{a:a<rs,\,r\in C^-,\,s\in D^-}.$\vspace{2pt}\par
-\BulletPointX {\normalsize The intuitive key point is that the prod of cuts is the cut with the endpoint being the prod of endpoints of cuts.}\vspace{2pt}\par
-\BulletPointX For $C$ not posi and $D$ posi, we expect that $CD$ not posi.\TextB{}
-$CD=-C\Par{{-D}}=-\Bra{a:a<rt,\:r\in C^-,\,t\in\Par{{-D}}{^-}}$\TextB{}
-\Blind{$CD$}${}=\Bra{{-a}:a>rt,\:\forall r\in C^-,\,0\geqslant t\geqslant -s,\,\forall s\notin D}$\hfill{\FontSmall \BigPar{$r\leqslant 0,\,-s\leqslant t\leqslant0\Rightarrow -rs\geqslant rt\geqslant0$}}\TextB{}
-\Blind{$CD$}${}=\Bra{{-a}:a>-rs,\,\forall s\not\in D,\,r\in C^-}=\Bra{{a}:a<rs,\,\forall s\not\in D,\,r\in C^-}.$\hfill Note the `$\forall$' here.
+$\Bra{cd:c\in C^+,d\in D^+}=CD\cap\Qbp=\Par{CD}{^+}.$ \;Note that `$a\leqslant cd$' here is equiv to `$a<cd$'.\vspace{4pt}\par
+\BulletPointX For $-C,-D$ posi, \,define $CD=\Par{{-C}}\Par{{-D}}=\Bra{cd:c\in\Par{{-C}}{^+},d\in\Par{{-D}}{^+}}\cup\Par{\Qbb\Backslash\Qbp}.$\TextB{}
+$CD=\Bra{0<cd<\Par{{-r}}\Par{{-s}}:r\in C^-\nonzero,\,s\in D^-\nonzero}\cup\Par{\Qbb\Backslash\Qbp}=\Bra{a:a<rs,\,r\in C^-,\,s\in D^-}.$\vspace{2pt}\TextB{}
+If $C,D$ not posi while $-C,-D$ not posi $\Rightarrow C=D=\tilde{0},$ then with the asum $\tilde{0}\tilde{0}=\tilde{0},$ \,it still holds.\vspace{2pt}\par
+%\BulletPointX For $C=D=\tilde{0},$ \,define $CD=\tilde{0}.$
+\BulletPointX {\normalsize The intuitive key point is that the prod of cuts is the cut with the endpoint being the prod of endpoints of cuts.}
 \SepLine\pagebreak
 
-\BulletPointX \Or $CD=-\Sbra{\Par{{-C}}D}=-\Bra{a:a\leqslant cd,\,c\in\Par{{-C}}{^+},\,d\in D^+}$\TextB{}
-\Blind{\Or $CD$}${}=\Bra{{a}:a$\uline{${}<-b<{}$}$-cd,\,\forall d\in D^+,\,\forall c\text{\;suth\;}$\uline{$0<c<-c',\,\exists\,c'$}${}\not\in C}$\hfill{\FontSmall\BigPar{$0<{}$\uline{$cd<-c'd$}}}\vspace{3pt}\TextB{}
+\BulletPointX For $C$ not posi and $D$ posi, we expect that $CD$ not posi. Consider $C$ and $-D$ both not posi.\TextB{}
+$CD=-C\Par{{-D}}=-\Bra{a:a<rt,\:r\in C^-,\,t\in\Par{{-D}}{^-}}$\TextB{}
+\Blind{$CD$}${}=\Bra{{-a}:a>rt,\:\forall r\in C^-,\,0\geqslant t\geqslant -s,\,\forall s\notin D}$\hfill{\FontSmall \BigPar{$r\leqslant 0,\,-s\leqslant t\leqslant0\Rightarrow -rs\geqslant rt\geqslant0$}}\TextB{}
+\Blind{$CD$}${}=\Bra{a:a<ru,\:\forall r\in C^-,\,0\leqslant u\leqslant s,\,\forall s\notin D}.$\vspace{3pt}\par
+\BulletPointX Note the `$0\leqslant u$'. Becs $C^-\neq\emptySet\Rightarrow 0\in C^-.$ If it is to be exactly $a<0$ in $LHS$ $\Par{{=\tilde{0}}}$, \,then $C^-=\zeroSubs,$\TextB{}
+for if not, $\exists\,u=s>0,$ and $\exists\,r\in C^-\nonzero,$ such that $\exists\,a<ru<0.$ Hence `$0\leqslant u$' is actually `$0<u$'.\vspace{3pt}\par
+\BulletPointX `$u\leqslant s$' cannot be abbreviated as in $\Bra{{-a}:a>-rs,\,\forall s\not\in D,\,r\in C^-}=\Bra{{a}:a<rs,\,\forall s\not\in D,\,r\in C^-}.$\TextB{}
+`$a<ru$' cannot be changed to `$a\leqslant ru$' with ``$0<u<s,\,\forall s\notin D$''?????\vspace{2pt}\par
+\BulletPointX Let ${}^+D=\Bra{u:0<u\leqslant s,\,\forall s\notin D}\supsetneq D^+.$
+\SepLine
+
+\BulletPointX Consider $-C$ and $D$ both posi. \;Omitting $C=\tilde{0},$ \,becs $C$ not posi $\notRightarrow{-C}$ posi.\vspace{1pt}\TextB{}
+$CD=-\Sbra{\Par{{-C}}D}=-\Bra{a:a\leqslant cd,\,c\in\Par{{-C}}{^+},\,d\in D^+}$\TextB{}
+\Blind{$CD$}${}=\Bra{{a}:a$\uline{${}<-b<{}$}$-cd,\,\forall d\in D^+,\,\forall c\text{\;suth\;}$\uline{$0<c<-c',\,\exists\,c'$}${}\not\in C}$\hfill{\FontSmall\BigPar{$0<{}$\uline{$cd<-c'd$}}}\vspace{4pt}\TextB{}
 To make \uline{those} comfortable, notice the following:\vspace{1pt}\TextB{}
 (a) $A=\Bra{a:a<M},\,B=\Bra{b:b<a,\,\forall a\in A\Rightarrow b<a<M}\subseteq\Bra{b:b<M}=A.$\TextB{}
-\Ha \!又 $\forall b<M,\,\exists\,\epsilon>0,\:b+\epsilon<M\Rightarrow b\in B.$\vspace{2pt}\TextB{}
+\Ha \!又 $\forall b<M,\,\exists\,\epsilon>0,\:b+\epsilon<M\Rightarrow b\in B.$\vspace{3pt}\TextB{}
 %(b) $\Bra{r:a<r,\,\forall a\in A}\supseteq\Bra{r:M\leqslant r}.$\TextB{}
-%\Hb \!又 Supp $r$ suth $\forall a\in A,\,r>a.$ If $r<M,$ then $r\in A\Rightarrow\exists\,r'\in A,\,r'>r.$\vspace{2pt}\TextB{}
+%\Hb \!又 Supp $r$ suth $\forall a\in A,\,r>a.$ If $r<M,$ then $r\in A\Rightarrow\exists\,r'\in A,\,r'>r.$\vspace{3pt}\TextB{}
 (b) $A=\Bra{a:M<a},\,B=\Bra{b:b<a,\,\forall a\in A}\supseteq\Bra{b:b\leqslant M}$\TextB{}
-\Hb \!又 Supp $b$ suth $\forall a\in A,\,b<a.$ If $b>M,$ then $b\in A\Rightarrow\exists\,b'\in A,\,b'<b.$\vspace{3pt}\TextB{}
+\Hb \!又 Supp $b$ suth $\forall a\in A,\,b<a.$ If $b>M,$ then $b\in A\Rightarrow\exists\,b'\in A,\,b'<b.$\vspace{4pt}\TextB{}
 $CD=\Bra{a:a<-cd,\:\forall d\in D^+,\,$\uline{$\forall c\text{\;suth\;}0<c<-c',\,\exists\,c'\notin C$}$}$\hfill{\FontSmall\BigPar{$c'd<-cd<0$}}\TextB{}
-$\Blind{CD}=\Bra{a:a\leqslant c'd,\;$\uline{$\forall c'\in C^-,$}$\,\forall d\in D^+}$\TextB{\vspace{-20pt}}
-\hspace{310pt}\begin{tikzpicture}[>=stealth, every node/.style={font=\scriptsize},scale=1.4]
-	\draw[->, thick] (-2,0) -- (1.8,0);
-	\draw[-, thick] (-1.5,0) -- (-1.5,0.16);
-	\draw[-, thick] (0,0) -- (0,0.3);
-	\draw[-, thick] (1.2,0) -- (1.2,0.3);
-	\draw[-, thick] (-1.5,0.16) -- (0,0.16);
-	\draw[-, thick] (0,0.3) -- (1.2,0.3);
-	\draw (0,0) circle [radius=2pt]
-	node [below=2pt] {0};
-
-	\fill[black] (-1.5,0) circle [radius=2pt]
-	node [below=2pt] {$\sup C$};
-
-	\draw (1.2,0) circle [radius=2pt]
-	node [below=2pt] {$\sup D$};
-\end{tikzpicture}\vspace{-10pt}
+$\Blind{CD}=\Bra{a:a\leqslant c'd,\;$\uline{$\forall c'\in C^-,$}$\,\forall d\in D^+}=\Bra{a:a\leqslant rd,\;\forall r\in C^-,\,\forall d\in D^+}.$
+%\TextB{\vspace{-20pt}}\hspace{310pt}\begin{tikzpicture}[>=stealth, every node/.style={font=\scriptsize},scale=1.4]
+%	\draw[->, thick] (-2,0) -- (1.8,0);
+%	\draw[-, thick] (-1.5,0) -- (-1.5,0.16);
+%	\draw[-, thick] (0,0) -- (0,0.3);
+%	\draw[-, thick] (1.2,0) -- (1.2,0.3);
+%	\draw[-, thick] (-1.5,0.16) -- (0,0.16);
+%	\draw[-, thick] (0,0.3) -- (1.2,0.3);
+%	\draw (0,0) circle [radius=2pt]
+%	node [below=2pt] {0};
+%
+%	\fill[black] (-1.5,0) circle [radius=2pt]
+%	node [below=2pt] {$\sup C$};
+%
+%	\draw (1.2,0) circle [radius=2pt]
+%	node [below=2pt] {$\sup D$};
+%\end{tikzpicture}\vspace{-10pt}
 \SepLine
 
-\BulletPointX For $C$ not posi and $D$ posi, to make $CD=DC,$ we define\TextB{} $CD=\Bra{a:a<rs,\,\forall s\not\in C,\,s\in D^-}=\Bra{a:a\leqslant cd,\;\forall c\in C^+,\,d\in D^-}.$
+%\BulletPointX Now we show ${}^+D=\Bra{u:0<u<s,\,\forall s\notin D}=D^+.$ Immed, ${}^+D\supseteq D^+.$\TextB{}
+%Becs $\forall u\in\Qbp,\,u\not\in D^+\Rightarrow u\geqslant b,\,\exists\,b\notin D\Rightarrow u\notin{}^+D.$
+%\SepLine
+
+\BulletPointX Let $LHS=\Bra{cs:c\in C,\,s\notin D},\;RHS=\Bra{a:a\leqslant rd,\,\forall r\in C^-,\,\forall d\in D^+}.$\TextB{}
+Supp $a\leqslant rd.$ Let $b\notin D\Rightarrow d<b.$ Let $q=b\big/d.$\TextB{}
+$r'=rq\Rightarrow r'd=rb.$\TextB{}
+Supp $c,s$ suth $cs\in LHS.$ \,Then $cs<rs,\,\forall r\in C^-.$
 \SepLine
 
-\BulletPointX Thus $CD=DC$ in all cases.
-\SepLine
+%\BulletPointX For $C$ not posi and $D$ posi, to make $CD=DC,$ we define\TextB{}
+%$CD=\Bra{a:a<rs,\,\forall s\not\in C,\,s\in D^-}=\Bra{a:a\leqslant cd,\;\forall c\in C^+,\,d\in D^-}.$
+%\SepLine
+
+%\BulletPointX Thus $CD=DC$ in all cases.
+%\SepLine
 
 \BulletPointX For a posi $D,$ \;$\tilde{1}D=\Bra{a:a\leqslant ij<j,\;0<i<1,\;j\in D^+}\subseteq D.$\TextB{}
 Now $\BigPar{\tilde{1}D}{^+}\subseteq D^+.$ \;又 $\forall d\in D^+,\,\exists\,\varepsilon>0,\:d+\varepsilon\in D^+\Rightarrow d=\Par{d+\varepsilon}\:\!${\Large$\frac{d}{\:d\,+\,\varepsilon\:}$}${}\in\tilde{1}D.$
-\SepLine
-
-\BulletPointX
-%For $C$ posi, $D$ not posi: $-\Sbra{C\Par{{-D}}}=\Bra{cd':cd'\leqslant-xy',\,xy'\not\in C\Par{{-D}}}.$\TextB{}
-%$C\Par{{-D}}=\Bra{a:a\leqslant cd,\,c\in C^+,d\in\Par{{-D}}{^+}}=\Bra{a:a<-cd,\,c\in C^+,d\in D^-}.$\TextB{}
-\TextB{}
-\TextB{}
-\TextB{}
-%\Bra{cs:c\in C,s\in\Qbb\Backslash D}\parNot{\IndentB}
-%For $C$ not posi, $D$ posi $\Longleftrightarrow -C$ posi, $-D$ not posi: $\Par{{-C}}\Par{{-D}}=\Bra{c's':c'\in-C,\,s'\not\in{-D}}.$\TextB{}
-%Note that $\Qbb\Backslash{-D}=\Bra{a\in\Qbb:a\geqslant -b,}$
-%$\Bra{rd:r\in\Qbb\Backslash C,d\in D}.$\parNot{\IndentB}
 \SepLine
 
 \Anchor{0B3}\ProblemN{3}{
@@ -142,6 +147,11 @@ Now $\BigPar{\tilde{1}D}{^+}\subseteq D^+.$ \;又 $\forall d\in D^+,\,\exists\,\
 }(a) Supp $C\subsetneq D.$ \,Let \:\!$d\in D\Backslash C\subseteq\Qbb\Backslash C.$ For any $a\in\tilde{0},$ \:let $\,y=d-a>d\Rightarrow a=d-y\in D-C.$\vspace{2pt}\parSol{}
 (b) Supp $D-C$ posi. Becs $d=y$ for some $d\in D,\,y>x\not\in C.$\parSol{\Hb}
 Note that $x\not\in C\Rightarrow\forall c\in C,\,c<x<y=d\Rightarrow C\subseteq D.$\PfEnd
+\SepLine
+
+\Anchor{0B4}\ProblemN{4}{
+	\TextA{Prove}
+}
 \SepLine
 
 \ChEnd
