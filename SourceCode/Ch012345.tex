@@ -30,6 +30,7 @@ $-\Par{{-D}}=-\Bra{a:a<-b,\,b\notin D}=\Bra{c:c<-a,\,a\geqslant -b,\,\forall b\n
 %	\PrePa\TextA{If $x\in\Qbb$ suth $\forall d\in D,\,d\leqslant x,$ then $x\in\Qbb\Backslash D.$\hfill\FontNorm\tgnr If not, by def, ctradic.}
 %	\PrePb\TextA{If $\forall d\in D,\,\exists\,\varepsilon\in\Qbp,\,d+\varepsilon\in D.$\hfill\FontNorm\tgnr Supp $d<d'\in D\Rightarrow d'-d=\varepsilon\in\Qbp.$}
 	\TextA{Prove $\forall\varepsilon>0,\,\exists\,b\not\in D$ \,suth\, $b-\varepsilon\in D.$}
+%	\PrePb\TextA{Prove $\forall q\in\tilde{0}\cap\Qbp,\,\exists\,d$}
 }Asum $\exists\,\varepsilon>0$ suth $\nexists\,b\not\in D,\,b-\varepsilon\in D\Longleftrightarrow\forall b\not\in D,\,b-\varepsilon\not\in D.$\parSol{}
 Then $\Par{b-\varepsilon}-\dots-\varepsilon=b-n\cdot\varepsilon\not\in D$ for any $n\in\Nbp.$\parSol{}
 Now $\forall d\in D,\,\exists\,n\in\Nbp$ suth $b-n\cdot\varepsilon<d\Rightarrow b-n\cdot\varepsilon\in D,$ ctradic.\PfEnd
@@ -45,14 +46,14 @@ Thus by def, $x+\delta\in -D,$ ctradic the max of $x\in -D.$ \,Hence $-D$ is Ddk
 $D+\Par{{-D}}=\Bra{x+y:x+y<x-b,\:x\in D,\,b\not\in D}.$\parSol{\Hb}
 Supp $a\in\tilde{0}\Rightarrow-a>0.$ By \TIPS, $\exists\,b\not\in D$ \,suth\, $b+a\in D.$\parSol{\Hb}
 Note that $b<b-a\not\in D\Rightarrow-b>-b+a\in -D.$ \,Then $\Par{{-b+a}}+\Par{b+a}=2\:\!a<0.$\parSol{\Hb}
-Thus $\forall a\in\tilde{0},\,\exists\,b\not\in D,\;d=b+\frac{\:1\:}{2}a\in D,\,c=-b+\frac{\:1\:}{2}a\in-D\Rightarrow c+d=a\in D+\Par{{-D}}.$\PfEnd\vspace{3pt}
-\ACoro $-\Par{{-D}}+\Par{{-D}}=\tilde{0}\Rightarrow -\Par{{-D}}=D,$ by the uniqnes.
+Thus $\forall a\in\tilde{0},\,\exists\,b\not\in D,\;d=b+\frac{\:1\:}{2}a\in D,\,c=-b+\frac{\:1\:}{2}a\in-D\Rightarrow c+d=a\in D+\Par{{-D}}.$\PfEnd
+%\ACoro $-\Par{{-D}}+\Par{{-D}}=\tilde{0}\Rightarrow -\Par{{-D}}=D,$ by the uniqnes.
 %$\Bra{a_1+a_2:a_1,a_2\in D}=D+D=\tilde{0}=\Bra{a:a<0}\Longrightarrow\forall a\in D,\,a+a<0\Longleftrightarrow a<0.$
 \SepLine
 
 \Anchor{0B3}\ProblemN{3}{
 	\TextA{Show $C\subsetneq D\Longleftrightarrow D-C${\FontNorm ${}=\Bra{d-y:d\in D,\:y>x,\:x\not\in C}$\:\!} posi.\vspace{1pt}}
-}(a) $C\subsetneq D\Rightarrow\exists\,x\in D\Backslash C\Rightarrow\exists\,y\in D,\,y>x\Rightarrow\exists\,y'\in D,\,y'>y\Longleftrightarrow 0<y'-y\in D-C.$\vspace{2pt}\parSol{}
+}(a) $C\subsetneq D\Rightarrow\exists\,x\in D\Backslash C\Rightarrow\exists\,y\in D,\,y>x\Rightarrow\exists\,d\in D,\,d>y\Longleftrightarrow 0<d-y\in D-C.$\vspace{2pt}\parSol{}
 (b) $0\in D-C\Rightarrow\exists\,y>x\notin C,\;y\in D\Rightarrow\forall c\in C,\,c<x<y\in D\Rightarrow C\subseteq D.$ \,又 $D-C\neq\tilde{0}.$\PfEnd
 \SepLine
 
@@ -67,13 +68,6 @@ Thus $\forall a\in\tilde{0},\,\exists\,b\not\in D,\;d=b+\frac{\:1\:}{2}a\in D,\,
 (b) Becs $\tilde{0}$ is the largest non posi cuts. Thus $-D\neq\tilde{0}\Rightarrow-D\subsetneq\tilde{0}\Rightarrow\tilde{0}-\Par{{-D}}=D$ posi.\parSol{\Hb}
 \Or $\exists\,a<0,\,a\notin -D=\Bra{a:-a>b,\,b\notin D}\Longleftrightarrow\nexists\,b\notin D,\,-a>b\Longleftrightarrow\forall b\notin D,\,0<-a\leqslant b.$\PfEnd
 \SepLine
-
-\Anchor{0B4}\ProblemN{4}{
-	\PrePa\TextA{Supp $D\neq\tilde{0}.$ Find a formula for $D^{-1}$ suth $D^{-1}$ is Dedekind cut and $DD^{-1}=\tilde{1}.$}
-	\PrePb\TextA{Show assoc for multi and distr holds in $\mD.$}
-}Let $D^{-1}=\Bra{a:a<1\big/d,\,\forall d\in D}\Rightarrow DD^{-1}=\Bra{a:a<rs,\:r\in D^\pm,\,s\in\Par{D^{-1}}{^\pm}}.$\parSol{}
-$\Par{D^{-1}}{^+}=\Bra{a:0<a<1\big/d,\,\forall d\in D^+},\:\Par{D^{-1}}{^-}=\Bra{a:0\geqslant a\geqslant 1\big/d,\,\exists\,d\in D}.$
-\SepLine\pagebreak
 
 \BulletPointX Define $D^+=\Bra{d\in D:d>0}=D\cap\Qbp.$ \,Then $D^+\neq\emptySet\Longleftrightarrow\Qbb\Backslash\Qbp\subsetneq D\Longleftrightarrow 0\in D\Longleftrightarrow D$ posi.\vspace{2pt}\TextB{}
 Define $D^-=\Bra{r\not\in D:r\leqslant 0}=\Par{\Qbb\Backslash D}\cap\Par{\Qbb\Backslash\Qbp}=\Qbb\Backslash\Par{D\cup\Qbp}.$\TextB{}
@@ -90,11 +84,20 @@ $\Par{{-D}}{^-}=\Par{\Qbb\Backslash{-D}}\cap\Par{\Qbb\Backslash\Qbp}=\Bra{a:0\ge
 \SepLine
 
 \BulletPointX For $C,D$ posi, \,define $CD=\Bra{a:a\leqslant cd,\,c\in C^+,\,d\in D^+}=\Bra{cd:c\in C^+,d\in D^+}\cup\Par{\Qbb\Backslash\Qbp}.$\vspace{2pt}\TextB{}
-$\Bra{cd:c\in C^+,d\in D^+}=CD\cap\Qbp=\Par{CD}{^+}.$ \;Note that `$a\leqslant cd$' here is equiv to `$a<cd$'.\vspace{4pt}\par
+$\Bra{cd:c\in C^+,d\in D^+}=CD\cap\Qbp=\Par{CD}{^+}.$ \;Note that `$a\leqslant cd$' here is equiv to `$a<cd$'.%\vspace{4pt}\par
+\SepLine
+
 \BulletPointX For $-C,-D$ posi, \,define $CD=\Par{{-C}}\Par{{-D}}=\Bra{cd:c\in\Par{{-C}}{^+},d\in\Par{{-D}}{^+}}\cup\Par{\Qbb\Backslash\Qbp}.$\TextB{}
 $CD=\Bra{0<cd<\Par{{-r}}\Par{{-s}}:r\in C^-\nonzero,\,s\in D^-\nonzero}\cup\Par{\Qbb\Backslash\Qbp}=\Bra{a:a<rs,\,r\in C^-,\,s\in D^-}.$\vspace{2pt}\TextB{}
 If $C,-C$ not posi $\Rightarrow C=\tilde{0},$ then with the asum $\tilde{0}D=\tilde{0},$ \,it still holds. \,Simlr for $D,-D$ not posi.\vspace{2pt}\par
 \BulletPointX {\normalsize The intuitive key point is that the prod of cuts is the cut with the endpoint being the prod of endpoints of cuts.}
+\SepLine
+
+\BulletPointX For $D$ posi, \,define $D^{-1}=\Bra{a:a<1\big/b,\;b\notin D}\Rightarrow DD^{-1}=\Bra{a:a\leqslant d\big/b<1,\;b\notin D,\,d\in D^+}=\tilde{1}.$\TextB{}
+The last equa holds becs $\forall a\in\tilde{1}\cap\Qbp,\:\exists\,d\in D^+$ suth $b=d\big/a\notin D\Rightarrow d\big/b=a\in DD^{-1}.$\vspace{3pt}\par
+\BulletPointX For non0 $D$ not posi, \,define $D^{-1}=\Bra{a:a<1\big/b,\;b\in D^-}\Rightarrow\Par{D^{-1}}{^-}=\Bra{s:0\geqslant s\geqslant 1\big/b,\,\forall b\in D^-}.$\TextB{}
+Then $DD^{-1}=\Bra{a:a<rs,\,r\in D^-,\,s\in\Par{D^{-1}}{^-}}=\Bra{a:a<rs,\:\exists\,r\in D^-,\,0\leqslant rs\leqslant r\big/b,\,\forall b\in D^-}.$\TextB{}
+Asum $\exists\,a\in\tilde{1}\cap\Qbp,\,\forall r\in D^-,\,s\in\Par{D^{-1}}{^-},\;a\geqslant rs\Longrightarrow a\geqslant r\big/b\Longleftrightarrow r\big/a\leqslant b,\,\forall b\in D^-.$ \;Let $r=0.$
 \SepLine
 
 \BulletPointX For $C$ not posi and $D$ posi, we expect that $CD$ not posi. Consider $C$ and $-D$ both not posi.\TextB{}
@@ -130,7 +133,7 @@ othws $r>\sup C\Rightarrow -r<-\sup C=\Sup\Par{{-C}}\Rightarrow\exists\,c>-r,\,c
 \TextB{}
 ($*$.b) Supp $a\leqslant c'd,\,\forall c'\!,\:\!d$ \Par{$\Rightarrow a<0$}. Asum \,$a\geqslant-cd,\,\exists\,c'\!,\:\!d'.$\TextB{}
 \Blind{($*$.b)} \vspace{-2pt}
-\SepLine
+\SepLine\pagebreak
 
 \BulletPointX Let $\,LHS=\Bra{a:a<ru,\:\forall r\in C^-,\,0<u\leqslant s,\,\forall s\notin D},\;RHS=\Bra{a:a\leqslant rd,\;\forall r\in C^-,\,\forall d\in D^+}.$\vspace{1pt}\TextB{}
 Where $\tilde{0}\neq C$ is not posi, $D$ posi. We show `$rd$' < `$ru$', \,so that\, $LHS=RHS.$\TextB{}
