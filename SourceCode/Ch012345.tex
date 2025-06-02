@@ -73,7 +73,7 @@ Thus $\forall a\in\tilde{0},\,\exists\,b\not\in D,\;d=b+\frac{\:1\:}{2}a\in D,\,
 Define $D^-=\Bra{r\not\in D:r\leqslant 0}=\Par{\Qbb\Backslash D}\cap\Par{\Qbb\Backslash\Qbp}=\Qbb\Backslash\Par{D\cup\Qbp}.$\TextB{}
 (a) $D^-=\zeroSubs\Longleftarrow D=\tilde{0}.$ \;Convly, $\Bra{r\notin D:r\leqslant0}=\zeroSubs\Longrightarrow\Qbb\Backslash D=\Qbs.$\TextB{}
 (b) $D^-=\emptySet\Longleftrightarrow D\cup\Qbp=\Qbb\Longleftrightarrow\Qbb\Backslash\Qbp\subseteq D\Longleftrightarrow 0\in D\Longleftrightarrow D$ posi. \hfill\ACoro $D$ not posi $\Longleftrightarrow 0\in D^-.$\TextB{}
-(c) $\Par{D^-}{^-}=\Bra{r\in D:r\leqslant0}=\Qbb\Backslash D^+.$ \hfill\ACoro $D$ not posi $\Longleftrightarrow\Par{{-D}}{^-}=D.$
+(c) $\Par{D^-}{^-}=\Bra{r\in D:r\leqslant0}=\Qbb\Backslash D^+.$ \hfill\ACoro $D$ not posi $\Longleftrightarrow\Par{D^-}{^-}=D.$
 \SepLine
 
 \BulletPointX $\Par{{-D}}{^+}=\Par{{-D}}\cap\Qbp=\Bra{a:0<a<-b,\:b\not\in D\Longleftrightarrow b\in D^-\nonzero}.$\TextB{}
@@ -108,14 +108,14 @@ $CD=-C\Par{{-D}}=-\Bra{a:a<rt,\:r\in C^-,\,t\in\Par{{-D}}{^-}}=\Bra{{-a}:a>b,\,b
 for if not, $\exists\,u>0,$ and $\exists\,r\in C^-\nonzero,$ such that $\exists\,a<ru<0.$ Hence `$0\leqslant u$' is actually `$0<u$'.\vspace{3pt}\par
 \BulletPointX `$u\leqslant s$' cannot be abbreviated as in $\Bra{{-a}:a>-rs,\,\forall s\not\in D,\,r\in C^-}=\Bra{{a}:a<rs,\,\forall s\not\in D,\,r\in C^-}.$\TextB{}
 `$u\leqslant s$' cannot be `$u<s$', becs here $rs<ru\Rightarrow\exists\,a=rs.$ \,Simlr for `$a<ru$' to be `$a\leqslant ru$' with `$u<s$'.\vspace{2pt}\par
-\BulletPointX Note that $\Bra{u:0<u\leqslant s,\,\forall s\notin D}\supsetneq D^+.$ We show ``$0<u\leqslant s,\,\forall s\notin D$'' is equiv to ``$\forall d\in D^+$''.\TextB{}
+\BulletPointX Note that $\Bra{u:0<u\leqslant s,\,\forall s\notin D}\supsetneq D^+.$ We show ``$0<u\leqslant s,\,\forall s\notin D$'' is equiv to ``$\forall u\in D^+$''.\TextB{}
 %$LHS=\Bra{a:a<ru,\:\forall r\in C^-,\,0<u\leqslant s,\,\forall s\notin D},\;\Bra{a:a<rd,\:\forall r\in C^-,\,\forall d\in D^+}=RHS.$\TextB{}
-For $LHS\subseteq RHS,\,$ if we cannot fix `$\min\Qbb\Backslash D$' by a certain scalar $s_M,$ then done.\TextB{}
+Immed, $LHS\subseteq RHS.$ \,For $RHS\subseteq LHS,\,$ if we cannot fix `$\min\Qbb\Backslash D$' by a certain scalar $s_M,$ then done.\TextB{}
 Othws, becs \,$s_M=\max D,$ now ``$a<rs_M,\,\forall r\in C^-$''.\TextB{}
 Note that if $0<d_1<\cdots<d_n<\cdots<d_{\infty}\in D^+$ \Sbra{$d_n<s_M$} \,and $0>r_{\:\!\!1}>\cdots>r_{\:\!\!m}>\cdots>r_{\:\!\!\infty}\in C^-,$\TextB{}
 \NOTICE that $d_{\infty}$ is an ordered pair $\Par{d_n,d_{n+1}}$ with $d_n<d_{n+1}.$ Simlr, $\Par{r_m,r_{m+1}}$ with $r_{m+1}<r_m.$\TextB{}
 We show ``$a<r_{\:\!\!m}\,d_{n}$'' is equiv to ``$a<r_{\:\!\!m}\,s_M$''. Becs \;\!$r_{\:\!\!m+1}\,s_M<r_{\:\!\!m}\,s_M<r_{\:\!\!m}\,d_{n+1}<r_{\:\!\!m}\,d_n>r_{\:\!\!m+1}\,d_{n+1}.$\TextB{}
-Asum $r_{\:\!\!m}\,s_M<\frac{\:p\:}{q}<r_{\:\!\!m}\,d_n,\,\forall m,n\in\Nbp.$
+Asum $r_{\:\!\!m}\,s_M\leqslant t<r_{\:\!\!m}\,d_n,\,\forall m,n\in\Nbp.$ Let $u=t\big/r_{\:\!\!m}\Rightarrow s_M\geqslant u>d_n.$ Ctradic.\PfEnd
 \SepLine
 
 \BulletPointX Consider $-C$ and $D$ both posi. \;Omitting $C=\tilde{0}.$\vspace{1pt}\TextB{}
@@ -192,7 +192,7 @@ Othws, $\exists\,d\in D^+,\,0<u<d<s,\,\forall s\notin D,$ ctradic.\vspace{-2pt}
 \end{tabularx}\vspace{8pt}
 \par\quad
 (1) $\BigPar{\Par{BC}D}{^+}=\Bra{\Par{bc}d:bc\in\Par{BC}{^+},\,d\in D^+}=\Bra{b\Par{cd}:b\in B^+,\,cd\in\Par{CD}{^+}}=\BigPar{B\Par{CD}}{^+}.$\par\quad
-(4) $\Par{BC}D=\Bra{a:a<rs,\:r\in\Par{BC}{^-},\,r\in D^-}.$\par\quad
+(4) $\Par{BC}D=\Bra{a:a<rs,\:r\in\Par{BC}{^-},\,s\in D^-}.$\par\quad
 
 \par\quad
 $\BigPar{B\Par{C+D}}{^+}=\Bra{bs:b\in B^+,\,s\in\Par{C+D}{^+}}=\Bra{bc+bd:b\in B^+,\,-bc<bd,\,c\in C,\,d\in D}=P.$\par\quad
