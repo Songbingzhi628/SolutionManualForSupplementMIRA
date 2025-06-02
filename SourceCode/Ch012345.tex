@@ -108,12 +108,19 @@ $CD=-C\Par{{-D}}=-\Bra{a:a<rt,\:r\in C^-,\,t\in\Par{{-D}}{^-}}=\Bra{{-a}:a>b,\,b
 for if not, $\exists\,u>0,$ and $\exists\,r\in C^-\nonzero,$ such that $\exists\,a<ru<0.$ Hence `$0\leqslant u$' is actually `$0<u$'.\vspace{3pt}\par
 \BulletPointX `$u\leqslant s$' cannot be abbreviated as in $\Bra{{-a}:a>-rs,\,\forall s\not\in D,\,r\in C^-}=\Bra{{a}:a<rs,\,\forall s\not\in D,\,r\in C^-}.$\TextB{}
 `$u\leqslant s$' cannot be `$u<s$', becs here $rs<ru\Rightarrow\exists\,a=rs.$ \,Simlr for `$a<ru$' to be `$a\leqslant ru$' with `$u<s$'.\vspace{2pt}\par
-\BulletPointX Note that $\Bra{u:0<u\leqslant s,\,\forall s\notin D}\supsetneq D^+.$
+\BulletPointX Note that $\Bra{u:0<u\leqslant s,\,\forall s\notin D}\supsetneq D^+.$ We show ``$0<u\leqslant s,\,\forall s\notin D$'' is equiv to ``$\forall d\in D^+$''.\TextB{}
+%$LHS=\Bra{a:a<ru,\:\forall r\in C^-,\,0<u\leqslant s,\,\forall s\notin D},\;\Bra{a:a<rd,\:\forall r\in C^-,\,\forall d\in D^+}=RHS.$\TextB{}
+For $LHS\subseteq RHS,\,$ if we cannot fix `$\min\Qbb\Backslash D$' by a certain scalar $s_M,$ then done.\TextB{}
+Othws, becs \,$s_M=\max D,$ now ``$a<rs_M,\,\forall r\in C^-$''.\TextB{}
+Note that if $0<d_1<\cdots<d_n<\cdots<d_{\infty}\in D^+$ \Sbra{$d_n<s_M$} \,and $0>r_{\:\!\!1}>\cdots>r_{\:\!\!m}>\cdots>r_{\:\!\!\infty}\in C^-,$\TextB{}
+\NOTICE that $d_{\infty}$ is an ordered pair $\Par{d_n,d_{n+1}}$ with $d_n<d_{n+1}.$ Simlr, $\Par{r_m,r_{m+1}}$ with $r_{m+1}<r_m.$\TextB{}
+We show ``$a<r_{\:\!\!m}\,d_{n}$'' is equiv to ``$a<r_{\:\!\!m}\,s_M$''. Becs \;\!$r_{\:\!\!m+1}\,s_M<r_{\:\!\!m}\,s_M<r_{\:\!\!m}\,d_{n+1}<r_{\:\!\!m}\,d_n>r_{\:\!\!m+1}\,d_{n+1}.$\TextB{}
+Asum $r_{\:\!\!m}\,s_M<\frac{\:p\:}{q}<r_{\:\!\!m}\,d_n,\,\forall m,n\in\Nbp.$
 \SepLine
 
 \BulletPointX Consider $-C$ and $D$ both posi. \;Omitting $C=\tilde{0}.$\vspace{1pt}\TextB{}
 $CD=-\Sbra{\Par{{-C}}D}=-\Bra{a:a\leqslant cd,\,c\in\Par{{-C}}{^+},\,d\in D^+}=\Bra{{-a}:a>b,\,b>cd,\,\forall c\in\Par{{-C}}{^+},\,d\in D^+}$\TextB{}
-\Blind{$CD$}${}=\Bra{{a}:a<-cd,\,\forall d\in D^+,\,\forall c\text{\;suth\;}$\uline{$0<c<-r,\,\exists\,r$}${}\in C^-}$\hfill{\FontSmall\BigPar{$rd<{}$\uline{$-cd<0$}}}\vspace{2pt}\TextB{}
+\Blind{$CD$}${}=\Bra{{a}:a<-cd,\,\forall d\in D^+,\,\forall c\text{\;suth\;}$\uline{$0<c<-r,\,\exists\,r$}${}\in C^-}$\hfill{\FontSmall\BigPar{$rd<{}$\uline{$-cd<0$}}}
 %To make \uline{those} comfortable, notice the following:\vspace{1pt}\TextB{}
 %(a) $A=\Bra{a:a<M},\,B=\Bra{b:b<a,\,\forall a\in A\Rightarrow b<a<M}\subseteq\Bra{b:b<M}=A.$\TextB{}
 %\Ha \!又 $\forall b<M,\,\exists\,\epsilon>0,\:b+\epsilon<M\Rightarrow b\in B.$\vspace{3pt}\TextB{}
@@ -122,17 +129,17 @@ $CD=-\Sbra{\Par{{-C}}D}=-\Bra{a:a\leqslant cd,\,c\in\Par{{-C}}{^+},\,d\in D^+}=\
 %(b) $A=\Bra{a:M<a},\,B=\Bra{b:b<a,\,\forall a\in A}\supseteq\Bra{b:b\leqslant M}$\TextB{}
 %\Hb \!又 Supp $b$ suth $\forall a\in A,\,b<a.$ If $b>M,$ then $b\in A\Rightarrow\exists\,b'\in A,\,b'<b.$\vspace{4pt}\TextB{}
 %$CD=\Bra{a:a<-cd,\:\forall d\in D^+,\,$\uline{$\forall c\text{\;suth\;}0<c<-c',\,\exists\,c'\notin C$}$}$\TextB{}
-$\Blind{CD}\overset{*}{=}\Bra{a:a<rd,\;$\uline{$\forall r\in C^-,$}$\,\forall d\in D^+}.$\vspace{4pt}\TextB{}
-Intuitively, \,$0<d_1<\cdots<d_n<\sup D,$ and $\sup C\leqslant r_{\:\!\!m}<\cdots<r_{\:\!\!1}<0.$ \,Becs $a<r_{\:\!\!j}\,d_k,\,\forall j,k.$\TextB{}
-又 $r_{\:\!\!j+1}<r_{\:\!\!j}\,d_k<r_{\:\!\!j}\,d_{k-1}\Rightarrow a<r_{\:\!\!m}\,d_n<r_{\:\!\!j}\,d_k.$ \;Thus `$a<rd$' cannot be `$a\leqslant rd$'.%, becs \,$r_{\:\!\!m}\,d_{n+1}<r_{\:\!\!m}\,d_n$
-\vspace{3pt}\TextB{}
-($*$.a) Supp $a<-cd<0,\forall c\in\Par{{-C}}{^+},\,d\in D^+.$ Asum \,$-cd>a\geqslant rd',\,\exists\,r\in C^-,\,d'\in D^+.$\TextB{}
-\Blind{($*$.a)} Let \,$d=d'\Rightarrow r\leqslant-c\Longleftrightarrow c\leqslant-r.$ \;Now $r<0.$\TextB{}
-If $\exists$ min upper bound in $\Qbb,$ \,then $r=\sup C,$\TextB{}
-othws $r>\sup C\Rightarrow -r<-\sup C=\Sup\Par{{-C}}\Rightarrow\exists\,c>-r,\,c<\Sup\Par{{-C}},$ simlr if $\sup C\notin\Qbb.$\TextB{}
-\TextB{}
-($*$.b) Supp $a\leqslant c'd,\,\forall c'\!,\:\!d$ \Par{$\Rightarrow a<0$}. Asum \,$a\geqslant-cd,\,\exists\,c'\!,\:\!d'.$\TextB{}
-\Blind{($*$.b)} \vspace{-2pt}
+%%%%%%%%%
+%$\Blind{CD}=\Bra{a:a<rd,\;$\uline{$\forall r\in C^-,$}$\,\forall d\in D^+}.$%\vspace{4pt}\TextB{}
+%%%%%%%%%
+%Intuitively, \,$0<d_1<\cdots<d_n<\sup D,$ and $\sup C\leqslant r_{\:\!\!m}<\cdots<r_{\:\!\!1}<0.$ \,Becs $a<r_{\:\!\!j}\,d_k,\,\forall j,k.$\TextB{}
+%又 $r_{\:\!\!j+1}\,d_k<r_{\:\!\!j}\,d_k<r_{\:\!\!j}\,d_{k-1}\Rightarrow a<r_{\:\!\!m}\,d_n<r_{\:\!\!j}\,d_k.$ \;Thus `$a<rd$' cannot be `$a\leqslant rd$'.%, becs \,$r_{\:\!\!m}\,d_{n+1}<r_{\:\!\!m}\,d_n$
+%\vspace{3pt}\TextB{}
+%($*$.a) Supp $a<-cd<0,\forall c\in\Par{{-C}}{^+},\,d\in D^+.$ Asum \,$-cd>a\geqslant rd',\,\exists\,r\in C^-,\,d'\in D^+.$\TextB{}
+%\Blind{($*$.a)} Let \,$d=d'\Rightarrow r\leqslant-c\Longleftrightarrow c\leqslant-r.$ \;Now $r<0.$\TextB{}
+%If $\exists$ min upper bound in $\Qbb,$ \,then $r=\sup C,$\TextB{}
+%othws $r>\sup C\Rightarrow -r<-\sup C=\Sup\Par{{-C}}\Rightarrow\exists\,c>-r,\,c<\Sup\Par{{-C}},$ simlr if $\sup C\notin\Qbb.$\TextB{}
+%($*$.b) Supp $a\leqslant c'd,\,\forall c'\!,\:\!d$ \Par{$\Rightarrow a<0$}. Asum \,$a\geqslant-cd,\,\exists\,c'\!,\:\!d'.$\TextB{}
 \SepLine\pagebreak
 
 \BulletPointX Let $\,LHS=\Bra{a:a<ru,\:\forall r\in C^-,\,0<u\leqslant s,\,\forall s\notin D},\;RHS=\Bra{a:a\leqslant rd,\;\forall r\in C^-,\,\forall d\in D^+}.$\vspace{1pt}\TextB{}
@@ -156,8 +163,42 @@ Othws, $\exists\,d\in D^+,\,0<u<d<s,\,\forall s\notin D,$ ctradic.\vspace{-2pt}
 %\BulletPointX Thus $CD=DC$ in all cases.
 %\SepLine
 
-\BulletPointX For a posi $D,$ \;$\tilde{1}D=\Bra{a:a\leqslant ij<j,\;0<i<1,\;j\in D^+}\subseteq D.$\TextB{}
-Now $\BigPar{\tilde{1}D}{^+}\subseteq D^+.$ \;又 $\forall d\in D^+,\,\exists\,\varepsilon>0,\:d+\varepsilon\in D^+\Rightarrow d=\Par{d+\varepsilon}\:\!${\Large$\frac{d}{\:d\,+\,\varepsilon\:}$}${}\in\tilde{1}D.$
+%\BulletPointX For a posi $D,$ \;$\tilde{1}D=\Bra{a:a\leqslant ij<j,\;0<i<1,\;j\in D^+}\subseteq D.$\TextB{}
+%Now $\BigPar{\tilde{1}D}{^+}\subseteq D^+.$ \;又 $\forall d\in D^+,\,\exists\,\varepsilon>0,\:d+\varepsilon\in D^+\Rightarrow d=\Par{d+\varepsilon}\:\!${\Large$\frac{d}{\:d\,+\,\varepsilon\:}$}${}\in\tilde{1}D.$
+%\SepLine
+
+\ProblemN{4}{
+	\TextA{Supp $B,C,D$ non0 Dedekind cuts. Show $\Par{BC}D=B\Par{CD},$ $B\Par{C+D}=BC+BD.$}
+}We discuss in cases.\vspace{8pt}\par\quad
+\begin{tabularx}{0.3\textwidth} {
+		| >{\centering\arraybackslash}X 
+		| >{\centering\arraybackslash}X 
+		| >{\centering\arraybackslash}X 
+		| >{\centering\arraybackslash}X 
+		| >{\centering\arraybackslash}X 
+		| >{\centering\arraybackslash}X 
+		| >{\centering\arraybackslash}X 
+		| >{\centering\arraybackslash}X 
+		| >{\centering\arraybackslash}X | }
+	\hline
+	\Backslash & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
+	\hline
+	B  & + & + & + & + & - & - & - & -\\
+	\hline
+	C  & + & + & - & - & - & + & - & +\\
+	\hline
+	D  & + & - & + & - & - & - & + & +\\
+	\hline
+\end{tabularx}\vspace{8pt}
+\par\quad
+(1) $\BigPar{\Par{BC}D}{^+}=\Bra{\Par{bc}d:bc\in\Par{BC}{^+},\,d\in D^+}=\Bra{b\Par{cd}:b\in B^+,\,cd\in\Par{CD}{^+}}=\BigPar{B\Par{CD}}{^+}.$\par\quad
+(4) $\Par{BC}D=\Bra{a:a<rs,\:r\in\Par{BC}{^-},\,r\in D^-}.$\par\quad
+
+\par\quad
+$\BigPar{B\Par{C+D}}{^+}=\Bra{bs:b\in B^+,\,s\in\Par{C+D}{^+}}=\Bra{bc+bd:b\in B^+,\,-bc<bd,\,c\in C,\,d\in D}=P.$\par\quad
+$\Bra{bc:b\in B^+,\,c\in C^+}+\Bra{b'd:b'\in B^+,\,d\in D^+}=\Bra{bc+b'd:b,b'\in B^+,\,c\in C^+,\,d\in D^+}=Q.$\par\quad
+
+%\Blind{(1)} $\Bra{a:a\leqslant b\Par{c+d},\:b\in B^+,\,c+d\in\Par{C+D}{^+}}=\Bra{a:a\leqslant bc,\,b\in B^+,\,c\in C^+}$
 \SepLine
 
 \ChEnd
