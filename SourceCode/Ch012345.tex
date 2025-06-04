@@ -89,8 +89,8 @@ $\Bra{cd:c\in C^+,d\in D^+}=CD\cap\Qbp=\Par{CD}{^+}.$ \;Note that `$a\leqslant c
 
 \BulletPointX For $-C,-D$ posi, \,define $CD=\Par{{-C}}\Par{{-D}}=\Bra{cd:c\in\Par{{-C}}{^+},d\in\Par{{-D}}{^+}}\cup\Par{\Qbb\Backslash\Qbp}.$\TextB{}
 $CD=\Bra{0<cd<\Par{{-r}}\Par{{-s}}:r\in C^-\nonzero,\,s\in D^-\nonzero}\cup\Par{\Qbb\Backslash\Qbp}=\Bra{a:a<rs,\,r\in C^-,\,s\in D^-}.$\vspace{2pt}\TextB{}
-If $C,-C$ not posi $\Rightarrow C=\tilde{0},$ then with the asum $\tilde{0}D=\tilde{0},$ \,it still holds. \,Simlr for $D,-D$ not posi.\vspace{2pt}\par
-\BulletPointX {\normalsize The intuitive key point is that the prod of cuts is the cut with the endpoint being the prod of endpoints of cuts.}
+If $C,-C$ not posi $\Rightarrow C=\tilde{0},$ then with the asum $\tilde{0}D=\tilde{0},$ \,it still holds. \,Simlr for $D,-D$ not posi.
+%\BulletPointX {\normalsize The intuitive key point is that the prod of cuts is the cut with the endpoint being the prod of endpoints of cuts.}
 \SepLine
 
 \BulletPointX For $D$ posi, \,define $D^{-1}=\Bra{a:a<1\big/b,\;b\notin D}\Rightarrow DD^{-1}=\Bra{a:a\leqslant d\big/b<1,\;b\notin D,\,d\in D^+}=\tilde{1}.$\TextB{}
@@ -108,12 +108,11 @@ $CD=-C\Par{{-D}}=-\Bra{a:a<rt,\:r\in C^-,\,t\in\Par{{-D}}{^-}}=\Bra{{-a}:a>b,\,b
 for if not, $\exists\,u>0,$ and $\exists\,r\in C^-\nonzero,$ such that $\exists\,a<ru<0.$ Hence `$0\leqslant u$' is actually `$0<u$'.\vspace{3pt}\par
 \BulletPointX `$u\leqslant s$' cannot be abbreviated as in $\Bra{{-a}:a>-rs,\,\forall s\not\in D,\,r\in C^-}=\Bra{{a}:a<rs,\,\forall s\not\in D,\,r\in C^-}.$\TextB{}
 `$u\leqslant s$' cannot be `$u<s$', becs here $rs<ru\Rightarrow\exists\,a=rs.$ \,Simlr for `$a<ru$' to be `$a\leqslant ru$' with `$u<s$'.\vspace{2pt}\par
-\BulletPointX Note that $\Bra{u:0<u\leqslant s,\,\forall s\notin D}\supsetneq D^+.$ We show ``$0<u\leqslant s,\,\forall s\notin D$'' is equiv to ``$\forall u\in D^+$''.\TextB{}
-$LHS=\Bra{a:a<ru,\:\forall r\in C^-,\,0<u\leqslant s,\,\forall s\notin D},\;\Bra{a:a<rd,\:\forall r\in C^-,\,\forall d\in D^+}=RHS.$\TextB{}
+\BulletPointX $LHS=\Bra{a:a<ru,\:\forall r\in C^-,\,0<u\leqslant s,\,\forall s\notin D},\;\Bra{a:a<rd,\:\forall r\in C^-,\,\forall d\in D^+}=RHS.$\TextB{}
 Immed, $LHS\subseteq RHS.$ \,For $RHS\subseteq LHS$\,:\TextB{}
 (I) If we cannot fix ``$\min\Qbb\Backslash D$'' by a certain scalar $s_M,$ then becs `$u\leqslant s$' is actually `$u<s$',\TextB{}
 \HI $u\in\Qbp,\,u\not\in D^+\Longleftrightarrow u\geqslant s,\,\exists\,s\notin D\Longleftrightarrow u\notin\Bra{u:0<u<s,\,\forall s\notin D}.$\vspace{2pt}\TextB{}
-(II) Othws, \,$s_M=\max D.$ \,Now in $LHS$, ``$a<rs_M,\,\forall r\in C^-$''.\TextB{}
+(II) Othws, \,$s_M=\min \Qbb\Backslash D.$ \,Now in $LHS$, ``$a<rs_M,\,\forall r\in C^-$''.\TextB{}
 \HII Supp \,$0<d_1<\cdots<d_n<\cdots\in D^+$ \Sbra{$d_n<s_M$} \,and $0>r_{\:\!\!1}>\cdots>r_{\:\!\!m}>\cdots\in C^-.$\TextB{}
 %\NOTICE that $d_{\infty}$ is an ordered pair $\Par{d_n,d_{n+1}}$ with $d_n<d_{n+1}.$ Simlr, $\Par{r_m,r_{m+1}}$ with $r_{m+1}<r_m.$\TextB{}
 \HII %We show ``$a<r_{\:\!\!m}\,d_{n}$'' is equiv to ``$a<r_{\:\!\!m}\,s_M$''. 
@@ -122,33 +121,26 @@ Becs \;\!$r_{\:\!\!m+1}\,s_M<r_{\:\!\!m}\,s_M<r_{\:\!\!m}\,d_{n+1}<r_{\:\!\!m}\,
 \PfEnd
 \SepLine
 
-\BulletPointX For $C$ posi and $D$ not posi. Consider $C$ and $-D$ both posi. \;Omitting $D=\tilde{0}.$\vspace{1pt}\TextB{}
+\BulletPointX For $C$ posi and $D$ not posi. If $D=\tilde{0},$ then $CD=-\Par{{-C}}\,\tilde{0}=-\tilde{0}.$ \,Now consider $C$ and $-D$ both posi.\vspace{1pt}\TextB{}
 $CD=-\Sbra{C\Par{{-D}}}=-\Bra{a:a\leqslant cd,\,c\in C^+,\,d\in\Par{{-D}}{^+}}=\Bra{{-a}:a>b,\,b>cd,\,\forall c\in C^+,\,d\in\Par{{-D}}{^+}}$\TextB{}
 \Blind{$CD$}${}=\Bra{{a}:a<-cd,\,\forall c\in C^+,\,\forall d\text{\;suth\;}$\uline{$0<d<-s,\,\exists\,s$}${}\in D^-}$\hfill{\FontSmall\BigPar{$sd<{}$\uline{$-cd<0$}}}\TextB{}
 $\Blind{CD}=\Bra{a:a<ct,\,\forall c\in C^+,\,\forall t\text{\;suth\;}s<t<0,\,\exists\,s\in D^-}$\TextB{}
 $\Blind{CD}=\Bra{a:a<cs,\,\forall c\in C^+,\,\forall s\in D^-\nonzero}.$
+%\Or Consider $-C$ not posi and $-D$ posi. Omitting $D=\tilde{0}.$\TextB{}
+%$CD=\Par{{-C}}\Par{{-D}}=\Bra{a:a<u\:\!w,\,\forall u\in\Par{{-C}}{^-},\,\forall w\in\Par{{-D}}{^+}}=\Bra{a:a<cs,\,\forall s\in D^-\nonzero,\,\forall c\in C^+}$
 \SepLine
 
 \BulletPointX For $C$ not posi and $D$ posi, we show $\Bra{a:a<rd,\:\forall r\in C^-,\,\forall d\in D^+}=\Bra{cs:c\in C,\,s\notin D}.$\TextB{}
 $\forall s\notin D,\forall d\in D^+,\,d<s\Rightarrow\forall c\in C,\forall r\in C^-,\,rd>cd>cs,$ \Or $rd>rs>cs.$ \:Thus $RHS\subseteq LHS.$\vspace{2pt}\TextB{}
 Supp $a\in LHS\Rightarrow a\big/d\in C,\,\forall d\in D^+.$ \,We show $\exists\,\varepsilon>0$ suth {\Large$\frac{a}{\:d\,+\,\varepsilon\:}$}${}\in C,\,\forall d\in D^+.$ So that $a\in RHS.$\vspace{2pt}\TextB{}
 Asum $\forall\varepsilon>0,\,\,${\Large$\frac{a}{\:d'\,+\,\varepsilon}$}${}\notin C\,\Sbra{\!=r_{\:\!\!0}\in C^-},\,\exists\,d'\in D^+.$ Then $\exists\,r_{\:\!\!1}\in C^-,\,r_{\:\!\!1}>r_{\:\!\!0}\Rightarrow a>r_{\:\!\!1}\:\!d'+\varepsilon\:\!d'.$\vspace{2pt}\TextB{}
-Now $\forall r\in C^-,\forall d\in D^+,\;r\:\!d>r_{\:\!\!1}\:\!d'+\varepsilon\:\!d'.$ 又 $r_{\:\!\!1}\:\!d'>r\:\!d'>r\:\!d$ \,and\, $\varepsilon\:\!d'>0.$ Ctradic.
-%Rewrite $a\big/d<r,\,\forall r\in C^-,\,d\in D^+\Longleftrightarrow a\big/d\in C,\,\forall d\in D^+.$ 
-%Asum $\exists\,a\in LHS$ suth $a\big/s\neq c,\,\forall c,s.$\TextB{}
-%Note that $\forall s\notin D,d\in D^+,\:0<a\;\!\Par{1\big/s-1\big/d}\Rightarrow{}$\uline{$\forall\varepsilon>0,\,\exists\,s,d$ suth $\varepsilon=a\;\!\Par{1\big/s-1\big/d}.$}\TextB{}
-%Thus for $a\in LHS,\,\exists\,s,d$ suth  $a\big/d+\varepsilon=a\big/s\in C.$
+Now $\forall r\in C^-,\forall d\in D^+,\;r\:\!d>r_{\:\!\!1}\:\!d'+\varepsilon\:\!d'.$ 又 $r_{\:\!\!1}\:\!d'>r\:\!d'>r\:\!d$ \,and\, $\varepsilon\:\!d'>0.$ Ctradic.\PfEnd
 \SepLine
 
-%\BulletPointX For $C$ posi and $D$ not posi, to make $CD=DC,$ \,we define\, $CD=\Bra{a:a<cs,\;\forall c\in C^+,\,s\in D^-}.$
-%\SepLine
-
-%\BulletPointX We show $\tilde{q}D=\Bra{a:a<qd,}$
-
-%\BulletPointX For a posi $D,$ \;$\tilde{1}D=\Bra{a:a\leqslant ij<j,\;0<i<1,\;j\in D^+}\subseteq D.$\TextB{}
-%Now $\BigPar{\tilde{1}D}{^+}\subseteq D^+.$ \;又 $\forall d\in D^+,\,\exists\,\varepsilon>0,\:d+\varepsilon\in D^+\Rightarrow d=\Par{d+\varepsilon}\:\!${\Large$\frac{d}{\:d\,+\,\varepsilon\:}$}${}\in\tilde{1}D.$
-%\SepLine
-\pagebreak
+\BulletPointX For $D$ posi, \;$\tilde{1}\:\!D=\Bra{a:a\leqslant ij<j,\;0<i<1,\;j\in D^+}\subseteq D.$\TextB{}
+Now $\BigPar{\tilde{1}\:\!D}{^+}\subseteq D^+.$ \;又 $\forall d\in D^+,\,\exists\,\varepsilon>0,\:d+\varepsilon\in D^+\Rightarrow d=\Par{d+\varepsilon}\:\!${\Large$\frac{d}{\:d\,+\,\varepsilon\:}$}${}\in\tilde{1}\:\!D.$\vspace{4pt}\TextB{}
+For $D$ not posi, \;$\tilde{1}\:\!D=\Bra{rd:r\geqslant 1,\,d\in D}=D.$
+\SepLine
 
 \ProblemN{4}{
 	\TextA{Supp $B,C,D$ non0 Dedekind cuts. Show $\Par{BC}D=B\Par{CD},$ $B\Par{C+D}=BC+BD.$}
