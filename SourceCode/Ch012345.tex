@@ -105,7 +105,7 @@ $CD=-C\Par{{-D}}=-\Bra{a:a<rt,\:r\in C^-,\,t\in\Par{{-D}}{^-}}=\Bra{{-a}:a>b,\,b
 \Blind{$CD$}${}=\Bra{{-a}:a>rt,\:\forall r\in C^-,\,0\geqslant t\geqslant -s,\,\forall s\notin D}=\Bra{a:a<ru,\:\forall r\in C^-,\,0\leqslant u\leqslant s,\,\forall s\notin D}.$\TextB{}
 \Blind{$CD={}$}{\FontSmall \BigPar{$r\leqslant 0<s,\;rs\leqslant ru=-rt\leqslant0\leqslant rt\leqslant-rs.$}}\vspace{3pt}\par
 \BulletPointX Note the `$0\leqslant u$'. Becs $C^-\neq\emptySet\Rightarrow 0\in C^-.$ If it is to be exactly $CD=\Bra{a:a<0}$, \,then $C^-=\zeroSubs,$\TextB{}
-for if not, $\exists\,u>0,$ and $\exists\,r\in C^-\nonzero,$ such that $\exists\,a<ru<0.$ Hence `$0\leqslant u$' is actually `$0<u$'.\vspace{3pt}\par
+for if not, $\exists\,u>0,$ and $\exists\,r\in C^-\nonzero,$ suth $\exists\,a<ru<0.$ Hence `$0\leqslant u$' is actually `$0<u$'.\vspace{3pt}\par
 \BulletPointX `$u\leqslant s$' cannot be abbreviated as in $\Bra{{-a}:a>-rs,\,\forall s\not\in D,\,r\in C^-}=\Bra{{a}:a<rs,\,\forall s\not\in D,\,r\in C^-}.$\TextB{}
 `$u\leqslant s$' cannot be `$u<s$', becs here $rs<ru\Rightarrow\exists\,a=rs.$ \,Simlr for `$a<ru$' to be `$a\leqslant ru$' with `$u<s$'.\vspace{4pt}\par
 \BulletPointX Note that \,$\Bra{u:0<u\leqslant s,\,\forall s\notin D}=\MathLeftBrace{l}{\!D^+\cup\Bra{{\min\Qbb\Backslash D}},\,\,\text{if it exis,}\\\!D^+,\hfill\text{othws.}}$\vspace{8pt}
@@ -126,14 +126,25 @@ But $CD=-\Par{{-C}}D=-\Bra{a:a\leqslant cd,\,\,c\in\Par{{-C}}{^+},\,d\in D^+}\ne
 %\SepLine
 
 \BulletPointX $LHS=\Bra{a:a<ru,\;\forall r\in C^-\!,\;0<u\leqslant s,\,\forall s\notin D},\;\Bra{cs:c\in C,\,s\notin D}=RHS.$\TextB{}
-Becs \,$cs\leqslant cu<ru.$ \,We show $LHS\subseteq RHS.$ \,Asum $a\in LHS$ while $\forall c\in C,\,a\big/c\in D.$\TextB{}
+Becs \,$cs\leqslant cu<ru.$ \,We show $LHS\subseteq RHS.$ \,Let $c_1<\cdots<c_n<\cdots\in C$, and $s_1>\cdots>s_m>\cdots\notin D.$\TextB{}
+Then \uline{$c_1s_1<\cdots<c_n\:\!s_m<\cdots<ru,\,\forall r,u$ as in $LHS.$ \;Thus $\,a\in LHS\Rightarrow\exists\,a<c_j\:\!s_k.$}\PfEnd
+\SepLine
 
+\BulletPointX For $C$ posi and $D$ not posi. If $D=\tilde{0},$ then $CD=-\Par{{-C}}D=-\tilde{0}.$\TextB{}
+Now consider $-C$ not posi and $-D$ posi. $\Qbb\Backslash{{-D}}=\Bra{s:s\geqslant -y,\;\forall y\notin D}.$\TextB{}
+$CD=\Par{{-C}}\Par{{-D}}=\Bra{a:a<ru,\;\forall r\in\Par{{-C}}{^-},\;0<u\leqslant s,\:\forall s\notin -D}$\TextB{}
+$\Blind{CD}=\Bra{a:a<ru,\;\forall x\notin C,\,0\geqslant r\geqslant -x,\;\forall u\text{\;suth\;}0<u\leqslant s,\,\forall s\geqslant -y,\,\forall y\notin D}$\TextB{}
+$\Blind{CD}=\Bra{a:a<\Par{{-r}}\Par{{-u}},\;\forall x\notin C,\,0\leqslant -r\leqslant x,\;\forall u\text{\;suth\;}y\leqslant -u<0,\,\forall y\notin D}$\TextB{}
+$\Blind{CD}=\Bra{a:a<ru,\;\forall x\notin C,\,0\leqslant r\leqslant x,\;\forall u\in D^-}.$\vspace{3pt}\par
+\BulletPointX Note the `$0\leqslant r$'. Becs $D^-\neq\emptySet\Rightarrow 0\in D^-.$ If it is to be exactly $CD=\Bra{a:a<0},$ then $D^-=\Bra{0},$\TextB{}
+for if not, $\exists\,r>0,$ and $\exists\,u\in D^-\nonzero,$ suth $\exists\,a<ru<0.$ Hence `$0\leqslant r$' is actually `$0<r$'.
 \SepLine
 
 \BulletPointX For $D$ posi, \;$\tilde{1}\:\!D=\Bra{a:a\leqslant ij<j,\;0<i<1,\;j\in D^+}\subseteq D.$\TextB{}
 Now $\BigPar{\tilde{1}\:\!D}{^+}\subseteq D^+.$ \;又 $\forall d\in D^+,\,\exists\,\varepsilon>0,\:d+\varepsilon\in D^+\Rightarrow d=\Par{d+\varepsilon}\:\!${\Large$\frac{d}{\:d\,+\,\varepsilon\:}$}${}\in\tilde{1}\:\!D.$\vspace{4pt}\TextB{}
 For $D$ not posi, \;$\tilde{1}\:\!D=\Bra{rd:r\geqslant 1,\,d\in D}=D.$
 \SepLine
+\pagebreak
 
 \ProblemN{4}{
 	\TextA{Supp $B,C,D$ non0 Dedekind cuts. Show $\Par{BC}D=B\Par{CD},$ $B\Par{C+D}=BC+BD.$}
