@@ -108,7 +108,7 @@ $CD=-C\Par{{-D}}=-\Bra{a:a<rt,\:r\in C^-,\,t\in\Par{{-D}}{^-}}=\Bra{{-a}:a>b,\,b
 for if not, $\exists\,u>0,$ and $\exists\,r\in C^-\nonzero,$ suth $\exists\,a<ru<0.$ Hence `$0\leqslant u$' is actually `$0<u$'.\vspace{3pt}\par
 \BulletPointX `$u\leqslant s$' cannot be abbreviated as in $\Bra{{-a}:a>-rs,\,\forall s\not\in D,\,r\in C^-}=\Bra{{a}:a<rs,\,\forall s\not\in D,\,r\in C^-}.$\TextB{}
 `$u\leqslant s$' cannot be `$u<s$', becs here $rs<ru\Rightarrow\exists\,a=rs.$ \,Simlr for `$a<ru$' to be `$a\leqslant ru$' with `$u<s$'.\vspace{4pt}\par
-\BulletPointX Note that \,$\Bra{u:0<u\leqslant s,\,\forall s\notin D}=\MathLeftBrace{l}{\!D^+\cup\Bra{{\min\Qbb\Backslash D}},\,\,\text{if it exis,}\\\!D^+,\hfill\text{othws.}}$\vspace{8pt}
+\BulletPointX Note that \,$\Bra{u:0<u\leqslant s,\,\forall s\notin D}=\MathLeftBrace{l}{\!D^+\cup\Bra{{\min\Qbb\Backslash D}},\,\,\text{if it exis,}\\\!D^+,\hfill\text{othws.}}$ \quad Denote it by $D^\oplus=D^\otimes\nonzero.$\vspace{8pt}
 \SepLine
 
 \BulletPointX For $C$ not posi and $D$ posi. If $C=\tilde{0},$  then $CD=-C\Par{{-D}}=-\tilde{0}.$ \,Now consider $-C$ and $D$ both posi.\vspace{1pt}\TextB{}
@@ -125,14 +125,14 @@ But $CD=-\Par{{-C}}D=-\Bra{a:a\leqslant cd,\,\,c\in\Par{{-C}}{^+},\,d\in D^+}\ne
 %\BulletPointX Note that \,$\Bra{t:s<t<0,\,s\in D^-}=\MathLeftBrace{l}{\!D^-\Backslash\Bra{0,\min\Qbb\Backslash D},\,\,\text{if it exis,}\\\!D^-\nonzero,\hfill\text{othws.}}$\vspace{8pt}
 %\SepLine
 
-\BulletPointX $LHS=\Bra{a:a<ru,\;\forall r\in C^-\!,\;\forall u\text{\;suth\;}0<u\leqslant s,\,\forall s\notin D},\;\Bra{cs:c\in C,\,s\notin D}=RHS.$\TextB{}
+\BulletPointX $LHS=\Bra{a:a<ru,\;\forall r\in C^-\!,\;\forall u\in D^\oplus},\;\Bra{cs:c\in C,\,s\notin D}=RHS.$\TextB{}
 Becs \,$cs\leqslant cu<ru.$ \,We show $LHS\subseteq RHS.$ \,Let $c_1<\cdots<c_n<\cdots\in C$, and $s_1>\cdots>s_m>\cdots\notin D.$\TextB{}
 Then \uline{$c_1s_1<\cdots<c_n\:\!s_m<\cdots<ru,\,\forall r,u$ as in $LHS.$ \;Thus $\,a\in LHS\Rightarrow\exists\,a<c_j\:\!s_k.$}\PfEnd
 \SepLine
 
 \BulletPointX For $C$ posi and $D$ not posi. If $D=\tilde{0},$ then $CD=-\Par{{-C}}D=-\tilde{0}.$\TextB{}
 Now consider $-C$ not posi and $-D$ posi. $\Qbb\Backslash{{-D}}=\Bra{s:s\geqslant -y,\;\forall y\notin D}.$\TextB{}
-$CD=\Par{{-C}}\Par{{-D}}=\Bra{a:a<ru,\;\forall r\in\Par{{-C}}{^-},\;\forall u\text{\;suth\;}0<u\leqslant s,\:\forall s\notin -D}$\TextB{}
+$CD=\Par{{-C}}\Par{{-D}}=\Bra{a:a<ru,\;\forall r\in\Par{{-C}}{^-},\;\forall u\in\Par{{-D}}{^\oplus}}$\TextB{}
 $\Blind{CD}=\Bra{a:a<ru,\;\forall r\text{\;suth\;}\forall x\notin C,\,0\geqslant r\geqslant -x,\;\forall u\text{\;suth\;}0<u\leqslant s,\,\forall s\geqslant -y,\,\forall y\notin D}$\TextB{}
 $\Blind{CD}=\Bra{a:a<\Par{{-r}}\Par{{-u}},\;\forall r\text{\;suth\;}\forall x\notin C,\,0\leqslant -r\leqslant x,\;\forall u\text{\;suth\;}y\leqslant -u<0,\,\forall y\notin D}$\TextB{}
 $\Blind{CD}=\Bra{a:a<ru,\;\forall r\text{\;suth\;}\forall x\notin C,\,0\leqslant r\leqslant x,\;\forall u\in D^-}.$\vspace{3pt}\par
@@ -174,29 +174,30 @@ For $D$ not posi, \;$\tilde{1}\:\!D=\Bra{rd:r\geqslant 1,\,d\in D}=D.$
 %\Blind{(1)} $B\Par{C+D}=\Bra{a:a\leqslant bx,\;b\in B^+,\,0<x=c+d\in C+D}.$\par\quad
 %\Blind{(1)} $BC+BD=\Bra{x:x\leqslant uc,\;u\in B^+,\,c\in C^+}+\Bra{y:y\leqslant vd,\;v\in B^+,\,d\in D^+}$\par\quad
 %\Blind{(1)} $\Blind{BC+BD}=\Bra{a:a\leqslant uc+vd,\;u,v\in B^+,\,c\in C^+,\,d\in D^+}.$\hfill Think intuitively. \;Done.\vspace{6pt}\par\quad
-(4) $\Par{BC}{^-}=\Bra{r:0\geqslant r\geqslant bc,\,\exists\,c\in C^-,\,\exists\,b\text{\;suth\;}\forall x\notin B,\,0<b\leqslant x}.$\par\quad
+(4) $\Par{BC}{^-}=\Bra{r:0\geqslant r\geqslant bc,\,\exists\,c\in C^-,\,\exists\,b\in B^\oplus}.$\par\quad
 \Blind{(4)} $\Par{BC}D=\Bra{a:a<rs,\:r\in\Par{BC}{^-},\,s\in D^-}$\par\quad
-\Blind{(4)} $\Blind{\Par{BC}D}=\Bra{a:a<bcs,\,\exists\,s\in D^-,\,c\in C^-,\,\exists\,b\text{\;suth\;}\forall x\notin B,\,0<b\leqslant x}.$\par\quad
+\Blind{(4)} $\Blind{\Par{BC}D}=\Bra{a:a<bcs,\,\exists\,s\in D^-,\,c\in C^-,\,\exists\,b\in B^\oplus}.$\par\quad
 \Blind{(4)} $B\Par{CD}=\Bra{a:a\leqslant bx<bcs,\,\exists\,s\in D^-,\,c\in C^-,\,\exists\,b\in B^+,\text{ and }cs>x\in\Par{CD}{^+}}$\par\quad
 \Blind{(4)} $\Blind{B\Par{CD}}=\Bra{a:a<bcs,\,\exists\,s\in D^-,\,c\in C^-,\,\exists\,b\in B^+}.$\vspace{2pt}\par\quad
-\Blind{(4)} Note that \,$\Bra{q:q<b,\,b\in B^+}=\Bra{q:q<b,\,\exists\,b\text{\;suth\;}\forall x\notin B,\,0<b\leqslant x}.$ \;Done.\vspace{6pt}\par\quad
+\Blind{(4)} Note that \,$\Bra{q:q<b,\,b\in B^+}=\Bra{q:q<b,\,\exists\,b\in B^\oplus}.$ \;Done.\vspace{6pt}\par\quad
 \Blind{(4)} $B\Par{C+D}=\Bra{a:a<ru,\,\forall r\text{\;suth\;}\forall x\notin B,\,0<r\leqslant x,\;\forall u\text{\;suth\;}0\geqslant u>c+d,\,\forall c\in C,\,d\in D}$\par\quad
-\Blind{(4)} $\Blind{B\Par{C+D}}=\Bra{a:a<ru,\,\forall r\text{\;suth\;}\forall x\notin B,\,0<r\leqslant x,\;\forall u\text{\;suth\;}0\geqslant u\geqslant c+d,\,\exists\,c\in C^-,\,d\in D^-}$\par\quad
-\Blind{(4)} $\Blind{B\Par{C+D}}=\Bra{a:a<r\Par{c+d},\,\forall r\text{\;suth\;}\forall x\notin B,\,0<r\leqslant x,\;\forall c\in C^-,\,d\in D^-}.$\par\quad
-\Blind{(4)} $BC+BD=\Bra{x:x<pc,\,\forall p\text{\;suth\;}\forall b\notin B,\,0<p\leqslant b,\;\forall c\in C^-}$\vspace{3pt}\par\quad
-\Blind{(4)} $\Blind{BC+BD={}}+\Bra{y:y<qd,\,\forall q\text{\;suth\;}\forall b\notin B,\,0<q\leqslant b,\;\forall d\in D^-}$\par\quad
-\Blind{(4)} $=\Bra{a:a<pc+qd,\,\forall p\text{\;suth\;}\forall b\notin B,\,0<p\leqslant b,\,\,\forall q\text{\;suth\;}\forall b\notin B,\,0<q\leqslant b,\;\forall c\in C^-,\,d\in D^-}.$\vspace{1pt}\par\quad
+\Blind{(4)} $\Blind{B\Par{C+D}}=\Bra{a:a<ru,\,\forall r\in B^\oplus,\;\forall u\text{\;suth\;}0\geqslant u\geqslant c+d,\,\exists\,c\in C^-,\,d\in D^-}$\par\quad
+\Blind{(4)} $\Blind{B\Par{C+D}}=\Bra{a:a<r\Par{c+d},\,\forall r\in B^\oplus,\;\forall c\in C^-,\,d\in D^-}.$\par\quad
+\Blind{(4)} $BC+BD=\Bra{x:x<pc,\,\forall p\in B^\oplus,\;\forall c\in C^-}+\Bra{y:y<qd,\,\forall q\in B^\oplus,\;\forall d\in D^-}$\par\quad
+\Blind{(4)} $\Blind{BC+BD}=\Bra{a:a<pc+qd,\,\forall p,q\in B^\oplus,\;\forall c\in C^-,\,d\in D^-}.$\vspace{1pt}\par\quad
 \Blind{(4)} Think intuitively. Easy to prove.\vspace{6pt}\par\quad
-(6) $\Par{BC}{^-}=\Bra{r:0\geqslant r\geqslant bc,\,\exists\,b\in B^-,\,\exists\,c\text{\;suth\;}0<c\leqslant x,\,\forall x\notin C}.$\par\quad
-\Blind{(6)} $\Par{BC}D=\Bra{a:a<rd\leqslant bcd,\,\exists\,d\in D^-,\,b\in B^-,\,\exists\,c\text{\;suth\;}0<c\leqslant x,\,\forall x\notin C}.$\par\quad
-\Blind{(6)} $\Par{CD}{^-}=\Bra{r:0\geqslant r\geqslant cd,\,\exists\,d\in D^-,\,\exists\,c\text{\;suth\;}\forall x\notin C,\,0<c\leqslant x}.$\par\quad
-\Blind{(6)} $B\Par{CD}=\Bra{a:a<br\leqslant bcd,\,\exists\,b\in B^-,\,d\in D^-,\,\exists\,c\text{\;suth\;}\forall x\notin C,\,0<c\leqslant x}.$ \;Done.\vspace{4pt}\par\quad
-$BC+BD=\Bra{x:x<bc,\,\forall b\in B^-,\,\forall c\text{\;suth\;}\forall s\notin C,\,0<c\leqslant s}+\Bra{y:y<bd,\,\exists\,b\in B^-,\,d\in D^-}$\par\quad
-$\Blind{BC+BD}=\Bra{a:a<pc+qd,\,\forall p\in B^-,\,\forall c\text{\;suth\;}\forall s\notin C,\,0<c\leqslant s,\text{\;and\;}\exists\,q\in B^-,\,d\in D^-}.$\vspace{2pt}\par\quad
-%$\Blind{BC+BD}=\Bra{a:a<b\Par{c+d},\,\forall b\in B^-,\,\forall c\text{\;suth\;}\forall s\notin C,\,0<c\leqslant s,\text{\;and\;}\exists\,d\in D^-}.$\par\quad
-(I) If $C=-D.$ \,Then $B\Par{C+D}=\tilde{0}.$ \;Becs $\Qbb\Backslash C=\Qbb\Backslash{{-D}}=\Bra{s:s\geqslant -r,\:\forall r\notin D}.$\par\quad\HI
-Thus ``$\forall s\notin C,\,0<c\leqslant s$'' is equiv to ``$\forall r\notin D,\,0<c\leqslant -r$''.\par\quad\HI
-Done.\vspace{2pt}\par\quad
+(6) $\Par{BC}{^-}=\Bra{r:0\geqslant r\geqslant bc,\,\exists\,b\in B^-,\,\exists\,c\in C^\oplus}.$ \,$\Par{CD}{^-}=\Bra{r:0\geqslant r\geqslant cd,\,\exists\,d\in D^-,\,\exists\,c\in C^\oplus}.$\par\quad
+\Blind{(6)} $\Par{BC}D=\Bra{a:a<rd\leqslant bcd,\,\exists\,d\in D^-,\,b\in B^-,\,\exists\,c\in C^\oplus}.$\par\quad
+%\Blind{(6)}\par\quad
+\Blind{(6)} $B\Par{CD}=\Bra{a:a<br\leqslant bcd,\,\exists\,b\in B^-,\,d\in D^-,\,\exists\,c\in C^\oplus}.$ \;Done.\vspace{4pt}\par\quad
+$BC+BD=\Bra{x:x<bc,\,\forall b\in B^-,\,\forall c\in C^\oplus}+\Bra{y:y<bd,\,\exists\,b\in B^-,\,d\in D^-}$\par\quad
+$\Blind{BC+BD}=\Bra{a:a<pc+qd,\,\forall p\in B^-,\,\forall c\in C^\oplus,\text{\;and\;}\exists\,q\in B^-,\,d\in D^-\Rightarrow q>p}.$\vspace{2pt}\par\quad
+$\Blind{BC+BD}=\Bra{bc:b\in B,\,c\notin C}+\Bra{a:a<bd,\,\exists\,b\in B^-,\,d\in D^-}$\vspace{-18pt}\par\quad
+\qquad\Or\par\quad
+$\Blind{BC+BD}=\Bra{a:a<pc+qd,\;\exists\,p,q\in B^-,\,c\notin C,\,d\in D^-}.$\vspace{4pt}\par\quad
+(I) If $C=-D.$ \,Then $B\Par{C+D}=\tilde{0}.$ \;Supp non0 \,$p,q\in B^-,\,c\notin C,\,d\in D^-.$\par\quad\HI
+Supp \,$pc+qd\geqslant0\Longleftrightarrow p\big/q\leqslant-d\big/c\leqslant 1.$ \,Where \,$c\in\Qbb\Backslash C=\Qbb\Backslash{{-D}}=\Bra{c:c\geqslant -d,\:\forall d\in D^-}.$\par\quad\HI
+\vspace{2pt}\par\quad
 (II) If $C+D$ not posi. Then $B\Par{C+D}=\Bra{a:a<bx,\,\exists\,b\in B^-,\,x>c+d,\,\forall c+d\in C+D}.$\par\quad\HII
 
 \SepLine
