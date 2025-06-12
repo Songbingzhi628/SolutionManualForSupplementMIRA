@@ -112,14 +112,13 @@ for if not, $\exists\,u>0,$ and $\exists\,r\in C^-\nonzero,$ suth $\exists\,a<ru
 \SepLine
 
 \BulletPointX For $C$ not posi and $D$ posi. If $C=\tilde{0},$  then $CD=-C\Par{{-D}}=-\tilde{0}.$ \,Now consider $-C$ and $D$ both posi.\vspace{1pt}\TextB{}
-But $CD=-\Par{{-C}}D=-\Bra{a:a\leqslant cd,\,\,c\in\Par{{-C}}{^+},\,d\in D^+}\neq\Bra{a:a<-cd,\;\forall c\in\Par{{-C}}{^+},\,d\in D^+}.$
-%$\Blind{CD}=\Bra{a:a<-cd,\;\forall d\in D^+,\,\forall c\text{\;suth\;}$\uline{$0<c<-r,\,\exists\,r$}${}\in C^-\nonzero}$\hfill{\FontSmall\BigPar{$rd<-cd<0$}}\TextB{}
-%$\Blind{CD}=\Bra{a:a<td,\;\forall d\in D^+,\,\forall t\text{\;suth\;}r<t<0,\,\exists\,r\in C^-\nonzero}.$\vspace{4pt}\par
-%\BulletPointX Note that \,$\Bra{t:r<t<0,\,r\in C^-\nonzero}=\MathLeftBrace{l}{\!C^-\Backslash\Bra{0,\min\Qbb\Backslash C},\,\,\text{if it exis,}\\\!C^-\nonzero,\hfill\text{othws.}}$\vspace{8pt}
+But\, $CD=-\Par{{-C}}D=-\Bra{a:a\leqslant cd,\,\,c\in\Par{{-C}}{^+},\,d\in D^+}\neq\Bra{a:a<-cd,\;\forall c\in\Par{{-C}}{^+},\,d\in D^+}.$\TextB{}
+Altho ``$a\leqslant cd$'' is equiv to ``$a<cd$'' so that \,$b\notin\Par{{-C}}D\Rightarrow b\geqslant cd,$ which is actually $b>cd,\,\forall c,d.$\TextB{}
+And\, $a<-b<-cd,\,\forall c,d\Rightarrow\forall a,\,\exists\,x$ suth $a<x<-cd,\,\forall c,d.$ \,While {\;\!$a$\:\!} can be the `boundary' in $RHS$.
 \SepLine
 
 %\BulletPointX For $C$ posi and $D$ not posi. If $D=\tilde{0},$ then $CD=-\Par{{-C}}\,\tilde{0}=-\tilde{0}.$ \,Now consider $C$ and $-D$ both posi.\vspace{1pt}\TextB{}
-%$CD=-\Sbra{C\Par{{-D}}}=-\Bra{a:a\leqslant cd,\,c\in C^+,\,d\in\Par{{-D}}{^+}}=\Bra{{-a}:a>b,\,b>cd,\,\forall c\in C^+,\,d\in\Par{{-D}}{^+}}$\TextB{}
+%$CD=-\Sbra{C\Par{{-D}}}=-\Bra{a:a<cd,\,c\in C^+,\,d\in\Par{{-D}}{^+}}=\Bra{{-a}:a>b,\,b\geqslant cd,\,\forall c\in C^+,\,d\in\Par{{-D}}{^+}}$\TextB{}
 %\Blind{$CD$}${}=\Bra{{a}:a<-cd,\,\forall c\in C^+,\,\forall d\text{\;suth\;}$\uline{$0<d<-s,\,\exists\,s$}${}\in D^-}$\hfill{\FontSmall\BigPar{$sd<{}$\uline{$-cd<0$}}}\TextB{}
 %$\Blind{CD}=\Bra{a:a<ct,\,\forall c\in C^+,\,\forall t\text{\;suth\;}s<t<0,\,\exists\,s\in D^-}$\vspace{4pt}\par
 %\BulletPointX Note that \,$\Bra{t:s<t<0,\,s\in D^-}=\MathLeftBrace{l}{\!D^-\Backslash\Bra{0,\min\Qbb\Backslash D},\,\,\text{if it exis,}\\\!D^-\nonzero,\hfill\text{othws.}}$\vspace{8pt}
@@ -140,11 +139,15 @@ $\Blind{CD}=\Bra{a:a<ru,\;\forall r\text{\;suth\;}\forall x\notin C,\,0\leqslant
 for if not, $\exists\,r>0,$ and $\exists\,u\in D^-\nonzero,$ suth $\exists\,a<ru<0.$ Hence `$0\leqslant r$' is actually `$0<r$'.
 \SepLine
 
-\BulletPointX For $D$ posi, \;$\tilde{1}\:\!D=\Bra{a:a\leqslant ij<j,\;0<i<1,\;j\in D^+}\subseteq D.$\TextB{}
-Now $\BigPar{\tilde{1}\:\!D}{^+}\subseteq D^+.$ \;又 $\forall d\in D^+,\,\exists\,\varepsilon>0,\:d+\varepsilon\in D^+\Rightarrow d=\Par{d+\varepsilon}\:\!${\Large$\frac{d}{\:d\,+\,\varepsilon\:}$}${}\in\tilde{1}\:\!D.$\vspace{4pt}\TextB{}
-For $D$ not posi, \;$\tilde{1}\:\!D=\Bra{rd:r\geqslant 1,\,d\in D}=D.$
+\BulletPointX We show $-D=\Bra{a:a<-b,\,b\notin D}=\Par{{-\tilde{1}}}D.$\TextB{}
+For $D$ posi, $RHS=\Bra{a:a<ru,\,\forall r\text{\;suth\;}{-1}\leqslant r\leqslant0,\,\forall u\in D^\oplus}=\Bra{a:a<-u,\,\forall u\in D^\oplus}\supseteq -D.$\TextB{}
+Supp $x$ suth $-b\leqslant x<-u,\,\forall b\notin D,\,\forall u\text{\;suth\;}{-s}\leqslant-u<0,\:\!\forall s\notin D\Longrightarrow -b\leqslant x<-s,\,\forall b,s\notin D.$\TextB{}
+For $D$ not posi, $RHS=\Bra{a:a<rb,\,\exists\,r\text{\;suth\;}{-1}\leqslant r\leqslant0,\,b\in D^-}=\Bra{a:a<-b,\;0\geqslant b\notin D}=-D.$
+\SepLine\pagebreak
+
+\BulletPointX We show $\tilde{1}\:\!D=D.$ \;For $D$ not posi, immed. \,Othws, \;$\tilde{1}\:\!D=\Bra{a:a\leqslant ij<j,\;0<i<1,\;j\in D^+}\subseteq D.$\vspace{3pt}\TextB{}
+Now $\BigPar{\tilde{1}\:\!D}{^+}\subseteq D^+.$ \;又 $\forall d\in D^+,\,\exists\,\varepsilon>0,\:d+\varepsilon\in D^+\Rightarrow d=\Par{d+\varepsilon}\:\!${\Large$\frac{d}{\:d\,+\,\varepsilon\:}$}${}\in\tilde{1}\:\!D.$
 \SepLine
-\pagebreak
 
 \ProblemN{4}{
 	\TextA{Supp $B,C,D$ non0 Dedekind cuts. Show $\Par{BC}D=B\Par{CD},$ $B\Par{C+D}=BC+BD.$}
@@ -189,7 +192,8 @@ For $D$ not posi, \;$\tilde{1}\:\!D=\Bra{rd:r\geqslant 1,\,d\in D}=D.$
 (6) $\Par{BC}{^-}=\Bra{r:0\geqslant r\geqslant bc,\,\exists\,b\in B^-,\,\exists\,c\in C^\oplus}.$ \,$\Par{CD}{^-}=\Bra{r:0\geqslant r\geqslant cd,\,\exists\,d\in D^-,\,\exists\,c\in C^\oplus}.$\par\quad
 \Blind{(6)} $\Par{BC}D=\Bra{a:a<rd\leqslant bcd,\,\exists\,d\in D^-,\,b\in B^-,\,\exists\,c\in C^\oplus}.$\par\quad
 %\Blind{(6)}\par\quad
-\Blind{(6)} $B\Par{CD}=\Bra{a:a<br\leqslant bcd,\,\exists\,b\in B^-,\,d\in D^-,\,\exists\,c\in C^\oplus}.$ \;Done.\vspace{4pt}\par\quad
+\Blind{(6)} $B\Par{CD}=\Bra{a:a<br\leqslant bcd,\,\exists\,b\in B^-,\,d\in D^-,\,\exists\,c\in C^\oplus}.$ \;Done.\vspace{2pt}\par\quad
+\Blind{(6)} \Or $\Par{BC}D=\Par{CB}D=C\Par{BD}=C\Par{DB}=\Par{CD}B=B\Par{CD}.$\vspace{6pt}\par\quad
 $BC+BD=\Bra{x:x<bc,\,\forall b\in B^-,\,\forall c\in C^\oplus}+\Bra{y:y<bd,\,\exists\,b\in B^-,\,d\in D^-}$\par\quad
 $\Blind{BC+BD}=\Bra{a:a<pc+qd,\,\forall p\in B^-,\,\forall c\in C^\oplus,\text{\;and\;}\exists\,q\in B^-,\,d\in D^-\Rightarrow q>p}.$\vspace{2pt}\par\quad
 $\Blind{BC+BD}=\Bra{bc:b\in B,\,c\notin C}+\Bra{a:a<bd,\,\exists\,b\in B^-,\,d\in D^-}$\vspace{-18pt}\par\quad
