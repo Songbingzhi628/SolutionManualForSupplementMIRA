@@ -2,8 +2,6 @@
 
 \vspace{4pt}
 
-%LOG: 尽管作者说这一节以后用不到，但这一节还是给我干出心理阴影了。我真是一点没学过实分析。
-
 \BulletPointX Define $\tilde{q}=\Bra{a:a<q},$ and $-\tilde{q}=\widetilde{-q}=\Bra{a:a<-q}.$\TextB{}
 Then $\tilde{0}=\Bra{a:a<0}=\Qbb\Backslash{\Qbs}\Rightarrow-\tilde{0}=\Bra{a:a<-b\leqslant0}=\tilde{0}.$\par\vspace{3pt}
 \BulletPointX Define $-D=\Bra{a:a<-b,\,b\not\in D}=\Bra{{-a}:-a<-b\Longleftrightarrow a>b,\:b\not\in D}.$\TextB{}
@@ -236,19 +234,33 @@ Thus (5) $\Rightarrow$ (2) in distr. Convly as well.\par\vspace{4pt}\quad
 
 \vspace{2pt}
 
+\def\sup{{\textup{\tgnr sup}}\;\!}
+\def\inf{{\textup{\tgnr inf}}\;\!}
+
+\def\supU{\sup\!\!\;U}
+\def\supV{\sup\!\!\;V}
+
+\Anchor{0C2}\ProblemN{2}{
+	\TextA{Supp nonempty $U\subseteq V\subseteq\Rbb.$\;Show\;$\supU\leqslant\supV.$
+%	and {\tgnr\large(b)} $\inf U\geqslant\inf V.$
+	}
+}Asum $\supU>\supV\Rightarrow\exists\,t\in U\cap\Interval{(}{]}{{\supV,\supU}}\Rightarrow \supV<t\in V,$ ctradic.\PfEnd
+%(b) Asum $\inf U<\inf V\Rightarrow\exists\,t\in U\cap\Interval{[}{)}{{\inf U,\inf V}}\Rightarrow\inf V>t\in V,$ ctradic.\PfEnd
+\SepLine
+
 \Anchor{0C5}\ProblemN{5}{
-	\TextA{Supp $a_1,a_2,\dots$ is a seq in $\Qbb,$ and $\Sup\Bra{a_1,a_2,\dots}=\sqrt{2}.$}
+	\TextA{Supp $\Par{a_1,a_2,\cdots}$ is a seq in $\Qbb,$ and $\Sup\Bra{a_1,a_2,\dots}=\sqrt{2}.$}
 	\TextA{Prove $\Sup\Bra{a_{n},a_{n+1},\dots}=\sqrt{2}$ \;for all $n\in\Nbp.$}
 }Becs the sup not in seq $\Rightarrow$ infily many disti elem.\parSol{}
 $\forall a_i,\,\exists\,a_j,\:a_i<a_j<\sqrt{2}.$ \;For $a_{n+k},$ choose $a_i>a_{n+k}.$ If $i\in\;\!\!\Bra{1,\dots,n},$ then choose $a_j>a_i.$\parSol{}
-After at most $\Par{n+1}$ steps, we have $a_{m}$ with $m>n.$ Thus $\forall a_{n+i},\,\exists\,a_{n+j},\:a_{n+i}<a_{n+j}<\sqrt{2}.$\PfEnd
+After at most $n$ steps, we must have $a_{m}$ with $m>n.$ Thus $\forall a_{n+i},\,\exists\,a_{n+j},\:a_{n+i}<a_{n+j}<\sqrt{2}.$\PfEnd
 \SepLine
 
 \ProblemB[]{
 	\TextB{Supp nonempty $A\subseteq\Rbb.$}
 }
 \Anchor{0CT1}\ProblemBX{\TipsN{1}}{
-	\TextA{Define $-A=\Bra{-a:a\in A}\Rightarrow{-\Par{{-A}}}=A.$ \,Prove $\Sup\Par{{-A}}=-\inf A.$}
+	\TextA{Define $-A=\Bra{{-a}:a\in A}\Rightarrow{-\Par{{-A}}}=A.$ \,Prove $\Sup\Par{{-A}}=-\inf A.$}
 }$-b$ is an upper bound of $-A\Longleftrightarrow\forall a\in A,\,-a\leqslant-b\Longleftrightarrow a\geqslant b\Longleftrightarrow b$ is a lower bound of $A.$\parSol{}
 Thus \,$-b_M=\Sup\Par{{-A}}\Longleftrightarrow-b_M\leqslant -b\Longleftrightarrow b_M\geqslant b\Longleftrightarrow b_M=\inf A.$\PfEnd
 \SepLine
@@ -263,8 +275,7 @@ Thus \,$-b_M=\Sup\Par{{-A}}\Longleftrightarrow-b_M\leqslant -b\Longleftrightarro
 \SepLine
 
 \Anchor{0C6}\ProblemN{6}{
-	\TextA{Supp $A,B\subseteq\Rbb$ has infily many disti elem, so has $A+B=\Bra{a+b:a\in A,b\in B}.$}
-	\TextA{Prove $\Sup\Par{A+B}=\sup A+\sup B,\,$ and \,$\Inf\Par{A+B}=\inf A+\inf B.$}
+	\TextA{Supp nonempty $A,B\subseteq\Rbb.$ Prove $\Sup\Par{A+B}=\sup A+\sup B,$\FontNorm\;and\;$\Inf\Par{A+B}=\inf A+\inf B.$}
 }$\inf A+\inf B\leqslant a+b\leqslant\sup A+\sup B\Rightarrow\Sup\Par{A+B}\leqslant\sup A+\sup B,\,\inf A+\inf B\leqslant\Inf\Par{A+B}.$\vspace{2pt}\parSol{}
 $\sup A+\sup B>\Sup\Par{A+B}\Longleftrightarrow\sup A>\Sup\Par{A+B}-\sup B$\parSol{}
 $\Longleftrightarrow\exists\,a+\sup B>\Sup\Par{A+B}\Longleftrightarrow\sup B>\Sup\Par{A+B}-a\Longleftrightarrow\exists\,a+b>\Sup\Par{A+B}.$ Ctradic.\vspace{2pt}\parSol{}
@@ -315,3 +326,15 @@ $\mR_1\Par{ab^{-1}}=\Bra{pq^{-1}\in\Qbb:\varphi_1\Par{q}\cdot\varphi_1\Par{q}{^{
 \SepLine
 
 \ChEnd
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 累计用时：思考学习的时长+整理代码的时长(h)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 0.A:  1.25    +    0h
+% 0.B:  18.25   + 5.25h
+% 0.C:  5       +  1.5h
+% 0.D:  
+% 0.E:  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
