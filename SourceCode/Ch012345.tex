@@ -146,7 +146,7 @@ $\Blind{CD}=\Bra{a:a<ru,\;\forall r\text{\;suth\;}\forall x\notin C,\,0\leqslant
 
 \BulletPointX We show $-D=\Bra{a:a<-b,\,b\notin D}=\Par{{-\tilde{1}}}D.$\TextB{}
 For $D$ posi, $RHS=\Bra{a:a<ru,\,\forall r\text{\;suth\;}{-1}\leqslant r\leqslant0,\,\forall u\in D^\oplus}=\Bra{a:a<-u,\,\forall u\in D^\oplus}\supseteq -D.$\TextB{}
-Supp $x$ suth $-b\leqslant x<-u,\,\forall b\notin D,\,\forall u\text{\;suth\;}{-s}\leqslant-u<0,\:\!\forall s\notin D\Longrightarrow -b\leqslant x<-s,\,\forall b,s\notin D.$\TextB{}
+Supp $x$ suth $-b\leqslant x<-u,\,\forall b\notin D,\,\forall u\text{\;suth\;}{-s}\leqslant-u<0,\:\!\forall s\notin D\Longrightarrow -s\leqslant x<-u.$ Let $-u=x.$\TextB{}
 For $D$ not posi, $RHS=\Bra{a:a<rb,\,\exists\,r\text{\;suth\;}{-1}\leqslant r\leqslant0,\,b\in D^-}=\Bra{a:a<-b,\;0\geqslant b\notin D}=-D.$
 \SepLine
 
@@ -157,17 +157,17 @@ Now $\BigPar{\tilde{1}\:\!D}{^+}\subseteq D^+.$ \;又 $\forall d\in D^+,\,\exist
 \ProblemN{4}{
 	\TextA{Supp $B,C,D$ non0 Dedekind cuts. Show $\Par{BC}D=B\Par{CD},$ $B\Par{C+D}=BC+BD.$}
 }We discuss in cases.\vspace{8pt}\par\quad
-\begin{tabular}{|c|c|c|c|c|c|c|}
+{\small\begin{tabular}{|c|c|c|c|c|c|c|}
 	\hline
 	\Backslash & 1 & 2 & 3 & 4 & 5 & 6 \\
 	\hline
-	B  & + & + & + & - & - & -\\
+	$B$  & + & + & + & - & - & -\\
 	\hline
-	C  & + & + & - & - & + & +\\
+	$C$  & + & + & - & - & + & +\\
 	\hline
-	D  & + & - & - & - & - & +\\
+	$D$  & + & - & - & - & - & +\\
 	\hline
-\end{tabular}
+\end{tabular}}
 \vspace{8pt}\par\quad
 (1) $\Sbra{\Par{BC}D}{^+}=\Bra{\Par{bc}d:bc\in\Par{BC}{^+},\,d\in D^+}=\Bra{b\Par{cd}:b\in B^+,\,cd\in\Par{CD}{^+}}=\Sbra{B\Par{CD}}{^+}.$\vspace{2pt}\par\quad
 \Blind{(1)} $B\Par{C+D}=\Bra{a:a\leqslant bc+bd,\;\exists\,b\in B^+,\,0<c+d\in C+D}.$\par\quad
@@ -226,11 +226,9 @@ Thus (5) $\Rightarrow$ (2) in distr. Convly as well.\par\vspace{4pt}\quad
 \Blind{(6)} $BC+BD=\Bra{a:a<bc,\,\forall b\in B^-,\,c\in C^\oplus}+\Bra{a:a<bd,\,\forall b\in B^-,\,d\in D^\oplus}.$ \;Done.\vspace{2pt}\par\quad
 \Or (2) instead of (6) ? \,\NOTICE that the distr in (6) cannot be shown without (6).\PfEnd
 \SepLine
-
 \ChEnd
-\pagebreak
 
-\ChDecl{Ch0C}{0$\cdot$C}{}
+\vfill\ChDecl{Ch0C}{0$\cdot$C}{}
 
 \vspace{2pt}
 
@@ -249,7 +247,7 @@ Thus (5) $\Rightarrow$ (2) in distr. Convly as well.\par\vspace{4pt}\quad
 \SepLine
 
 \Anchor{0C5}\ProblemN{5}{
-	\TextA{Supp $\Par{a_1,a_2,\cdots}$ is a seq in $\Qbb,$ and $\Sup\Bra{a_1,a_2,\dots}=\sqrt{2}.$}
+	\TextA{Supp $a_1,a_2,\cdots\in\Qbb,$ and $\Sup\Bra{a_1,a_2,\dots}=\sqrt{2}.$}
 	\TextA{Prove $\Sup\Bra{a_{n},a_{n+1},\dots}=\sqrt{2}$ \;for all $n\in\Nbp.$}
 }Becs the sup not in seq $\Rightarrow$ infily many disti elem.\parSol{}
 $\forall a_i,\,\exists\,a_j,\:a_i<a_j<\sqrt{2}.$ \;For $a_{n+k},$ choose $a_i>a_{n+k}.$ If $i\in\;\!\!\Bra{1,\dots,n},$ then choose $a_j>a_i.$\parSol{}
@@ -267,12 +265,13 @@ Thus \,$-b_M=\Sup\Par{{-A}}\Longleftrightarrow-b_M\leqslant -b\Longleftrightarro
 
 \Anchor{0CT2}\ProblemBX{\TipsN{2}}{
 	\TextA{Show if $x\in\Rbb,$ {\tgnr\large(a)} $\sup A>x\Rightarrow\exists\,a\in A,\:a>x,$ \;{\tgnr\large(b)} $\inf A<x\Rightarrow\exists\,a\in A,\:a<x.$}
-}(a) $\nexists\,a>x\Longleftrightarrow\forall a\in A,\,a\leqslant x.$ Then by def of sup.\parSol{\Ha}
+}(a) $\nexists\:a>x\Longleftrightarrow\forall a\in A,\,a\leqslant x\Longrightarrow\sup A\leqslant x.$\parSol{\Ha}
 \Or By (b), $\inf\Par{{-A}}=-\sup A<-x\Rightarrow\exists\,{-a}\in A,\:-a<-x.$ \hfill Simlr for (b).\Blind{\qquad}\PfEnd
 %\vspace{4pt}\parSol{}
 %(b) $\nexists\,a<x\Longleftrightarrow\forall a\in A,\,a\geqslant x.$ Then by def of inf.\parSol{\Hb}
 %\Or By (a), $\sup\Par{{-A}}=-\inf A>-x\Rightarrow\exists\,{-a}\in A,\:-a>-x.$\PfEnd
 \SepLine
+\pagebreak
 
 \Anchor{0C6}\ProblemN{6}{
 	\TextA{Supp nonempty $A,B\subseteq\Rbb.$ Prove $\Sup\Par{A+B}=\sup A+\sup B,$\FontNorm\;and\;$\Inf\Par{A+B}=\inf A+\inf B.$}
@@ -310,31 +309,61 @@ Simlr for $\Inf\Par{A+B}\in A+B.$ \,\Or Apply to $-A-B,$ becs $\Sup\Par{{-A}}=-\
 
 \Anchor{0C16}\ProblemN{16}{
 	\TextA{Supp $\Rbb{_1},\Rbb{_2}$ are complete ordered fields. Define $\varphi_1,\varphi_2$ as in [0.11].\vspace{2pt}}
-	\TextA{Define $\mR_1\Par{a}=\Bra{q\in\Qbb:\varphi_1\Par{q}\leqslant a}\Rightarrow\sup_{\mR_1\SmallPar[0.5pt]{a}}\varphi_1=a.$ \;Define $\psi_1\Par{a}=\sup_{\mR_1\SmallPar[0.5pt]{a}}\varphi_2.$\vspace{4pt}}
-	\PrePa\TextA{Show $\psi=\psi_1:\Rbb{_1}\rightarrow\Rbb{_2}$ is one-to-one. \;{\tgnr\large(b)} Show $\psi\Par{0}=0,\,\psi\Par{1}=1.$\vspace{2pt}}
-	\PrePc\TextA{Show $\psi\Par{a\pm b}=\psi\Par{a}\pm\Par{b},$ and $\psi\Par{ab^{-1}}=\psi\Par{a}\psi\Par{b}{^{-1}}.$\vspace{2pt}}
-	\PrePd\TextA{Supp $a\in\Rbb{_1}.$ Show $a>0\Longleftrightarrow\psi\Par{a}>0.$\vspace{2pt}}
-}(a) Define $\mR_2\Par{c}=\Bra{q\in\Qbb:\varphi_2\Par{q}\leqslant c}\Rightarrow\sup_{\mR_2\SmallPar[0.5pt]{c}}\varphi_2=c.$\vspace{1pt}\parSol{\Ha}
-Define $\psi_2\Par{c}=\sup_{\mR_2\SmallPar[0.5pt]{c}}\varphi_1.$ Then $\psi_2:\Rbb{_2}\rightarrow\Rbb{_1}$ well-defined.\vspace{1pt}\parSol{\Ha}
-Note that $\mR_2\BigPar{\psi_1\Par{a}}=\Bra{q\in\Qbb:\varphi_2\Par{q}\leqslant\sup_{\mR_1\SmallPar[0.5pt]{a}}\varphi_2}=\mR_1\Par{a}.$\vspace{1pt}\parSol{\Ha}
-Now $\psi_2\BigPar{\psi_1\Par{a}}=\sup_{\mR_1\SmallPar[0.5pt]{a}}\varphi_1=a.$ \;Rev the roles of $\Rbb_1,\Rbb_2.$\vspace{4pt}\parSol{}
-(b) Note that $\varphi\Par{q}<0\Longleftrightarrow q<0,$ and $\varphi\Par{0}=0.$\parSol{\Hb}
-$\forall q\in\mR_1\Par{1}=\Bra{1\big/m\in\Qbb:m\in\Nbp,\varphi_1\Par{1\big/m}=\Par{1+\dots+1}{^{-1}}\leqslant 1}\cup\Par{\Qbb\Backslash\Qbp},$ \,$\varphi_2\Par{q}\leqslant 1.$\vspace{2pt}\parSol{}
-(c) $\mR_1\Par{a\pm b}=\Bra{p\pm q\in\Qbb:\varphi_1\Par{p}\pm\varphi_1\Par{q}\leqslant a\pm b}.$\parSol{\Hc}
-$\mR_1\Par{ab^{-1}}=\Bra{pq^{-1}\in\Qbb:\varphi_1\Par{q}\cdot\varphi_1\Par{q}{^{-1}}\leqslant ab^{-1}}.$\vspace{3pt}\parSol{}
-(d) $a>0\Longleftrightarrow\exists\,n\in\Nbp,\:1\big/n<a\Longleftrightarrow\psi_1\Par{a}>0.$\PfEnd
+	\TextA{Define $\psi:\Rbb{_1}\rightarrow\Rbb{_2}$ by $\psi\Par{a}=\Sup\Bra{\varphi_2\Par{q}:q\in\Qbb,\,\varphi_1\Par{q}\leqslant a}.$ \,Show\vspace{2pt}}
+	\PrePa\TextA{$\psi:\Rbb{_1}\rightarrow\Rbb{_2}$ is one-to-one. \;{\tgnr\large(b)} $\psi\Par{0}=0,\,\psi\Par{1}=1.$\vspace{2pt}}
+	\PrePc\TextA{$\psi\Par{a+b}=\psi\Par{a}+\psi\Par{b}.$ \;{\tgnr\large(d)} $\psi\Par{ab}=\psi\Par{a}\:\!\psi\Par{b}.$\vspace{2pt}}
+}(a) Define $\mR_1\Par{a}=\Bra{q\in\Qbb:\varphi_1\Par{q}\leqslant a}\Rightarrow\sup_{\!\mR_1\SmallPar[0.5pt]{a}}\varphi_1=a.$ \;Let $\psi_1\Par{a}=\sup_{\!\mR_1\SmallPar[0.5pt]{a}}\varphi_2=\psi\Par{a}.$\vspace{2pt}\parSol{\Ha}
+Define $\mR_2\Par{c}=\Bra{q\in\Qbb:\varphi_2\Par{q}\leqslant c}\Rightarrow\sup_{\!\mR_2\SmallPar[0.5pt]{c}}\varphi_2=c.$\vspace{1pt}\parSol{\Ha}
+Define $\psi_2\Par{c}=\sup_{\!\mR_2\SmallPar[0.5pt]{c}}\varphi_1.$ Then $\psi_2:\Rbb{_2}\rightarrow\Rbb{_1}$ well-defined.\vspace{1pt}\parSol{\Ha}
+Note that $\mR_2\BigPar{\psi_1\Par{a}}=\Bra{q\in\Qbb:\varphi_2\Par{q}\leqslant\sup_{\!\mR_1\SmallPar[0.5pt]{a}}\varphi_2}=\mR_1\Par{a}.$\vspace{1pt}\parSol{\Ha}
+Now $\psi_2\BigPar{\psi_1\Par{a}}=\sup_{\!\mR_1\SmallPar[0.5pt]{a}}\varphi_1=a.$ \;Rev the roles of $\Rbb_1,\Rbb_2.$\vspace{3pt}\parSol{}
+(b) Becs $\varphi_1\Par{q}\leqslant\varphi_1\Par{0}\Longleftrightarrow q\leqslant0\Longleftrightarrow\varphi_2\Par{q}\leqslant\varphi_2\Par{0}.$ \,Simlr for $\psi\Par{1}=1.$\vspace{3pt}\parSol{}
+(c) $S=\Bra{\varphi_2\Par{t}:t\in\Qbb,\,\varphi_1\Par{t}\leqslant a+b}\supseteq\Bra{\varphi_2\Par{p+q}:p,q\in\Qbb,\,\varphi_1\Par{p}\leqslant a,\,\varphi_1\Par{q}\leqslant b}=T$\parSol{\Hc}
+$\Rightarrow\sup S\geqslant\sup T.$ \,Asum it is `$>$'. Now $\exists\,t\in\Qbb$ suth\;$\sup S\geqslant\varphi_2\Par{t}>\sup T=\psi\Par{a}+\psi\Par{b}.$\parSol{\Hc}
+Which means\;$\varphi_2\Par{t}>\varphi_2\Par{p+q},\,\forall p,q\in\Qbb$ suth\;$\varphi_1\Par{p}\leqslant a$ and $\varphi_1\Par{q}\leqslant b.$\parSol{\Hc}
+Now $a+b\geqslant\varphi_1\Par{t}>\varphi_1\Sbra{\Par{t+p+q}\big/2}>\varphi_1\Par{p+q},\forall p,q.$ \,Ctradic.\vspace{4pt}\parSol{}
+(d) We show it for (I) $a,b>0,$ (II) $a>0>b.$\parSol{\Hd}
+$LHS=\Sup\Bra{\varphi_2\Par{t}:t\in\Qbb,\,\varphi_1\Par{t}\leqslant ab},\,\Sup\Bra{\psi\Par{a}\:\!\varphi_2\Par{q}:q\in\Qbb,\,\varphi_1\Par{q}\leqslant b}=RHS.$\parSol{\Hd}
+(I) $RHS=\Sup\Bra{\varphi_2\Par{pq}:p,q\in\Qbb,\,\varphi_1\Par{p}\leqslant a,\;\varphi_1\Par{q}\leqslant b}.$\parSol{\Hd}
+(II) $RHS=\Sup\Bra{\gamma\:\!\varphi_2\Par{q}:q\in\Qbb,\,\varphi_1\Par{q}\leqslant b,\text{and\;}\gamma\geqslant\varphi_2\Par{p},\forall p\text{\;suth\;}\varphi_1\Par{p}\leqslant a}.$\parSol{\Hd\HII}
+$\Blind{RHS}=\Sup\Bra{\varphi_2\Par{pq}:p,q\in\Qbb,\,\varphi_1\Par{p}\leqslant a,\;\varphi_1\Par{q}\leqslant b}.$\vspace{2pt}\parSol{\Hd}
+Thus $LHS\geqslant RHS.$ \,Asum it is `$>$'. Now $\exists\,t\in\Qbb$ suth\;$LHS\geqslant\varphi_2\Par{t}>RHS.$\parSol{\Hd}
+Which means\;$\varphi_2\Par{t}>\varphi_2\Par{pq},\,\forall p,q\in\Qbb$ suth\;$\varphi_1\Par{p}\leqslant a,\,\varphi_1\Par{q}\leqslant b.$\parSol{\Hd}
+Now $ab\geqslant\varphi_1\Par{t}>\varphi_1\BigPar{p\Par{q+\delta}}>\varphi_1\Par{pq},\forall p,q.$ \,Ctradic.\PfEnd
 \SepLine
+\ChEnd
+\pagebreak
+
+\ChDecl{Ch0D}{0$\cdot$D}{}
+
+\vspace{2pt}
+
 
 \ChEnd
 
+\ChDecl{Ch0E}{0$\cdot$E}{}
 
+\vspace{2pt}
+
+\ProblemB{
+	\TextB{Supp $b\in A\subseteq\RbbP{m},\,f:A\rightarrow\RbbP{n}.$ Prove}
+	\TextB{[P] \;\!$f$ is continu at $b\Longleftrightarrow\forall b_1,b_2,\cdots\in A$ suth $\lim_{k\rightarrow\infty}b_k=b,$ $\lim_{k\rightarrow\infty}f\Par{b_k}=f\Par{b}.$ [Q]\vspace{1pt}}
+}$Q\Rightarrow P:$ \;Supp $\varepsilon>0$ suth $\forall\delta>0,\exists\,a\in A$ with $\Dvert{a-b}{_\infty}<\delta$ and $\BigDvert{\,f\Par{a}-f\Par{b}}{_\infty}\geqslant\varepsilon.$\parSol{}
+\Blind{$P\Rightarrow Q:$ \;}Fix a $\delta.$ \,Define $\delta_k=\delta\big/k\Rightarrow\exists\,a_k$ for each. \,Now $\lim_{k\rightarrow\infty}a_k=b.$\parSol{}
+\Blind{$P\Rightarrow Q:$ \;}Thus $\forall m,\forall k\geqslant m,\,\BigDvert{\,f\Par{a_k}-f\Par{b}}{_\infty}\geqslant\varepsilon.$ \,Ctradic $Q$.\vspace{4pt}\parSol{}
+$P\Rightarrow Q:$ \;Supp $b_1,b_2,\cdots\in A$ suth $\forall\delta>0,\,\exists\,m,\forall k\geqslant m,\,\Dvert{b_k-b}{_\infty}<\delta.$\parSol{}
+\Blind{$P\Rightarrow Q:$ \;}Asum $\varepsilon>0$ suth $\forall m,\forall k\geqslant m,\,\BigDvert{\,f\Par{b_k}-f\Par{b}}{_\infty}\geqslant\varepsilon.$ \,Ctradic $P.$\PfEnd 
+\SepLine
+
+
+\ChEnd
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 累计用时：思考学习的时长+整理代码的时长(h)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 0.A:  1.25    +    0h
 % 0.B:  18.25   + 5.25h
-% 0.C:  5       +  1.5h
+% 0.C:  5.25    + 1.75h
 % 0.D:  
 % 0.E:  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
