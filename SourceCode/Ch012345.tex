@@ -348,14 +348,14 @@ Thus\;$ab\geqslant\varphi_1\Par{t}>\varphi_1\Sbra{\Par{t+sq}\big/2}>\varphi_1\Pa
 %\SepLine
 
 \Anchor{0D15}\ProblemN{15}{
-	\TextA{Supp $F$ is a closed subset of $\Rbb.$ Prove $\Bra{a^2:a\in F}$ is closed.}
-}
+	\TextA{Supp $F$ is a closed subset of $\Rbb.$ Prove $S=\Bra{a^2:a\in F}$ is closed.}
+}Let $\Rbb\Backslash F=\bigcup_{k=1}^\infty I_k$ \Par{disj} 
 \SepLine
 
 \Anchor{0D17}\ProblemN{17}{
 	\TextA{Supp $F\subseteq\Rbb,$ and $\forall n\in\Nbp,\,F\cap\Interval{[}{]}{{-n,n}}$ is closed. Prove $F$ is closed.}
 }Becs $G=\BigPar{\Rbb\Backslash F}\cup\Interval{(}{)}{{-\infty,-n}}\cup\Interval{(}{)}{{n,\infty}}$ is open for all $n\in\Nbp.$ Let $n>\Sup\Bra{\aMid{a}:a\in\Rbb\Backslash F}.$\parSol{}
-By [0.59], $G=\Interval{(}{)}{{-\infty,-n}}\cup\Interval{(}{)}{{n,\infty}}\cup I_1\cup I_2\cup\cdots$ \Par{disjoint} $\Longrightarrow I_1\cup I_2\cup\cdots=\Rbb\Backslash F.$\PfEnd
+By [0.59], $G=\Interval{(}{)}{{-\infty,-n}}\cup\Interval{(}{)}{{n,\infty}}\cup I_1\cup I_2\cup\cdots$ \Par{disj} $\Longrightarrow I_1\cup I_2\cup\cdots=\Rbb\Backslash F.$\PfEnd
 \SepLine
 
 \Anchor{0D20}\ProblemN{20}{
@@ -372,10 +372,14 @@ Now $\bigcup_{k=1}^\infty\bigcup_{j=1}^\infty E_{j,k}=\bigcup_{k=1}^\infty I_k=X
 \SepLine
 
 \Anchor{0D23}\ProblemN{23}{
-	\TextA{Supp $F_{\!1},F_{\!2}$ are disj closed subsets of $\Rbb$ suth $F_{\!1}\cup F_{\!2}$ is interval. Prove $F_{\!1}=\emptySet$ or $F_{\!2}=\emptySet.$}
-}Asum both $F_{\!1},F_{\!2}\neq\emptySet\Rightarrow F_{\!1}\cup F_{\!2}$ contains at least two elem $\Rightarrow$ infily many.\parSol{}
-Then \,$x\in F_{\!1}\cup F_{\!2}\Longleftrightarrow x\in F_{\!1}$ xor $x\in F_{\!2}.$ Thus $\exists\,x,\,\forall\delta>0,\,B\Par{x,\delta}\not\subseteq F_{\!1}\cup F_{\!2}.$\parSol{}
-While $\forall x\in F_{\!1}\cup F_{\!2}=\Interval{[}{]}{a,b},$ we have $x\in\Interval{(}{)}{a,b}\Longleftrightarrow\exists\,\delta>0,\,B\Par{x,\delta}\subseteq\Interval{[}{]}{a,b}.$ Ctradic.\PfEnd
+	\TextA{Supp $F_{\!1},F_{\!2}$ are disj closed subsets of $\Rbb$ suth $U=F_{\!1}\cup F_{\!2}$ is interval. Prove $F_{\!1}$ or $F_{\!2}$ open.}
+}If $U$ open, then $F_{\!1}=\emptySet,\,F_{\!2}=\emptySet$ or $\Rbb.$ Now supp $U$ not open $\Rightarrow F_{\!1}$ or $F_{\!2}$ not open.\parSol{}
+We show $F_{\!1}$ open $\Longleftrightarrow F_{\!2}$ not open. Note that $F_{\!1}$ open $\Longleftrightarrow F_{\!1}=\emptySet.$ \,Simlr for $F_{\!2}.$\parSol{}
+WLOG, asum $F_{\!1},F_{\!2}$ not open, and $x\in F_{\!1},y\in F_{\!2}$ with $x<y\Rightarrow x,y\in U\supseteq\Interval{[}{]}{x,y}.$\parSol{}
+\NOTICE that $T=\Interval{[}{]}{x,y}\cap F_{\!1}$ is a closed subset that has infily many elem. 又 $\sup T<y.$\parSol{}
+(I) If $\sup T\notin F_{\!1}.$ Then $\exists$ a convg seq in $T$ with lim $\sup T.$\parSol{}
+(II) Othws, $\forall t\in\Interval{(}{]}{\sup T,y},\,t\notin F_{\!1}\Longleftrightarrow t\in F_{\!2}.$ Now $\exists$ a convg seq in $F_{\!2}$ with lim $\sup T\notin F_{\!2}.$\parSol{}
+Ctradic the asum $\Rightarrow$ at least one of $F_{\!1},F_{\!2}$ is empty.\PfEnd
 \SepLine
 
 %\Anchor{0D24}\ProblemN{24}{
@@ -397,12 +401,11 @@ Define \,$f\Par{a_j}=b_{2j+1},\:f\Par{b_k}=b_{2k}\Rightarrow\,f^{-1}\Par{b_i}=\M
 	\TextA{Supp $E,G\subseteq\RbbP{n},$ and $G$ is open. Prove $E+G=\Bra{x+y:x\in E,\:\!y\in G}$ is open.}
 }Asum $E+G$ not open $\Longleftrightarrow\RbbP{n}\Backslash\Par{E+G}$ not closed.\vspace{2pt}\parSol{}
 Then $\exists\,a=x+y\in E+G$ suth $\forall\delta>0,\exists\,b\notin E+G$ suth $\Dvert{a-b}{_\infty}<\delta.$\parSol{}
-Let \:\!$z=b-x\notin G\Rightarrow\Dvert{y-z}{_\infty}<\delta\Rightarrow z\in B\Par{y,\delta}\subseteq G,\,\exists\,\delta>0.$\PfEnd\vspace{2pt}\parSol{}
+Let \:\!$z=b-x\notin G\Rightarrow\Dvert{y-z}{_\infty}<\delta\Rightarrow z\in B\Par{y,\delta}\subseteq G,\,\exists\,\delta>0.$\PfEnd\vspace{3pt}\parSol{}
 \Or $\exists\,a_1,a_2,\dots\notin E+G$ while its lim $L=e+g\in E+G.$ \,又 $\forall x\in E,\,a_k-x\notin G$\parSol{}
 $\Rightarrow\lim_{k\rightarrow\infty}\!\Par{a_k-e}=L-e=g\in G.$ \,Thus $\RbbP{n}\Backslash G$ not closed $\Longleftrightarrow G$ not open.\PfEnd
 \SepLine
-
-\ChEnd
+\ChEnd\pagebreak
 
 \ChDecl{Ch0E}{0$\cdot$E}{}
 
