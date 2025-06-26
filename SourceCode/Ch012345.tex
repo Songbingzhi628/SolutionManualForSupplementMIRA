@@ -340,12 +340,12 @@ Thus\;$ab\geqslant\varphi_1\Par{t}>\varphi_1\Sbra{\Par{t+sq}\big/2}>\varphi_1\Pa
 
 \vspace{4pt}
 
-\Anchor{0D12}\ProblemN{12}{
-	\TextA{Supp $a_1,a_2,\dots\in\RbbP{n}$ convg of lim $L.$ \,Prove $F=\Bra{L,a_1,a_2,\dots}$ is closed.}
-}We show $\RbbP{n}\Backslash F$ is open. Asum $\exists\,b\in\RbbP{n}\Backslash F$ suth $\forall\delta>0,\,B\Par{b,\delta}\not\subseteq\RbbP{n}\Backslash F\Longleftrightarrow\exists\,x\in B\Par{b,\delta}\cap F.$\parSol{}
-Then $\forall\delta>0,\exists\,x\in F$ suth $\Dvert{b-x}{_\infty}<\delta.$ \,Thus $\exists$ a seq $b_1,b_2,\dots\in F$ with lim $b\notin F.$\parSol{}
-Now $F=F\cup\Bra{b_1,b_2,\dots},$ while $F=\Bra{L,a_1,a_2,\dots}\Rightarrow$ each $b_j=a_k,\exists\,k\in\Nbp.$ \,Ctradic.\PfEnd
-\SepLine
+%\Anchor{0D12}\ProblemN{12}{
+%	\TextA{Supp $a_1,a_2,\dots\in\RbbP{n}$ convg of lim $L.$ \,Prove $F=\Bra{L,a_1,a_2,\dots}$ is closed.}
+%}We show $\RbbP{n}\Backslash F$ is open. Asum $\exists\,b\in\RbbP{n}\Backslash F$ suth $\forall\delta>0,\,B\Par{b,\delta}\not\subseteq\RbbP{n}\Backslash F\Longleftrightarrow\exists\,x\in B\Par{b,\delta}\cap F.$\parSol{}
+%Then $\forall\delta>0,\exists\,x\in F$ suth $\Dvert{b-x}{_\infty}<\delta.$ \,Thus $\exists$ a seq $b_1,b_2,\dots\in F$ with lim $b\notin F.$\parSol{}
+%Now $F=F\cup\Bra{b_1,b_2,\dots},$ while $F=\Bra{L,a_1,a_2,\dots}\Rightarrow$ each $b_j=a_k,\exists\,k\in\Nbp.$ \,Ctradic.\PfEnd
+%\SepLine
 
 \Anchor{0D13}\ProblemN{13}{
 	\TextA{Supp $0\notin A\subseteq\Rbb.$ \,Let $A^{-1}=\Bra{a^{-1}:a\in A}.$}
@@ -365,29 +365,52 @@ Now $F=F\cup\Bra{b_1,b_2,\dots},$ while $F=\Bra{L,a_1,a_2,\dots}\Rightarrow$ eac
 
 \Anchor{0D17}\ProblemN{17}{
 	\TextA{Supp $F\subseteq\Rbb,$ and $\forall n\in\Nbp,\,F\cap\Interval{[}{]}{{-n,n}}$ is closed. Prove $F$ is closed.}
-}
+}Becs $G=\BigPar{\Rbb\Backslash F}\cup\Interval{(}{)}{{-\infty,-n}}\cup\Interval{(}{)}{{n,\infty}}$ is open for all $n\in\Nbp.$ Let $n>\Sup\Bra{\aMid{a}:a\in\Rbb\Backslash F}.$\parSol{}
+By [0.59], $G=\Interval{(}{)}{{-\infty,-n}}\cup\Interval{(}{)}{{n,\infty}}\cup I_1\cup I_2\cup\cdots$ \Par{disjoint} $\Longrightarrow I_1\cup I_2\cup\cdots=\Rbb\Backslash F.$\PfEnd
 \SepLine
 
 \Anchor{0D20}\ProblemN{20}{
-	\TextA{Prove $\forall b\in\RbbP{n},\,\delta>0,\,\Bra{a\in\RbbP{n}:\Dvert{a-b}{_\infty}\leqslant\delta},\Bra{a\in\RbbP{n}:\Dvert{a-b}\leqslant\delta}$ are closed.}
+	\TextA{Prove $\forall b\in\RbbP{n},\,\delta>0,\,\Bra{a\in\RbbP{n}:\Dvert{a-b}{_\infty}>\delta},\Bra{a\in\RbbP{n}:\Dvert{a-b}>\delta}$ are open.}
 }
 \SepLine
 
 \Anchor{0D21}\ProblemN{21}{
 	\TextA{Supp $X$ is an open subset of $\Rbb.$ Prove $\exists\,a_k,b_k\in\Rbb$ suth $X=\bigcup_{k=1}^\infty\Interval{[}{]}{a_k,b_k}.$}
-}
+}Let $X=\bigcup_{k=1}^\infty\Interval{(}{)}{c_k,d_k},$ where each $d_k<c_{k+1}.$ \,Let $I_k=\Interval{(}{)}{c_k,d_k}.$\parSol{}
+Let $a_{1,k},a_{2,k},\dots$ be convg of lim $c_k.$ Simlr, let $b_{1,k},b_{2,k},\dots$ of lim $d_k.$ \,Let $E_{j,k}=\Interval{[}{]}{a_{j,k},b_{j,k}}.$\parSol{}
+Now $\bigcup_{k=1}^\infty\bigcup_{j=1}^\infty E_{j,k}=\bigcup_{k=1}^\infty I_k=X.$ \,Rearrange the order of $E_{j,k}$'s.\PfEnd
 \SepLine
+
+\Anchor{0D23}\ProblemN{23}{
+	\TextA{Supp $F_{\!1},F_{\!2}$ are disj closed subsets of $\Rbb$ suth $F_{\!1}\cup F_{\!2}$ is interval. Prove $F_{\!1}=\emptySet$ or $F_{\!2}=\emptySet.$}
+}Asum both $F_{\!1},F_{\!2}\neq\emptySet\Rightarrow F_{\!1}\cup F_{\!2}$ contains at least two elem $\Rightarrow$ infily many.\parSol{}
+Then \,$x\in F_{\!1}\cup F_{\!2}\Longleftrightarrow x\in F_{\!1}$ xor $x\in F_{\!2}.$ Thus $\exists\,x,\,\forall\delta>0,\,B\Par{x,\delta}\not\subseteq F_{\!1}\cup F_{\!2}.$\parSol{}
+While $\forall x\in F_{\!1}\cup F_{\!2}=\Interval{[}{]}{a,b},$ we have $x\in\Interval{(}{)}{a,b}\Longleftrightarrow\exists\,\delta>0,\,B\Par{x,\delta}\subseteq\Interval{[}{]}{a,b}.$ Ctradic.\PfEnd
+\SepLine
+
+%\Anchor{0D24}\ProblemN{24}{
+%	\TextA{Supp $G_1,G_2,\dots$ disj open, and $U=\bigcup_{k=1}^\infty G_k$ is interval. Prove at most one $G_k\neq\emptySet.$}
+%}Asum all $G_1,G_2,\dots\neq\emptySet\Rightarrow U$ contains infily many elem.\parSol{}
+%Becs by [0.59], a union of disj intervals $I_1,I_2,\dots$ is also interval $\Longleftrightarrow$ at most one $I_k\neq\emptySet.$
+%Then \,$x\in U\Longleftrightarrow x\in G_1$ xor $x\in G_2$ xor $\cdots,$ which means $\exists\,!\,k,\,x\in G_k.$\parSol{}
+%Thus $\exists\,x,\,\forall\delta>0,\,B\Par{x,\delta}\not\subseteq U.$ While $\forall x\in U=\Interval{(}{)}{a,b},\exists\,\delta>0,\,B\Par{x,\delta}\subseteq U.$
+%\SepLine
 
 \Anchor{0D25}\ProblemN{25}{
 	\TextA{Give an exa of inv \,$f:\Rbb\rightarrow\Rbb\Backslash\Qbb.$}
-}
+}Consider a seq disti $a_1,b_1,a_2,b_2,\dots\in\Rbb$ where each $a_j\in\Rbb\Backslash\Qbb$ and $\Bra{b_1,b_2,\dots}=\Qbb.$\parSol{}
+Define \,$f\Par{a_j}=b_{2j+1},\:f\Par{b_k}=b_{2k}\Rightarrow\,f^{-1}\Par{b_i}=\MathLeftBrace{l}{\!a_{\SmallPar{i-1}/2},\,\,\text{if }i\text{ is odd,}\\\!b_{i/2},\hfill\text{if }i\text{ is even.}}$\PfEnd\vspace{4pt}
+\ANote $\nexists$ a seq of {\tgsl all} irrational numbers, but whenever use \,$f$, the input in $\Rbb\Backslash\Qbb$ are always countable.
 \SepLine
 
 \Anchor{0D26}\ProblemN{26}{
-	\TextA{Supp $E,G\subseteq\RbbP{n}$ and $G$ is open. Prove $E+G=\Bra{x+y:x\in E,\:\!y\in G}$ is open.}
-}
+	\TextA{Supp $E,G\subseteq\RbbP{n},$ and $G$ is open. Prove $E+G=\Bra{x+y:x\in E,\:\!y\in G}$ is open.}
+}Asum $E+G$ not open $\Longleftrightarrow\RbbP{n}\Backslash\Par{E+G}$ not closed.\vspace{2pt}\parSol{}
+Then $\exists\,a=x+y\in E+G$ suth $\forall\delta>0,\exists\,b\notin E+G$ suth $\Dvert{a-b}{_\infty}<\delta.$\parSol{}
+Let \:\!$z=b-x\notin G\Rightarrow\Dvert{y-z}{_\infty}<\delta\Rightarrow z\in B\Par{y,\delta}\subseteq G,\,\exists\,\delta>0.$\PfEnd\vspace{2pt}\parSol{}
+\Or $\exists\,a_1,a_2,\dots\notin E+G$ while its lim $L=e+g\in E+G.$ \,又 $\forall x\in E,\,a_k-x\notin G$\parSol{}
+$\Rightarrow\lim_{k\rightarrow\infty}\!\Par{a_k-e}=L-e=g\in G.$ \,Thus $\RbbP{n}\Backslash G$ not closed $\Longleftrightarrow G$ not open.\PfEnd
 \SepLine
-
 
 \ChEnd
 
