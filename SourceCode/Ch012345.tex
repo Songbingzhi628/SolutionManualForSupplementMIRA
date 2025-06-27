@@ -349,7 +349,10 @@ Thus\;$ab\geqslant\varphi_1\Par{t}>\varphi_1\Sbra{\Par{t+sq}\big/2}>\varphi_1\Pa
 
 \Anchor{0D15}\ProblemN{15}{
 	\TextA{Supp $F$ is a closed subset of $\Rbb.$ Prove $S=\Bra{a^2:a\in F}$ is closed.}
-}Let $\Rbb\Backslash F=\bigcup_{k=1}^\infty I_k$ \Par{disj} 
+}Supp $S$ not closed $\Rightarrow\exists\,a_1^2,a_2^2,\dots\in S$ convg to $L^2$ suth $\pm L\notin F.$ \,Let $\varepsilon_1>\varepsilon_2>\dots\in\Rbp.$\parSol{}
+Becs $\forall\varepsilon_p,\exists\,m\in\Nbp,\forall k\geqslant m,\:\Dvert{a_k^2-L^2}{_\infty}=\aMid{a_k-L}\cdot\aMid{a_k+L}<\varepsilon_p,$\parSol{}
+if $\aMid{a_k-L}<\varepsilon_p,$ then let $b_p=a_k,$ \:if $\aMid{a_k+L}<\varepsilon_p,$ then let $c_p=a_k.$\parSol{}
+Then we have at least one seq in $F$ with lim $\pm L\notin F\Rightarrow F$ not closed.\PfEnd
 \SepLine
 
 \Anchor{0D17}\ProblemN{17}{
@@ -392,9 +395,9 @@ Ctradic the asum $\Rightarrow$ at least one of $F_{\!1},F_{\!2}$ is empty.\PfEnd
 
 \Anchor{0D25}\ProblemN{25}{
 	\TextA{Give an exa of inv \,$f:\Rbb\rightarrow\Rbb\Backslash\Qbb.$}
-}Consider a seq disti $a_1,b_1,a_2,b_2,\dots\in\Rbb$ where each $a_j\in\Rbb\Backslash\Qbb$ and $\Bra{b_1,b_2,\dots}=\Qbb.$\parSol{}
-Define \,$f\Par{a_j}=b_{2j+1},\:f\Par{b_k}=b_{2k}\Rightarrow\,f^{-1}\Par{b_i}=\MathLeftBrace{l}{\!a_{\SmallPar{i-1}/2},\,\,\text{if }i\text{ is odd,}\\\!b_{i/2},\hfill\text{if }i\text{ is even.}}$\PfEnd\vspace{4pt}
-\ANote $\nexists$ a seq of {\tgsl all} irrational numbers, but whenever use \,$f$, the input in $\Rbb\Backslash\Qbb$ are always countable.
+}Consider a seq disti $a_1,b_1,a_2,b_2,\dots\in\Rbb$ where $\Bra{a_1,a_2,\dots}\in\Qbb$ and each $b_i\in\Rbb\Backslash\Qbb.$\parSol{}
+Define \,$\varphi\Par{a_j}=b_{2j-1},\:\varphi\Par{b_k}=b_{2k}\Rightarrow\,\varphi^{-1}\Par{b_i}=\MathLeftBrace{l}{\!a_{\SmallPar{i+1}/2},\,\,\text{if }i\text{ is odd,}\\\!b_{i/2},\hfill\text{if }i\text{ is even.}}$\vspace{6pt}\parSol{}
+Let $B=\Bra{b_1,b_2,\dots},\,U=\Qbb\cup B,\,K=\Rbb\Backslash U.$ \,Extend $\varphi\in B^U$ to $\psi\in\;\!\!\Par{K\cup B}{^{K\,\cup\,U}}$ by $\psi\mmid_K=I.$\PfEnd
 \SepLine
 
 \Anchor{0D26}\ProblemN{26}{
