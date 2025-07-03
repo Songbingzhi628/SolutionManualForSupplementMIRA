@@ -334,11 +334,20 @@ Which means\;$\varphi_2\Par{t}>\psi\Par{a}\:\!\varphi_2\Par{q},\,\forall q\in\Qb
 (II) $\Longrightarrow\varphi_2\Par{t}>\varphi_2\Par{s}\:\!\varphi_2\Par{q},\,\forall q$ and $\forall s\in\Qbb$ suth $\varphi_2\Par{s}\geqslant\varphi_2\Par{p},\forall p$ suth\;$0<\varphi_1\Par{p}\leqslant a.$\vspace{1pt}\parSol{\Hd}
 Thus\;$ab\geqslant\varphi_1\Par{t}>\varphi_1\Sbra{\Par{t+sq}\big/2}>\varphi_1\Par{sq},\forall s,q.$ \,Ctradic.\PfEnd\SepLine
 \ChEnd
-\pagebreak
 
-\ChDecl{Ch0D}{0$\cdot$D}{}
+\vfill\ChDecl{Ch0D}{0$\cdot$D}{}
 
 \vspace{4pt}
+
+\Anchor{0DN065}\ProblemB{
+	\TextA{Supp nonempty $A$ is closed and open subsets of $\RbbP{n}.$ Prove $A=\RbbP{n}.$}
+}Asum $A\neq\RbbP{n}.$ \,Let\;$a\in A,\,b\in\RbbP{n}\Backslash A.$ \,Define \,$f\Par{t}=\Par{1-t}\:\!a+t\:\!b.$\par\quad
+If $\;\!f\Par{t_1}=f\Par{t_2}\Rightarrow\Par{t_1-t_2}\Par{b-a}=0\Rightarrow t_1=t_2.$ \,Inje.\par\quad
+Let $\mA=\Bra{t\in\Interval{[}{)}{0,1}:\,f\Par{t}\in A},$ and \,$\sup\mA=t_M\in\Interval{[}{]}{0,1}.$ \,Let $c=\;\!f\Par{t_M}.$\vspace{2pt}\par\quad
+(I) If $c\in A\Rightarrow\exists\,\delta>0,\,B\Par{c,\delta}\subseteq A.$ \,Let \:\!$t\neq t_M$ \:\!be suth \;\!$f\Par{t}\in B\Par{c,\delta}\Rightarrow\BigDvert{\Par{t-t_M}\Par{b-a}}{_\infty}<\delta.$\par\quad\HI
+Let $\varepsilon=\aMid{t-t_M}>0\Rightarrow f\Par{t_M+\varepsilon}\in B\Par{c,\delta}\subseteq A\Rightarrow t_M\geqslant t_M+\varepsilon,$ ctradic.\vspace{2pt}\par\quad
+(II) If $c\in\RbbP{n}\Backslash A.$ \,Simlr. \,$\forall t'\in\Interval{[}{)}{t_M-\varepsilon,\:t_M},\,t'\notin\mA.$ \,Now $\forall t\in\mA,\,t<t_M\Rightarrow t<t_M-\varepsilon.$\PfEnd
+\SepLine\pagebreak
 
 %\Anchor{0D12}\ProblemN{12}{
 %	\TextA{Supp $a_1,a_2,\dots\in\RbbP{n}$ convg of lim $L.$ \,Prove $F=\Bra{L,a_1,a_2,\dots}$ is closed.}
@@ -431,11 +440,11 @@ Thus $\Dvert{a_k}{_\infty}\in\XInterval{(}{)}{\aXMid{\varepsilon-\Dvert{L}{_\inf
 Which means $\forall T\in\Rbp,\forall m\in\Nbp,\exists\,k>m,\,\max\!\Bra{\Dvert{a_1}{_\infty},\dots,\Dvert{a_m}{_\infty}}<\Dvert{a_k}{_\infty}>T.$ \,Ctradic.\PfEnd
 \SepLine
 
-
-
-\ProblemN{}{
-	\TextA{}
-}
+\ProblemN{3}{
+	\TextA{Supp $F\subseteq\RbbP{n}$ suth every seq in $F$ has a subseq that convg in $F.$ Prove $F$ is closed bounded.}
+}Supp $a_1,a_2,\cdots\in F$ and $\exists\,k_1,k_2,\cdots$ incre in $\Nbp$ suth 
+$a_{k_1},a_{k_2},\cdots$ convg to $L\in F.$\parSol{}
+Asum $\Sup F=\infty\Rightarrow\forall a\in F,\exists\,b\in F,\,b>a.$
 \SepLine
 
 \ProblemN{}{
