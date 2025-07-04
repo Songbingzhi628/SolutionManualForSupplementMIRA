@@ -259,7 +259,7 @@ After at most $n$ steps, we must have $a_{m}$ with $m>n.$ Thus $\forall a_{n+i},
 }
 \Anchor{0CT1}\ProblemBX{\TipsN{1}}{
 	\TextA{Define $-A=\Bra{{-a}:a\in A}\Rightarrow{-\Par{{-A}}}=A.$ \,Prove $\Sup\Par{{-A}}=-\inf A.$}
-}$-b$ is an upper bound of $-A\Longleftrightarrow\forall a\in A,\,-a\leqslant-b\Longleftrightarrow a\geqslant b\Longleftrightarrow b$ is a lower bound of $A.$\parSol{}
+}$-b$ is an up-bound of $-A\Longleftrightarrow\forall a\in A,\,-a\leqslant-b\Longleftrightarrow a\geqslant b\Longleftrightarrow b$ is a low-bound of $A.$\parSol{}
 Thus \,$-b_M=\Sup\Par{{-A}}\Longleftrightarrow-b_M\leqslant -b\Longleftrightarrow b_M\geqslant b\Longleftrightarrow b_M=\inf A.$\PfEnd
 \SepLine
 
@@ -426,19 +426,23 @@ $\Rightarrow\lim_{k\rightarrow\infty}\!\Par{a_k-e}=L-e=g\in G.$ \,Thus $\Rbbn\Ba
 \ProblemN{1}{
 	\TextA{Prove every convg seq in $\Rbbn$ is bounded.}
 }Supp $a_1,a_2,\dots\in\Rbbn$ suth $\forall\varepsilon>0,\exists\,m\in\Nbp,\forall k\geqslant m,\:\aXMid{\Dvert{a_k}{_\infty}-\Dvert{L}{_\infty}}\leqslant\Dvert{a_k-L}{_\infty}<\varepsilon.$\parSol{}
-Thus $\Dvert{a_k}{_\infty}\in\XInterval{(}{)}{\aXMid{\varepsilon-\Dvert{L}{_\infty}},\,\varepsilon+\Dvert{L}{_\infty}}.$ \,Now asum $\Sup\Bra{\Dvert{a_k}{_\infty}:k\in\Nbp}=\infty.$\vspace{2pt}\parSol{}
-Which means $\forall T\in\Rbp,\forall m\in\Nbp,\exists\,k>m,\,\max\!\Bra{\Dvert{a_1}{_\infty},\dots,\Dvert{a_m}{_\infty}}<\Dvert{a_k}{_\infty}>T.$ \,Ctradic.\PfEnd
+Thus $\Dvert{a_k}{_\infty}\in\XInterval{(}{)}{\aXMid{\varepsilon-\Dvert{L}{_\infty}},\:\varepsilon+\Dvert{L}{_\infty}}.$ \,Now asum $\Sup\Bra{\Dvert{a_k}{_\infty}:k\in\Nbp}=\infty.$\vspace{2pt}\parSol{}
+Which means $\forall t\in\Rbp,\forall m\in\Nbp,\exists\,k\geqslant m,\,\max\!\Bra{\Dvert{a_1}{_\infty},\dots,\Dvert{a_m}{_\infty}}\leqslant\Dvert{a_k}{_\infty}>t.$ \,Ctradic.\PfEnd
+%\vspace{3pt}\parSol{}
+%\Or Using coord lim, $a_1,a_2,\cdots\in\Rbbn$ convg $\Longleftrightarrow a_{1,k},a_{2,k},\cdots\in\Rbb$ convg for each $k\in\;\!\!\Bra{1,\dots,n}.$\parSol{}
+%Then by (L1), each $a_{1,k},a_{2,k},\cdots$ bounded $\Longleftrightarrow a_1,a_2,\cdots$ bounded.
 \SepLine
 
 \ProblemN{3}{
-	\TextA{Supp $F\subseteq\Rbbn$ suth every seq in $F$ has a subseq that convg in $F.$ Prove $F$ is closed bounded.}
-}Supp $a_1,a_2,\cdots\in F$ and $\exists\,k_1,k_2,\cdots$ incre in $\Nbp$ suth 
-$a_{k_1},a_{k_2},\cdots$ convg to $L\in F.$\parSol{}
-Asum $\Sup F=\infty\Rightarrow\forall a\in F,\exists\,b\in F,\,b>a.$
+	\TextA{Supp $F\subseteq\Rbbn,$ every seq in $F$ has a convg subseq with lim in $F.$ Prove $F$ is closed bounded.}
+}Asum $a_1,a_2,\cdots\in F$ convg with lim $L\notin F.$ 又 $\exists$ convg subseq with lim $L'\in F$ but not in seq.\parSol{}
+$\forall\varepsilon>0,\exists\,k_m\in\Nbp,\forall k_j\in\;\!\!\Bra{k_m,k_{m+1},\cdots},\:\Dvert{L-L'}\leqslant\Dvert{a_{k_m}-L}+\Dvert{a_{k_m}-L'}<2\:\!\varepsilon.$ Ctradic.\parSol{}
+Asum $\sup\Bra{\Dvert{a}{_\infty}:a\in F}=\infty\Rightarrow\forall\Delta>0,\exists\,a_1,a_2,\cdots\in F$ with each $\Dvert{a_{k+1}}{_\infty}\geqslant\Dvert{a_k}{_\infty}+\Delta.$\parSol{}
+Thus every subseq is unbounded $\Rightarrow$ not convg. Ctradic.\PfEnd
 \SepLine
 
 \ProblemB{
-	\TextB{Supp $b\in A\subseteq\RbbP{m},\,f:A\rightarrow\Rbbn.$ Prove}
+	\TextB{Supp $b\in A\subseteq\Rbbm,\,f:A\rightarrow\Rbbn.$ Prove}
 	\TextB{[P] \;\!$f$ is continu at $b\Longleftrightarrow\forall b_1,b_2,\cdots\in A$ suth $\lim_{k\rightarrow\infty}b_k=b,$ $\lim_{k\rightarrow\infty}f\Par{b_k}=f\Par{b}.$ [Q]\vspace{1pt}}
 }$Q\Rightarrow P:$ \;Supp $\varepsilon>0$ suth $\forall\delta>0,\exists\,a\in A$ with $\Dvert{a-b}{_\infty}<\delta$ and $\BigDvert{\,f\Par{a}-f\Par{b}}{_\infty}\geqslant\varepsilon.$\parSol{}
 \Blind{$P\Rightarrow Q:$ \;}Fix a $\delta.$ \,Define $\delta_k=\delta\big/k\Rightarrow\exists\,a_k$ for each. \,Now $\lim_{k\rightarrow\infty}a_k=b.$\parSol{}
