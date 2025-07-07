@@ -433,10 +433,12 @@ Which means $\forall t\in\Rbp,\forall m\in\Nbp,\exists\,k\geqslant m,\,\max\!\Br
 %Then by (L1), each $a_{1,k},a_{2,k},\cdots$ bounded $\Longleftrightarrow a_1,a_2,\cdots$ bounded.
 \SepLine
 
+\BulletPointX\TipsN{1}\,\,\,By def, a seq \:\!$a_1,a_2,\cdots\in\Rbbn$ convg to $L$ $\Longrightarrow$ every subseq convg to $L.$
+\SepLine
+
 \ProblemN{3}{
 	\TextA{Supp $F\subseteq\Rbbn,$ every seq in $F$ has a convg subseq with lim in $F.$ Prove $F$ is closed bounded.}
-}Asum $a_1,a_2,\cdots\in F$ convg with lim $L\notin F.$ 又 $\exists$ convg subseq with lim $L'\in F$ but not in seq.\parSol{}
-$\forall\varepsilon>0,\exists\,k_m\in\Nbp,\forall k_j\in\;\!\!\Bra{k_m,k_{m+1},\cdots},\:\Dvert{L-L'}\leqslant\Dvert{a_{k_m}-L}+\Dvert{a_{k_m}-L'}<2\:\!\varepsilon.$ Ctradic.\parSol{}
+}Supp $a_1,a_2,\cdots\in F$ convg with lim $L.$ Becs $\exists$ subseq with lim in $F.$ By \TIPSN{1}, $L\in F.$\parSol{}
 Asum $\sup\Bra{\Dvert{a}{_\infty}:a\in F}=\infty\Rightarrow\forall\Delta>0,\exists\,a_1,a_2,\cdots\in F$ with each $\Dvert{a_{k+1}}{_\infty}\geqslant\Dvert{a_k}{_\infty}+\Delta.$\parSol{}
 Thus every subseq is unbounded $\Rightarrow$ not convg. Ctradic.\PfEnd
 \SepLine
@@ -451,8 +453,28 @@ $P\Rightarrow Q:$ \;Supp $b_1,b_2,\cdots\in A$ suth $\forall\delta>0,\,\exists\,
 \Blind{$P\Rightarrow Q:$ \;}Asum $\varepsilon>0$ suth $\forall m,\forall k\geqslant m,\,\BigDvert{\,f\Par{b_k}-f\Par{b}}{_\infty}\geqslant\varepsilon.$ \,Ctradic $P.$\PfEnd 
 \SepLine
 
+%\ProblemN{}{
+%	\TextA{}
+%}
+%\SepLine
+%
+%\ProblemN{}{
+%	\TextA{}
+%}
+%\SepLine
+
 \ProblemN{}{
 	\TextA{}
+}
+\SepLine
+
+\ProblemN{10}{
+	\TextA{Supp bounded $A\subseteq\Rbbm$ and uniformly continu \,$f\in\RbbP{A}.$ Prove $\,f$ is bounded.}
+}Asum $\forall a\in A,\exists\,b\in A,\;f\Par{b}>\;\!f\Par{a}.$ Let $.$
+\SepLine
+
+\ProblemN{11}{
+	\TextA{Supp $\,f\in\RbbP{\Rbb}$ is diff and $\,f\apostrophe$ is bounded. Prove $\,f$ is uniformly continu.}
 }
 \SepLine
 
@@ -461,57 +483,65 @@ $P\Rightarrow Q:$ \;Supp $b_1,b_2,\cdots\in A$ suth $\forall\delta>0,\,\exists\,
 }
 \SepLine
 
-\ProblemN{}{
-	\TextA{}
+\ProblemN{18}{
+	\TextA{Supp $h:\Rbbm\rightarrow\Rbbn.$ Prove $h$ continu $\Longleftrightarrow h^{-1}\Par{G}$ is open for all open $G\subseteq\Rbbn.$}
+}Supp $h$ continu and open $G\subseteq\Rbbn.$ We show $\Rbbm\Backslash h^{-1}\Par{G}=\Bra{t\in\Rbbm:h\Par{t}\notin G}$ is closed.\parSol{}
+Let $t_1,t_2,\cdots\in\Rbbm\Backslash h^{-1}\Par{G}$ convg to $L\Rightarrow h\Par{t_1},h\Par{t_2},\cdots\in\Rbbn\Backslash G$ convg to $h\Par{L}.$\vspace{2pt}\parSol{}
+Supp open $G\subseteq\Rbbn$ suth $\Rbbm\Backslash h^{-1}\Par{G}$ not closed. Asum show $h$ continu.\parSol{}
+$\exists\,t_1,t_2,\cdots\in\Rbbm\Backslash h^{-1}\Par{G}$ convg to $L\in h^{-1}\Par{G}\Longrightarrow h\Par{t_1},h\Par{t_2},\cdots\in\Rbbn\Backslash G$ convg to $h\Par{L}\notin G.$\PfEnd
+\SepLine
+
+%\ProblemN{19}{
+%	\TextA{Supp $h:\Rbbm\rightarrow\Rbbn.$ Prove $h$ continu $\Longleftrightarrow h^{-1}\Par{F}$ is closed for all closed $F\subseteq\Rbbn.$}
+%}\NOTICE that \,$h$ continu $\Longleftrightarrow\Rbbm\Backslash h^{-1}\Par{F}=h^{-1}\BigPar{\Rbbn\Backslash F}$ is open for all open $\Rbbn\Backslash F\subseteq\Rbbn.$\PfEnd\parSol{}
+%%\Or Supp $h$ continu and closed $F\subseteq\Rbbn.$ We show $\Rbbm\Backslash h^{-1}\Par{F}=\Bra{t\in\Rbbm:h\Par{t}\notin F}$ is open.\parSol{}
+%%Supp $h\Par{t}\notin F\Rightarrow\exists\,\delta>0,\forall s$ suth $\BigDvert{h\Par{s}-h\Par{t}}{_\infty}<\delta,$ we have $h\Par{s}\notin F.$
+%\SepLine
+
+\ProblemN{22}{
+	\TextA{Supp $\Rbbn\supseteq F_1\supseteq F_2\supseteq\cdots$ is a decre seq of non-$\emptySet$ subsets. Prove $\bigcap{_{k=1}^\infty}F_k\neq\emptySet.$}
 }
 \SepLine
 
-\ProblemN{}{
-	\TextA{}
+\ProblemN{23}{
+	\TextA{Supp closed $F\subseteq\Rbb,$ continu $g\in\RbbP{F}.$ Prove $\exists$ continu $h\in\RbbP{\Rbb}$ suth $\forall x\in F,\,g\Par{x}=h\Par{x}.$}
 }
 \SepLine
 
-\ProblemN{}{
-	\TextA{}
+\ProblemN{26}{
+	\TextA{Supp $F\subseteq\Rbbn$ suth every continu $\,f\in\RbbP{F}$ attains a max. Prove $F$ is closed bounded.}
 }
 \SepLine
 
-\ProblemN{}{
-	\TextA{}
+\ProblemN{27}{
+	\TextA{Supp $\,f\in\RbbP{\Rbb}$ is incre. Prove $\exists$ countable $A\subseteq\Rbb$ suth $\,f\mmid_{\Rbb\text{\small\backslash}A}$ continu.}
 }
 \SepLine
 
-\ProblemN{}{
-	\TextA{}
+\ProblemN{29}{
+	\TextA{Supp continu $\,f:\Interval{[}{]}{a,b}\rightarrow\Rbb,$ and $t$ is between $\,f\Par{a},\,f\Par{b}.$ Prove $\exists\,c\in\Interval{[}{]}{a,b},\;f\Par{c}=t.$}
 }
 \SepLine
 
-\ProblemN{}{
-	\TextA{}
-}
+%\ProblemN{32}{
+%	\TextA{Prove every convg seq in $\Rbbn$ is a Cauchy seq.}
+%}Supp $a_1,a_2,\cdots\in\Rbbn$ convg to $L.$ Then $\forall\varepsilon,\exists\,m\in\Nbp,\forall j,k\geqslant m,\;\Dvert{a_j-L}<\varepsilon,\,\Dvert{a_k-L}<\varepsilon.$\parSol{}
+%Note that $\Dvert{a_j-a_k}\leqslant\Dvert{a_j-L}+\Dvert{L-a_k}<2\:\!\varepsilon.$
+%\SepLine
+
+\ProblemN{33}{
+	\TextA{Supp $a_1,a_2,\cdots\in\Rbbn$ is Cauchy seq and $\exists$ subseq convg to $L.$ Prove the seq convg to $L.$}
+}Supp subseq $a_{j_1},a_{j_2},\cdots$ convg to $L.$ Then $\forall\varepsilon>0,\exists\,j_m,\forall j_k\in\;\!\!\Bra{j_m,j_{m+1},\cdots},\:\Dvert{a_{j_k}-L}<\varepsilon,$\vspace{1pt}\parSol{}
+and $\exists\,n\in\Nbp,\forall i\geqslant n,\:\Dvert{a_i-L}=\BigDvert{\Par{a_i-a_{j_k}}+\Par{a_{j_k}-L}}\leqslant\Dvert{a_i-a_{j_k}}+\Dvert{a_{j_k}-L}<2\:\!\varepsilon.$\PfEnd
 \SepLine
 
-\ProblemN{}{
-	\TextA{}
-}
-\SepLine
-
-\ProblemN{}{
-	\TextA{}
-}
-\SepLine
-
-\ProblemN{}{
-	\TextA{}
-}
-\SepLine
-
-\ProblemN{}{
-	\TextA{}
+\ProblemN{34}{
+	\TextA{Supp closed $F_{\!1}\subseteq\Rbbn$ and closed bounded $F_{\!2}\subseteq\Rbbn.$ Prove $F_{\!1}+F_{\!2}$ is closed.}
 }
 \SepLine
 
 \ChEnd
+\pagebreak
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 累计用时：思考学习的时长+整理代码的时长(h)
