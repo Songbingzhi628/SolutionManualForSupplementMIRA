@@ -537,7 +537,10 @@ and $\exists\,n\in\Nbp,\forall i\geqslant n,\:\Dvert{a_i-L}=\BigDvert{\Par{a_i-a
 
 \ProblemN{34}{
 	\TextA{Supp closed $F_{\!1}\subseteq\Rbbn$ and closed bounded $F_{\!2}\subseteq\Rbbn.$ Prove $F_{\!1}+F_{\!2}$ is closed.}
-}
+}Asum $\exists$ convg $a_1,a_2,\cdots\in F_{\!1}+F_{\!2}$ with lim $L\notin F_{\!1}+F_{\!2}.$ \,Let each $a_k=x_k+y_k,$ and $z_k=L-x_k.$\parSol{}
+$\forall\varepsilon>0,\exists\,m\in\Nbp,\forall k\geqslant m,\:\Dvert{a_k-L}=\Dvert{x_k+y_k-L}=\Dvert{y_k-z_k}<\varepsilon.$\parSol{}
+Supp subseq \;\!$y_{j_1},y_{j_2},\cdots$ convg to $L_y\in F_{\!2}.$ Then $\forall\varepsilon>0,\exists\,j_m,\forall j_k\in\;\!\!\Bra{j_m,j_{m+1},\cdots},$\parSol{}
+$\Dvert{z_{j_k}-L_y}=\Dvert{\Par{z_{j_k}-y_{j_k}}+\Par{y_{j_k}-L_y}}<\varepsilon.$ \,Now $x_{j_1},x_{j_2},\cdots\in F_{\!1}$ convg to $L-L_y\notin F_{\!1}.$\PfEnd
 \SepLine
 
 \ChEnd
