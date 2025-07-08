@@ -469,19 +469,23 @@ $P\Rightarrow Q:$ \;Supp $b_1,b_2,\cdots\in A$ suth $\forall\delta>0,\,\exists\,
 \SepLine
 
 \ProblemN{10}{
-	\TextA{Supp bounded $A\subseteq\Rbbm$ and uniformly continu \,$f\in\RbbP{A}.$ Prove $\,f$ is bounded.}
-}Asum $\forall a\in A,\exists\,b\in A,\;f\Par{b}>\;\!f\Par{a}.$ Let $.$
+	\TextA{Supp bounded $A\subseteq\Rbbm$ and uniformly continu \;\!$f\in\RbbP{A}.$ Prove $\,f$ is bounded.}
+}Asum $\forall\Delta>0,\exists\,a_1,a_2,\cdots\in A$ suth each $\aXMid{\,f\Par{a_{k+1}}-f\Par{a_k}}\geqslant\aXMid{\,f\Par{a_{k+1}}}-\aXMid{\,f\Par{a_k}}\geqslant\Delta.$\parSol{}
+$\exists$ subseq $a_{j_1},a_{j_2},\cdots$ convg to $L\Rightarrow\forall\delta>0,\exists\,j_m,\forall j_x,j_y\in\;\!\!\Bra{j_m,j_{m+1},\cdots},\:\Dvert{a_{j_x}-a_{j_y}}<\delta.$\parSol{}
+$\forall\varepsilon>0,\exists\,\delta>0,\forall a,b\in A$ suth $\Dvert{a-b}<\delta,$ we have $\,f\Par{a}\in\Interval{(}{)}{\,f\Par{b}-\varepsilon,\;f\Par{b}+\varepsilon}.$\parSol{}
+Let $b_{k_i}=a_{j_{k_i}}\!.$ \,Becs $\exists\,k_1<k_2<\cdots$ suth $\,f\Par{b_{k_1}},f\Par{b_{k_2}},\cdots$ is monotone.\parSol{}
+If incre, then let $k_1$ suth $\,f\Par{b_{k_1}}>0\Rightarrow\,f\Par{b_{k_{i+1}}\!}>f\Par{b_{k_i}\:\!\!}+\Delta.$ Ctradic. Simlr for decre.\PfEnd
 \SepLine
 
 \ProblemN{11}{
-	\TextA{Supp $\,f\in\RbbP{\Rbb}$ is diff and $\,f\apostrophe$ is bounded. Prove $\,f$ is uniformly continu.}
+	\TextA{Supp $\,f\in\RbbP{\Rbb}$ is diff and $\;\!f\apostrophe$ is bounded. Prove $\;\!f$ is uniformly continu.}
 }
 \SepLine
 
 \ProblemN{}{
 	\TextA{}
 }
-\SepLine
+\SepLine\pagebreak
 
 \ProblemN{18}{
 	\TextA{Supp $h:\Rbbm\rightarrow\Rbbn.$ Prove $h$ continu $\Longleftrightarrow h^{-1}\Par{G}$ is open for all open $G\subseteq\Rbbn.$}
@@ -499,8 +503,10 @@ $\exists\,t_1,t_2,\cdots\in\Rbbm\Backslash h^{-1}\Par{G}$ convg to $L\in h^{-1}\
 %\SepLine
 
 \ProblemN{22}{
-	\TextA{Supp $\Rbbn\supseteq F_1\supseteq F_2\supseteq\cdots$ is a decre seq of non-$\emptySet$ subsets. Prove $\bigcap{_{k=1}^\infty}F_k\neq\emptySet.$}
-}
+	\TextA{Supp decre seq $F_{\!1}\supsetneq F_{\!2}\supsetneq\cdots$ non-$\emptySet$ closed bounded subsets of $\;\!\Rbbn.$ Prove $\bigcap_{k=1}^\infty F_{\!k}\neq\emptySet.$}
+}Fix one $k.$\;Supp $a_1,a_2,\cdots\in F_{\!1}$ convg to $L\in F_{\!k}\Rightarrow\exists$ subseq $a_{j_1},a_{j_2},\cdots\in F_{\!k}$ convg to $L.$\parSol{}
+Asum $\bigcup_{k=1}^\infty\Rbbn\Backslash F_{\!k}=\Rbbn.$ Note that $\Rbbn\Backslash F_{\!1}\subsetneq\Rbbn\Backslash F_{\!2}\subsetneq\cdots$ is an incre seq of non-$\emptySet$ open subsets.\parSol{}
+Fix $k>1.$ Then $\forall a\in\BigPar{\Rbbn\Backslash F_{\!k}}\Backslash[\Big]\BigPar{\Rbbn\Backslash F_{\!{k-1}}},\:a\in F_{\!{k-1}}\Backslash F_{\!k},$ and $\exists\,\delta>0,\,B\Par{a,\delta}\subseteq\Rbbn\Backslash F_{\!k}.$
 \SepLine
 
 \ProblemN{23}{
