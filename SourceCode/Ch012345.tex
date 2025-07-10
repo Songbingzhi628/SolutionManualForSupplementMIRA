@@ -477,15 +477,11 @@ Let $b_{k_i}=a_{j_{k_i}}\!.$ \,Becs $\exists\,k_1<k_2<\cdots$ suth $\,f\Par{b_{k
 If incre, then let $k_1$ suth $\,f\Par{b_{k_1}}>0\Rightarrow\,f\Par{b_{k_{i+1}}\!}>f\Par{b_{k_i}\:\!\!}+\Delta.$ Ctradic. Simlr for decre.\PfEnd
 \SepLine
 
-\ProblemN{11}{
-	\TextA{Supp $\,f\in\RbbP{\Rbb}$ is diff and $\;\!f\apostrophe$ is bounded. Prove $\;\!f$ is uniformly continu.}
-}
-\SepLine
-
-\ProblemN{}{
-	\TextA{}
-}
-\SepLine\pagebreak
+%\ProblemN{11}{
+%	\TextA{Supp $\,f\in\RbbP{\Rbb}$ is diff and $\;\!f\apostrophe$ is bounded. Prove $\;\!f$ is uniformly continu.}
+%}Asum $\exists\,\varepsilon>0,\forall k\in\Nbp,\exists\,a_k,b_k\in\Rbb$ suth $\aMid{a_k-b_k}<1\big/k$ \,while \,$\aXMid{\,f\Par{a_k}-f\Par{b_k}}\geqslant\varepsilon.$\parSol{}
+%%$f\apostrophe\Par{a}=\lim_{k\rightarrow\infty}\;\!${\FontSmall\Large$\frac{\,\;f\Par{a\,+\,\Delta_k}\,-\;f\Par{a}\;}{\Delta_k}$}, where $\Delta_1,\Delta_2,\cdots\in\Rbp$ convg to $0.$\parSol{}
+%\SepLine
 
 \ProblemN{18}{
 	\TextA{Supp $h:\Rbbm\rightarrow\Rbbn.$ Prove $h$ continu $\Longleftrightarrow h^{-1}\Par{G}$ is open for all open $G\subseteq\Rbbn.$}
@@ -509,24 +505,63 @@ Asum $\bigcup_{k=1}^\infty\Rbbn\Backslash F_{\!k}=\Rbbn.$ Note that $\Rbbn\Backs
 Fix $k>1.$ Then $\forall a\in\BigPar{\Rbbn\Backslash F_{\!k}}\Backslash[\Big]\BigPar{\Rbbn\Backslash F_{\!{k-1}}},\:a\in F_{\!{k-1}}\Backslash F_{\!k},$ and $\exists\,\delta>0,\,B\Par{a,\delta}\subseteq\Rbbn\Backslash F_{\!k}.$
 \SepLine
 
-\ProblemN{23}{
-	\TextA{Supp closed $F\subseteq\Rbb,$ continu $g\in\RbbP{F}.$ Prove $\exists$ continu $h\in\RbbP{\Rbb}$ suth $\forall x\in F,\,g\Par{x}=h\Par{x}.$}
-}
-\SepLine
+%\ProblemN{23}{
+%	\TextA{Supp closed $F\subseteq\Rbb,$ continu $g\in\RbbP{F}.$ Prove $\exists$ continu $h\in\RbbP{\Rbb}$ suth $\forall x\in F,\,g\Par{x}=h\Par{x}.$}
+%}
+%\SepLine
+\pagebreak
 
 \ProblemN{26}{
 	\TextA{Supp $F\subseteq\Rbbn$ suth every continu $\,f\in\RbbP{F}$ attains a max. Prove $F$ is closed bounded.}
-}
+}Supp $f\Par{a_1},f\Par{a_2},\cdots$ convg to $\Sup\Bra{\,f\Par{a}:a\in F}.$ Becs $F$ is bounded $\Rightarrow\exists$ subseq $a_{j_1},a_{j_2},\cdots\in F$ convg.
+
 \SepLine
 
 \ProblemN{27}{
-	\TextA{Supp $\,f\in\RbbP{\Rbb}$ is incre. Prove $\exists$ countable $A\subseteq\Rbb$ suth $\,f\mmid_{\Rbb\text{\small\backslash}A}$ continu.}
-}
+	\TextA{Supp $\,f\in\RbbP{\Rbb}$ is incre. Prove $\exists$ countable $A\subseteq\Rbb$ suth $\,f\mmid_{\Rbb\text{\small\backslash}A}$ is continu.}
+}Asum $\forall$\:\!countable $A\subseteq\Rbb,$\;$\,f\mmid_{\Rbb\text{\small\backslash}A}$ is not continu at some $b\in\Rbb\Backslash A.$\parSol{}
+Then $\exists\,\varepsilon>0,\forall\delta>0,\exists\,a\in\Rbb\Backslash A$ suth $\aMid{a-b}<\delta,$\;$\aXMid{\,f\Par{a}-f\Par{b}}\geqslant\varepsilon.$\parSol{}
+
 \SepLine
 
 \ProblemN{29}{
 	\TextA{Supp continu $\,f:\Interval{[}{]}{a,b}\rightarrow\Rbb,$ and $t$ is between $\,f\Par{a},\,f\Par{b}.$ Prove $\exists\,c\in\Interval{[}{]}{a,b},\;f\Par{c}=t.$}
-}
+}Let $a_0=a,\,b_0=b.$\parSol{}
+{\tgbf Step 1}\;\; Pick $c_1\in\Interval{(}{)}{a_0,b_0}.$ If $\,f\Par{c_1}=t,$ then stop.\parSol{}
+\Blind{{\tgbf Step 1}\;\; }If $\,f\Par{a_0}<t<f\Par{b_0}.$ Let $\Par{a_1,b_1}=\MathLeftBrace{l}{\!\!\Par{a_0,c_1},\;\text{if }t<f\Par{c_1},\\\!\!\Par{c_1,b_0},\;\text{if }\,f\Par{c_1}<t.}$\vspace{3pt}\parSol{}
+\Blind{{\tgbf Step 1}\;\; }If $\,f\Par{b_0}<t<f\Par{a_0}.$ Let $\Par{a_1,b_1}=\MathLeftBrace{l}{\!\!\Par{c_1,b_0},\;\text{if }t<f\Par{c_1},\\\!\!\Par{a_0,c_1},\;\text{if }\,f\Par{c_1}<t.}$\vspace{6pt}\parSol{}
+{\tgbf Step m}\; Pick $c_m\in\Interval{(}{)}{a_{m-1},b_{m-1}}.$ If $\,f\Par{c_m}=t,$ then stop.\parSol{}
+\Blind{{\tgbf Step m}\; }If $\,f\Par{a_{m-1}}<t<f\Par{b_{m-1}}.$ Let $\Par{a_m,b_m}=\MathLeftBrace{l}{\!\!\Par{a_{m-1},c_m},\;\text{if }t<f\Par{c_m},\\\!\!\Par{c_m,b_{m-1}},\;\text{if }\,f\Par{c_m}<t.}$\vspace{3pt}\parSol{}
+\Blind{{\tgbf Step m}\; }If $\,f\Par{b_{m-1}}<t<f\Par{a_{m-1}}.$ Let $\Par{a_m,b_m}=\MathLeftBrace{l}{\!\!\Par{c_m,b_{m-1}},\;\text{if }t<f\Par{c_m},\\\!\!\Par{a_{m-1},c_m},\;\text{if }\,f\Par{c_m}<t.}$\vspace{8pt}\parSol{}
+Either we stop at some $m$ and done or we get a seq $\Interval{(}{)}{a_1,b_1}\supsetneq\Interval{(}{)}{a_2,b_2}\supsetneq\cdots$\parSol{}
+suth $\forall\varepsilon>0,\exists\,m\in\Nbp,\forall k\geqslant m,$ $b_k-a_k<\varepsilon\Longrightarrow\lim_{k\rightarrow\infty}a_k=\lim_{k\rightarrow\infty}b_k,$ let it be $c\in\Interval{(}{)}{a_0,b_0}.$\parSol{}
+Now $\forall\varepsilon>0,\exists\,m\in\Nbp,\forall k\geqslant m,\:\aXMid{t-f\Par{a_k}}<\varepsilon\Longrightarrow\lim_{k\rightarrow\infty}\,f\Par{a_k}=t=f\Par{c}.$\PfEnd
+\SepLine
+
+\ProblemN{30}{
+	\TextA{Prove for every continu \;\!$f:\Rbb\rightarrow\Rbb\Backslash\Qbb,$\;$\,f\Par{\Rbb}=\Bra{c}$ for some $c\in\Rbb\Backslash\Qbb.$}
+}If $f\Par{a}\neq f\Par{b}.$ By Exe\:\!(29), $\forall t\in\Qbb$ suth $t$ between $\,f\Par{a},f\Par{b},$ $\exists\,c\in\Interval{(}{)}{a,b},\;f\Par{c}=t,$ ctradic.\parSol{}
+\Or Asum $\,f\Par{\Rbb}$ has more than one elem $\Rightarrow\exists$ convg $a_1,a_2,\cdots\in\Rbb$ and convg $b_1,b_2,\cdots\in\Rbb$\parSol{}
+suth $\lim_{k\rightarrow\infty}\aMid{a_k-b_k}=0$ while $\lim_{k\rightarrow\infty}a_k<\lim_{k\rightarrow\infty}b_k.$ \colorbox{yellow}{TODO}\PfEnd
+\SepLine
+
+\ProblemN{L1}{
+	\TextA{Supp $p\in\RbbP{\Rbb}$ is a poly. Prove $p$ continu.}
+}Write $p\Par{x}=a_0+a_1x+\dots+a_mx^m$ with $a_m\neq0.$ \,Supp $x_0\in\Rbb.$ Then write\hspace{1pt}:\parSol{}
+$\forall\varepsilon>0,\exists\,\delta_M>0,\forall\delta$ suth $\aMid{\delta}<\delta_M,\:\aXMid{p\Par{x_0+\delta}-p\Par{x_0}}=\aXMid{\delta\cdot q\Par{x_0,\delta}}<\varepsilon\Longleftrightarrow \aXMid{q\Par{x_0,\delta}}<\aMid{\varepsilon\big/\delta}$\vspace{2pt}\parSol{}
+where \;\!$q\Par{x_0,\delta}=\sum_{k=1}^m\!\BigBigPar{{\sum_{i=1}^k}\,a_k\:\!\mathC_k^i\,\delta^{k-i-1}\:\!x_0^{i}}\Rightarrow\aXMid{q\Par{x_0,\delta}}\leqslant\sum_{k=1}^m\!{\sum_{i=1}^k}\:\!\aMid{\delta}{^{k-i-1}}\aXMid{a_k\:\!\mathC_k^i\:\!x_0^{i}}.$\vspace{3pt}\parSol{}
+Let $\aMid{\delta}<1$ suth \:\!$\max\!\Bra{\aMid{a_k\:\!\mathC_k^i\:\!x_0^{i}}:i,k\in\Nbp,\,1\leqslant k\leqslant m,\,1\leqslant i\leqslant k}\cdot\aMid{\delta}\leqslant\aMid{\varepsilon}<\aMid{\varepsilon\big/\delta}.$\PfEnd
+\SepLine\pagebreak
+
+\ProblemN{31}{
+	\TextA{Supp $p\in\RbbP{\Rbb}$ is a poly with odd deg. Prove $\exists\,b\in\Rbb$ suth $p\Par{b}=0.$}
+}Write $p\Par{x}=a_0+a_1x+\dots+a_mx^m$ with $a_m\neq0.$ Supp $a_m>0.$ \Sbra{If $a_m<0,$ then apply to $-p.$}\vspace{3pt}\parSol{}
+Now $p\Par{x}=x^m\XSbra{${\small$\Frac{a_0}{\:x^m}+\Frac{a_1}{\,\,x^{m-1}}+\dots+\Frac{\,a_{m-1}\,}{x}+a_m$}$}$ for all $x\in\Rbb\nonzero.$\vspace{3pt}\parSol{}
+While $\aXXMid{${\small$\Frac{a_0}{\:x^m}+\Frac{a_1}{\,\,x^{m-1}}+\dots+\Frac{\,a_{m-1}\,}{x}$}$}\leqslant\delta^m\;\!\aMid{a_0}+\delta^{m-1}\aMid{a_1}+\dots+\delta\;\!\aMid{a_{m-1}}\:\!;$\;let $\delta=\aMid{x}.$\vspace{5pt}\parSol{}
+Let $x$ be suth $\delta<1$ and $\;\!\max\!\Bra{\aMid{a_0},\aMid{a_1},\dots,\aMid{a_{m-1}}}\cdot\delta\leqslant\aMid{a_m}\big/m.$ \,Thus $p\Par{{-\aMid{x}}}<0<p\Par{\aMid{x}}.$\PfEnd
+%By induc on $\deg p=2k+1,\:\!k\in\Nbp.$ (i) $k=0.$ Immed. (ii) $k\geqslant 0.$ Asum true for $k.$\parSol{}
+%Let $p=q+r,$ where $q\Par{x}=a_0+a_1x+\dots+a_{\deg q}x^{2k+1},r\Par{x}=a_{\deg q+1}x^{2k+2}+a_{\deg p}x^{2\SmallPar{k+1}+1}.$\parSol{}
+%Let $2k+3=m.$ Supp $q\Par{b}=0.$ If $r\Par{b}=0,$ then done. If $r\Par{b}$
 \SepLine
 
 %\ProblemN{32}{
@@ -558,6 +593,6 @@ $\Dvert{z_{j_k}-L_y}=\Dvert{\Par{z_{j_k}-y_{j_k}}+\Par{y_{j_k}-L_y}}<\varepsilon
 % 0.A:  1.25  +    0h
 % 0.B:  18.25 + 5.25h
 % 0.C:  7     +    2h
-% 0.D:  6     +  1.5h
-% 0.E:  1.25  +    0h
+% 0.D:  7.25  + 1.75h
+% 0.E:  6     +  1.5h
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
