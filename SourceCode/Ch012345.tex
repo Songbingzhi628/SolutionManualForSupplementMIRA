@@ -247,8 +247,7 @@ Thus (5) $\Rightarrow$ (2) in distr. Convly as well.\par\vspace{4pt}\quad
 \SepLine
 
 \Anchor{0C5}\ProblemN{5}{
-	\TextA{Supp $a_1,a_2,\cdots\in\Qbb,$ and $\Sup\Bra{a_1,a_2,\dots}=\sqrt{2}.$}
-	\TextA{Prove $\Sup\Bra{a_{n},a_{n+1},\dots}=\sqrt{2}$ \;for all $n\in\Nbp.$}
+	\TextA{Supp $\Sup\Bra{a_1,a_2,\dots}=\sqrt{2}$ and each $a_k\in\Qbb.$ Prove each $\Sup\Bra{a_{n},a_{n+1},\dots}=\sqrt{2}.$}
 }Becs the sup not in seq $\Rightarrow$ infily many disti elem.\parSol{}
 $\forall a_i,\,\exists\,a_j,\:a_i<a_j<\sqrt{2}.$ \;For $a_{n+k},$ choose $a_i>a_{n+k}.$ If $i\in\;\!\!\Bra{1,\dots,n},$ then choose $a_j>a_i.$\parSol{}
 After at most $n$ steps, we must have $a_{m}$ with $m>n.$ Thus $\forall a_{n+i},\,\exists\,a_{n+j},\:a_{n+i}<a_{n+j}<\sqrt{2}.$\PfEnd
@@ -426,7 +425,7 @@ $\Rightarrow\lim_{k\rightarrow\infty}\!\Par{a_k-e}=L-e=g\in G.$ \,Thus $\Rbbn\Ba
 \ProblemN{1}{
 	\TextA{Prove every convg seq in $\Rbbn$ is bounded.}
 }Supp $a_1,a_2,\dots\in\Rbbn$ suth $\forall\varepsilon>0,\exists\,m\in\Nbp,\forall k\geqslant m,\:\aXMid{\Dvert{a_k}{_\infty}-\Dvert{L}{_\infty}}\leqslant\Dvert{a_k-L}{_\infty}<\varepsilon.$\parSol{}
-Thus $\Dvert{a_k}{_\infty}\in\XInterval{(}{)}{\aXMid{\varepsilon-\Dvert{L}{_\infty}},\:\varepsilon+\Dvert{L}{_\infty}}.$ \,Now asum $\Sup\Bra{\Dvert{a_k}{_\infty}:k\in\Nbp}=\infty.$\vspace{2pt}\parSol{}
+Thus $\Dvert{a_k}{_\infty}\in\Interval{(}{)}{\Dvert{L}{_\infty}\:\!\!-\varepsilon,\:\Dvert{L}{_\infty}\:\!\!+\varepsilon}.$ \,Now asum $\Sup\Bra{\Dvert{a_k}{_\infty}:k\in\Nbp}=\infty.$\vspace{2pt}\parSol{}
 Which means $\forall t\in\Rbp,\forall m\in\Nbp,\exists\,k\geqslant m,\,\max\!\Bra{\Dvert{a_1}{_\infty},\dots,\Dvert{a_m}{_\infty}}\leqslant\Dvert{a_k}{_\infty}>t.$ \,Ctradic.\PfEnd
 %\vspace{3pt}\parSol{}
 %\Or Using coord lim, $a_1,a_2,\cdots\in\Rbbn$ convg $\Longleftrightarrow a_{1,k},a_{2,k},\cdots\in\Rbb$ convg for each $k\in\;\!\!\Bra{1,\dots,n}.$\parSol{}
@@ -463,15 +462,17 @@ $P\Rightarrow Q:$ \;Supp $b_1,b_2,\cdots\in A$ suth $\forall\delta>0,\,\exists\,
 %}
 %\SepLine
 
-\ProblemN{}{
-	\TextA{}
-}
+\ProblemN{8}{
+	\TextA{Supp $\,f\in\RbbP{\Rbb}$ is bounded continu. Prove $\,f$ uniformly continu.}
+}Asum $\exists\,\varepsilon>0,\forall k\in\Nbp,\,\aXMid{\,f\Par{a_k}-f\Par{b_k}}\geqslant\varepsilon$ for some $a_k,b_k\in\Rbb$ suth $\aMid{a_k-b_k}<1\big/k.$\parSol{}
+Becs $\,f\Par{a_1},\,f\Par{a_2},\cdots$ bounded $\Rightarrow\exists\,\,f\Par{a_{k_1}},\,f\Par{a_{k_2}},\cdots$ convg to $A.$\parSol{}
+Now $\aXMid{A-f\Par{b_{k_j}}}\leqslant\aXMid{A-f\Par{a_{k_j}}}+\aXMid{\,f\Par{a_{k_j}}-f\Par{b_{k_j}}}\Longrightarrow\,f\Par{b_{k_1}},\,f\Par{b_{k_2}},\cdots$ convg to $A.$\PfEnd
 \SepLine
 
 \ProblemN{10}{
 	\TextA{Supp bounded $A\subseteq\Rbbm$ and uniformly continu \;\!$f\in\RbbP{A}.$ Prove $\,f$ is bounded.}
 }Asum $\forall\Delta>0,\exists\,a_1,a_2,\cdots\in A$ suth each $\aXMid{\,f\Par{a_{k+1}}-f\Par{a_k}}\geqslant\aXMid{\,f\Par{a_{k+1}}}-\aXMid{\,f\Par{a_k}}\geqslant\Delta.$\parSol{}
-$\exists$ subseq $a_{j_1},a_{j_2},\cdots$ convg to $L\Rightarrow\forall\delta>0,\exists\,j_m,\forall j_x,j_y\in\;\!\!\Bra{j_m,j_{m+1},\cdots},\:\Dvert{a_{j_x}-a_{j_y}}<\delta.$\parSol{}
+$\exists$ subseq $a_{j_1},a_{j_2},\cdots$ convg to $L\Rightarrow\forall\delta>0,\exists\,j_m,\forall j_x,j_y\in\;\!\!\Bra{\;\!j_m,j_{m+1},\cdots},\:\Dvert{a_{j_x}-a_{j_y}}<\delta.$\parSol{}
 $\forall\varepsilon>0,\exists\,\delta>0,\forall a,b\in A$ suth $\Dvert{a-b}<\delta,$ we have $\,f\Par{a}\in\Interval{(}{)}{\,f\Par{b}-\varepsilon,\;f\Par{b}+\varepsilon}.$\parSol{}
 Let $b_{k_i}=a_{j_{k_i}}\!.$ \,Becs $\exists\,k_1<k_2<\cdots$ suth $\,f\Par{b_{k_1}},f\Par{b_{k_2}},\cdots$ is monotone.\parSol{}
 If incre, then let $k_1$ suth $\,f\Par{b_{k_1}}>0\Rightarrow\,f\Par{b_{k_{i+1}}\!}>f\Par{b_{k_i}\:\!\!}+\Delta.$ Ctradic. Simlr for decre.\PfEnd
@@ -487,7 +488,7 @@ If incre, then let $k_1$ suth $\,f\Par{b_{k_1}}>0\Rightarrow\,f\Par{b_{k_{i+1}}\
 	\TextA{Supp $h:\Rbbm\rightarrow\Rbbn.$ Prove $h$ continu $\Longleftrightarrow h^{-1}\Par{G}$ is open for all open $G\subseteq\Rbbn.$}
 }Supp $h$ continu and open $G\subseteq\Rbbn.$ We show $\Rbbm\Backslash h^{-1}\Par{G}=\Bra{t\in\Rbbm:h\Par{t}\notin G}$ is closed.\parSol{}
 Let $t_1,t_2,\cdots\in\Rbbm\Backslash h^{-1}\Par{G}$ convg to $L\Rightarrow h\Par{t_1},h\Par{t_2},\cdots\in\Rbbn\Backslash G$ convg to $h\Par{L}.$\vspace{2pt}\parSol{}
-Supp open $G\subseteq\Rbbn$ suth $\Rbbm\Backslash h^{-1}\Par{G}$ not closed. Asum show $h$ continu.\parSol{}
+Supp open $G\subseteq\Rbbn$ suth $\Rbbm\Backslash h^{-1}\Par{G}$ not closed. Asum $h$ continu.\parSol{}
 $\exists\,t_1,t_2,\cdots\in\Rbbm\Backslash h^{-1}\Par{G}$ convg to $L\in h^{-1}\Par{G}\Longrightarrow h\Par{t_1},h\Par{t_2},\cdots\in\Rbbn\Backslash G$ convg to $h\Par{L}\notin G.$\PfEnd
 \SepLine
 
@@ -498,22 +499,32 @@ $\exists\,t_1,t_2,\cdots\in\Rbbm\Backslash h^{-1}\Par{G}$ convg to $L\in h^{-1}\
 %%Supp $h\Par{t}\notin F\Rightarrow\exists\,\delta>0,\forall s$ suth $\BigDvert{h\Par{s}-h\Par{t}}{_\infty}<\delta,$ we have $h\Par{s}\notin F.$
 %\SepLine
 
+\def\Finf{F_{\:\!\!\!\infty}}
+\def\subZero{{_{\:\!0}}}
 \ProblemN{22}{
-	\TextA{Supp decre seq $F_{\!1}\supsetneq F_{\!2}\supsetneq\cdots$ non-$\emptySet$ closed bounded subsets of $\;\!\Rbbn.$ Prove $\bigcap_{k=1}^\infty F_{\!k}\neq\emptySet.$}
-}Fix one $k.$\;Supp $a_1,a_2,\cdots\in F_{\!1}$ convg to $L\in F_{\!k}\Rightarrow\exists$ subseq $a_{j_1},a_{j_2},\cdots\in F_{\!k}$ convg to $L.$\parSol{}
-Asum $\bigcup_{k=1}^\infty\Rbbn\Backslash F_{\!k}=\Rbbn.$ Note that $\Rbbn\Backslash F_{\!1}\subsetneq\Rbbn\Backslash F_{\!2}\subsetneq\cdots$ is an incre seq of non-$\emptySet$ open subsets.\parSol{}
-Fix $k>1.$ Then $\forall a\in\BigPar{\Rbbn\Backslash F_{\!k}}\Backslash[\Big]\BigPar{\Rbbn\Backslash F_{\!{k-1}}},\:a\in F_{\!{k-1}}\Backslash F_{\!k},$ and $\exists\,\delta>0,\,B\Par{a,\delta}\subseteq\Rbbn\Backslash F_{\!k}.$
+	\TextA{Supp decre seq $F_{\!1}\supsetneq F_{\!2}\supsetneq\cdots$ non-$\emptySet$ closed bounded subsets of $\;\!\Rbbn.$ Prove $\Finf=\bigcap_{k=1}^\infty F_{\!k}\neq\emptySet.$}
+}Define $\Dvert{F}{_\infty}=\Sup\Bra{\Dvert{a}{_\infty}:a\in F}$ and $\Dvert{F}\subZero=\Inf\Bra{\Dvert{a}{_\infty}:a\in F}$ for all bounded $F\subseteq\Rbbn.$\parSol{}
+Note that $\Dvert{F}{_\infty}=-\infty\Longleftrightarrow\Dvert{F}\subZero=\infty\Longleftrightarrow\Dvert{F}{_\infty}\:\!\!<\Dvert{F}\subZero\Longleftrightarrow F=\emptySet.$\parSol{}
+Now $\Dvert{F_{\!1}}{_\infty},\Dvert{F_{\!2}}{_\infty},\cdots$ bounded decre, and $\Dvert{F_{\!1}}\subZero,\Dvert{F_{\!2}}\subZero,\cdots$ bounded incre.\parSol{}
+%\Inf\Bra{\Dvert{F_{\!k}}{_\infty}:k\in\Nbp},\Sup\Bra{\Dvert{F_{\!k}}\subZero:k\in\Nbp}
+Consider $\Dvert{\Finf}{_\infty}=\lim_{k\rightarrow\infty}\Dvert{F_{\!k}}{_\infty},$ and\;$\Dvert{\Finf}\subZero=\lim_{k\rightarrow\infty}\Dvert{F_{\!k}}\subZero.$\parSol{}
+Note that $\Dvert{\Finf}{_\infty}-\Dvert{\Finf}\subZero=\lim_{k\rightarrow\infty}\!{\Sbra{\Dvert{F_{\!k}}{_\infty}-\Dvert{F_{\!k}}\subZero}}\geqslant0.$\parSol{}
+\又 For a closed bounded $F,$ $\Dvert{F}{_\infty}=\Dvert{a}$ for some $a\in F,$ \:\!simlr for $\Dvert{F}\subZero.$\PfEnd
+\PfEnd
 \SepLine
 
 %\ProblemN{23}{
 %	\TextA{Supp closed $F\subseteq\Rbb,$ continu $g\in\RbbP{F}.$ Prove $\exists$ continu $h\in\RbbP{\Rbb}$ suth $\forall x\in F,\,g\Par{x}=h\Par{x}.$}
 %}
 %\SepLine
-\pagebreak
 
 \ProblemN{26}{
 	\TextA{Supp $F\subseteq\Rbbn$ suth every continu $\,f\in\RbbP{F}$ attains a max. Prove $F$ is closed bounded.}
-}Supp $f\Par{a_1},f\Par{a_2},\cdots$ convg to $\Sup\Bra{\,f\Par{a}:a\in F}.$ Becs $F$ is bounded $\Rightarrow\exists$ subseq $a_{j_1},a_{j_2},\cdots\in F$ convg.
+}Let $\,f\Par{a_M}=\Sup\Bra{\,f\Par{a}:a\in F}.$\parSol{}
+%$\forall\delta>0,\exists\,m,\forall k\geqslant m,\,\,f\Par{a_k}\in B\BigPar{\,f\Par{a_M},\delta}.$\parSol{}
+$\forall k\in\Nbp,\exists\,\delta_k>0,\forall b_k\in F\cap B\Par{a_M,\delta_k},\,\,f\Par{b_k}\in B\BigPar{\,f\Par{a_M},1\big/k}.$\parSol{}
+Then $\delta_1,\delta_2,\cdots$ is decre and of lim $0.$ Thus $b_1,b_2,\cdots$ convg to $a_M.$\parSol{}
+Asum $\exists\,a_1,a_2,\cdots\in F$ has no subseq convg to some elem in $F.$\parSol{}
 
 \SepLine
 
@@ -538,12 +549,12 @@ suth $\forall\varepsilon>0,\exists\,m\in\Nbp,\forall k\geqslant m,$ $b_k-a_k<\va
 Now $\forall\varepsilon>0,\exists\,m\in\Nbp,\forall k\geqslant m,\:\aXMid{t-f\Par{a_k}}<\varepsilon\Longrightarrow\lim_{k\rightarrow\infty}\,f\Par{a_k}=t=f\Par{c}.$\PfEnd
 \SepLine
 
-\ProblemN{30}{
-	\TextA{Prove for every continu \;\!$f:\Rbb\rightarrow\Rbb\Backslash\Qbb,$\;$\,f\Par{\Rbb}=\Bra{c}$ for some $c\in\Rbb\Backslash\Qbb.$}
-}If $f\Par{a}\neq f\Par{b}.$ By Exe\:\!(29), $\forall t\in\Qbb$ suth $t$ between $\,f\Par{a},f\Par{b},$ $\exists\,c\in\Interval{(}{)}{a,b},\;f\Par{c}=t,$ ctradic.\parSol{}
-\Or Asum $\,f\Par{\Rbb}$ has more than one elem $\Rightarrow\exists$ convg $a_1,a_2,\cdots\in\Rbb$ and convg $b_1,b_2,\cdots\in\Rbb$\parSol{}
-suth $\lim_{k\rightarrow\infty}\aMid{a_k-b_k}=0$ while $\lim_{k\rightarrow\infty}a_k<\lim_{k\rightarrow\infty}b_k.$ \colorbox{yellow}{TODO}\PfEnd
-\SepLine
+%\ProblemN{30}{
+%	\TextA{Prove for every continu \;\!$f:\Rbb\rightarrow\Rbb\Backslash\Qbb,$\;$\,f\Par{\Rbb}=\Bra{c}$ for some $c\in\Rbb\Backslash\Qbb.$}
+%}If $f\Par{a}\neq f\Par{b}.$ By Exe\:\!(29), $\forall t\in\Qbb$ suth $t$ between $\,f\Par{a},f\Par{b},$ $\exists\,c\in\Interval{(}{)}{a,b},\;f\Par{c}=t,$ ctradic.\PfEnd
+%%\Or Asum $\,f\Par{\Rbb}$ has more than one elem $\Rightarrow\exists$ convg $a_1,a_2,\cdots\in\Rbb$ and convg $b_1,b_2,\cdots\in\Rbb$\parSol{}
+%%suth $\lim_{k\rightarrow\infty}\aMid{a_k-b_k}=0$ while $\lim_{k\rightarrow\infty}a_k<\lim_{k\rightarrow\infty}b_k.$ \colorbox{yellow}{TODO}\PfEnd
+%\SepLine
 
 \ProblemN{L1}{
 	\TextA{Supp $p\in\RbbP{\Rbb}$ is a poly. Prove $p$ continu.}
@@ -551,7 +562,7 @@ suth $\lim_{k\rightarrow\infty}\aMid{a_k-b_k}=0$ while $\lim_{k\rightarrow\infty
 $\forall\varepsilon>0,\exists\,\delta_M>0,\forall\delta$ suth $\aMid{\delta}<\delta_M,\:\aXMid{p\Par{x_0+\delta}-p\Par{x_0}}=\aXMid{\delta\cdot q\Par{x_0,\delta}}<\varepsilon\Longleftrightarrow \aXMid{q\Par{x_0,\delta}}<\aMid{\varepsilon\big/\delta}$\vspace{2pt}\parSol{}
 where \;\!$q\Par{x_0,\delta}=\sum_{k=1}^m\!\BigBigPar{{\sum_{i=1}^k}\,a_k\:\!\mathC_k^i\,\delta^{k-i-1}\:\!x_0^{i}}\Rightarrow\aXMid{q\Par{x_0,\delta}}\leqslant\sum_{k=1}^m\!{\sum_{i=1}^k}\:\!\aMid{\delta}{^{k-i-1}}\aXMid{a_k\:\!\mathC_k^i\:\!x_0^{i}}.$\vspace{3pt}\parSol{}
 Let $\aMid{\delta}<1$ suth \:\!$\max\!\Bra{\aMid{a_k\:\!\mathC_k^i\:\!x_0^{i}}:i,k\in\Nbp,\,1\leqslant k\leqslant m,\,1\leqslant i\leqslant k}\cdot\aMid{\delta}\leqslant\aMid{\varepsilon}<\aMid{\varepsilon\big/\delta}.$\PfEnd
-\SepLine\pagebreak
+\SepLine
 
 \ProblemN{31}{
 	\TextA{Supp $p\in\RbbP{\Rbb}$ is a poly with odd deg. Prove $\exists\,b\in\Rbb$ suth $p\Par{b}=0.$}
@@ -572,7 +583,7 @@ Let $x$ be suth $\delta<1$ and $\;\!\max\!\Bra{\aMid{a_0},\aMid{a_1},\dots,\aMid
 
 \ProblemN{33}{
 	\TextA{Supp $a_1,a_2,\cdots\in\Rbbn$ is Cauchy seq and $\exists$ subseq convg to $L.$ Prove the seq convg to $L.$}
-}Supp subseq $a_{j_1},a_{j_2},\cdots$ convg to $L.$ Then $\forall\varepsilon>0,\exists\,j_m,\forall j_k\in\;\!\!\Bra{j_m,j_{m+1},\cdots},\:\Dvert{a_{j_k}-L}<\varepsilon,$\vspace{1pt}\parSol{}
+}Supp subseq $a_{j_1},a_{j_2},\cdots$ convg to $L.$ Then $\forall\varepsilon>0,\exists\,j_m,\forall j_k\in\;\!\!\Bra{\;\!j_m,j_{m+1},\cdots},\:\Dvert{a_{j_k}-L}<\varepsilon,$\vspace{1pt}\parSol{}
 and $\exists\,n\in\Nbp,\forall i\geqslant n,\:\Dvert{a_i-L}=\BigDvert{\Par{a_i-a_{j_k}}+\Par{a_{j_k}-L}}\leqslant\Dvert{a_i-a_{j_k}}+\Dvert{a_{j_k}-L}<2\:\!\varepsilon.$\PfEnd
 \SepLine
 
@@ -580,7 +591,7 @@ and $\exists\,n\in\Nbp,\forall i\geqslant n,\:\Dvert{a_i-L}=\BigDvert{\Par{a_i-a
 	\TextA{Supp closed $F_{\!1}\subseteq\Rbbn$ and closed bounded $F_{\!2}\subseteq\Rbbn.$ Prove $F_{\!1}+F_{\!2}$ is closed.}
 }Asum $\exists$ convg $a_1,a_2,\cdots\in F_{\!1}+F_{\!2}$ with lim $L\notin F_{\!1}+F_{\!2}.$ \,Let each $a_k=x_k+y_k,$ and $z_k=L-x_k.$\parSol{}
 $\forall\varepsilon>0,\exists\,m\in\Nbp,\forall k\geqslant m,\:\Dvert{a_k-L}=\Dvert{x_k+y_k-L}=\Dvert{y_k-z_k}<\varepsilon.$\parSol{}
-Supp subseq \;\!$y_{j_1},y_{j_2},\cdots$ convg to $L_y\in F_{\!2}.$ Then $\forall\varepsilon>0,\exists\,j_m,\forall j_k\in\;\!\!\Bra{j_m,j_{m+1},\cdots},$\parSol{}
+Supp subseq \;\!$y_{j_1},y_{j_2},\cdots$ convg to $L_y\in F_{\!2}.$ Then $\forall\varepsilon>0,\exists\,j_m,\forall j_k\in\;\!\!\Bra{\;\!j_m,j_{m+1},\cdots},$\parSol{}
 $\Dvert{z_{j_k}-L_y}=\Dvert{\Par{z_{j_k}-y_{j_k}}+\Par{y_{j_k}-L_y}}<\varepsilon.$ \,Now $x_{j_1},x_{j_2},\cdots\in F_{\!1}$ convg to $L-L_y\notin F_{\!1}.$\PfEnd
 \SepLine
 
