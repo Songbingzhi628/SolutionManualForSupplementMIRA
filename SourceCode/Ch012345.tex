@@ -238,6 +238,8 @@ Thus (5) $\Rightarrow$ (2) in distr. Convly as well.\par\vspace{4pt}\quad
 \def\supU{\sup\!\!\;U}
 \def\supV{\sup\!\!\;V}
 
+\def\supf{\sup\,f}
+
 \Anchor{0C2}\ProblemN{2}{
 	\TextA{Supp nonempty $U\subseteq V\subseteq\Rbb.$\;Show\;$\supU\leqslant\supV.$
 %	and {\tgnr\large(b)} $\inf U\geqslant\inf V.$
@@ -341,7 +343,7 @@ Thus\;$ab\geqslant\varphi_1\Par{t}>\varphi_1\Sbra{\Par{t+sq}\big/2}>\varphi_1\Pa
 \Anchor{0DN065}\ProblemB{
 	\TextA{Supp nonempty $A$ is closed and open subsets of $\Rbbn.$ Prove $A=\Rbbn.$}
 }Asum $A\neq\Rbbn.$ \,Let\;$a\in A,\,b\in\Rbbn\Backslash A.$ \,Define \,$f\Par{t}=\Par{1-t}\:\!a+t\:\!b.$\par\quad
-If $\;\!f\Par{t_1}=f\Par{t_2}\Rightarrow\Par{t_1-t_2}\Par{b-a}=0\Rightarrow t_1=t_2.$ \,Inje.\par\quad
+If $\;\!f\Par{t_1}=\;\!f\Par{t_2}\Rightarrow\Par{t_1-t_2}\Par{b-a}=0\Rightarrow t_1=t_2.$ \,Inje.\par\quad
 Let $\mA=\Bra{t\in\Interval{[}{)}{0,1}:\,f\Par{t}\in A},$ and \,$\sup\mA=t_M\in\Interval{[}{]}{0,1}.$ \,Let $c=\;\!f\Par{t_M}.$\vspace{2pt}\par\quad
 (I) If $c\in A\Rightarrow\exists\,\delta>0,\,B\Par{c,\delta}\subseteq A.$ \,Let \:\!$t\neq t_M$ \:\!be suth \;\!$f\Par{t}\in B\Par{c,\delta}\Rightarrow\BigDvert{\Par{t-t_M}\Par{b-a}}{_\infty}<\delta.$\par\quad\HI
 Let $\varepsilon=\aMid{t-t_M}>0\Rightarrow f\Par{t_M+\varepsilon}\in B\Par{c,\delta}\subseteq A\Rightarrow t_M\geqslant t_M+\varepsilon,$ ctradic.\vspace{2pt}\par\quad
@@ -444,7 +446,7 @@ Thus every subseq is unbounded $\Rightarrow$ not convg. Ctradic.\PfEnd
 
 \ProblemB{
 	\TextB{Supp $b\in A\subseteq\Rbbm,\,f:A\rightarrow\Rbbn.$ Prove}
-	\TextB{[P] \;\!$f$ is continu at $b\Longleftrightarrow\forall b_1,b_2,\cdots\in A$ suth $\lim_{k\rightarrow\infty}b_k=b,$ $\lim_{k\rightarrow\infty}f\Par{b_k}=f\Par{b}.$ [Q]\vspace{1pt}}
+	\TextB{[P] \;\!$f$ is continu at $b\Longleftrightarrow\forall b_1,b_2,\cdots\in A$ suth $\lim_{k\rightarrow\infty}b_k=b,$ $\lim_{k\rightarrow\infty}f\Par{b_k}=\;\!f\Par{b}.$ [Q]\vspace{1pt}}
 }$Q\Rightarrow P:$ \;Supp $\varepsilon>0$ suth $\forall\delta>0,\exists\,a\in A$ with $\Dvert{a-b}{_\infty}<\delta$ and $\BigDvert{\,f\Par{a}-f\Par{b}}{_\infty}\geqslant\varepsilon.$\parSol{}
 \Blind{$P\Rightarrow Q:$ \;}Fix a $\delta.$ \,Define $\delta_k=\delta\big/k\Rightarrow\exists\,a_k$ for each. \,Now $\lim_{k\rightarrow\infty}a_k=b.$\parSol{}
 \Blind{$P\Rightarrow Q:$ \;}Thus $\forall m,\forall k\geqslant m,\,\BigDvert{\,f\Par{a_k}-f\Par{b}}{_\infty}\geqslant\varepsilon.$ \,Ctradic $Q$.\vspace{4pt}\parSol{}
@@ -465,7 +467,7 @@ $P\Rightarrow Q:$ \;Supp $b_1,b_2,\cdots\in A$ suth $\forall\delta>0,\,\exists\,
 \ProblemN{8}{
 	\TextA{Supp $\,f\in\RbbP{\Rbb}$ is bounded continu. Prove $\,f$ uniformly continu.}
 }Asum $\exists\,\varepsilon>0,\forall k\in\Nbp,\,\aXMid{\,f\Par{a_k}-f\Par{b_k}}\geqslant\varepsilon$ for some $a_k,b_k\in\Rbb$ suth $\aMid{a_k-b_k}<1\big/k.$\parSol{}
-Becs $\,f\Par{a_1},\,f\Par{a_2},\cdots$ bounded $\Rightarrow\exists\,\,f\Par{a_{k_1}},\,f\Par{a_{k_2}},\cdots$ convg to $A.$\parSol{}
+Becs $\,f\Par{a_1},\,f\Par{a_2},\cdots$ bounded $\Rightarrow\exists\,\,f\Par{a_{k_1}\:\!\!},\,f\Par{a_{k_2}\:\!\!},\cdots$ convg to $A.$\parSol{}
 Now $\aXMid{A-f\Par{b_{k_j}}}\leqslant\aXMid{A-f\Par{a_{k_j}}}+\aXMid{\,f\Par{a_{k_j}}-f\Par{b_{k_j}}}\Longrightarrow\,f\Par{b_{k_1}},\,f\Par{b_{k_2}},\cdots$ convg to $A.$\PfEnd
 \SepLine
 
@@ -498,6 +500,7 @@ $\exists\,t_1,t_2,\cdots\in\Rbbm\Backslash h^{-1}\Par{G}$ convg to $L\in h^{-1}\
 %%\Or Supp $h$ continu and closed $F\subseteq\Rbbn.$ We show $\Rbbm\Backslash h^{-1}\Par{F}=\Bra{t\in\Rbbm:h\Par{t}\notin F}$ is open.\parSol{}
 %%Supp $h\Par{t}\notin F\Rightarrow\exists\,\delta>0,\forall s$ suth $\BigDvert{h\Par{s}-h\Par{t}}{_\infty}<\delta,$ we have $h\Par{s}\notin F.$
 %\SepLine
+\pagebreak
 
 \def\Finf{F_{\:\!\!\!\infty}}
 \def\subZero{{_{\:\!0}}}
@@ -520,19 +523,22 @@ Note that $\Dvert{\Finf}{_\infty}-\Dvert{\Finf}\subZero=\lim_{k\rightarrow\infty
 
 \ProblemN{26}{
 	\TextA{Supp $F\subseteq\Rbbn$ suth every continu $\,f\in\RbbP{F}$ attains a max. Prove $F$ is closed bounded.}
-}Let $\,f\Par{a_M}=\Sup\Bra{\,f\Par{a}:a\in F}.$\parSol{}
-%$\forall\delta>0,\exists\,m,\forall k\geqslant m,\,\,f\Par{a_k}\in B\BigPar{\,f\Par{a_M},\delta}.$\parSol{}
-$\forall k\in\Nbp,\exists\,\delta_k>0,\forall b_k\in F\cap B\Par{a_M,\delta_k},\,\,f\Par{b_k}\in B\BigPar{\,f\Par{a_M},1\big/k}.$\parSol{}
-Then $\delta_1,\delta_2,\cdots$ is decre and of lim $0.$ Thus $b_1,b_2,\cdots$ convg to $a_M.$\parSol{}
-Asum $\exists\,a_1,a_2,\cdots\in F$ has no subseq convg to some elem in $F.$\parSol{}
-
+	%Let $\,f\Par{a_M}=\Sup\Bra{\,f\Par{a}:a\in F}.$\parSol{}
+	%$\forall k\in\Nbp,\exists\,\delta_k>0,\forall b_k\in F\cap B\Par{a_M,\delta_k},\,\,f\Par{b_k}\in B\BigPar{\,f\Par{a_M},1\big/k}.$\parSol{}
+	%Then $\delta_1,\delta_2,\cdots$ is decre and of lim $0.$ Thus $b_1,b_2,\cdots$ convg to $a_M.$\parSol{}
+}Asum $\Delta>0$ and $\exists\,a_1,a_2,\cdots\in F$ suth each $\Dvert{a_{k+1}-a_k}\geqslant\Dvert{a_{k+1}}-\Dvert{a_k}\geqslant\Delta.$\parSol{}
+Then $\exists$ subseq $\,f\Par{a_{k_1}\:\!\!},\,f\Par{a_{k_2}\:\!\!},\cdots$ convg to some $L.$ Define $\,f\Par{a}=\Dvert{a}{_\infty}.$ Ctradic.\vspace{3pt}\parSol{}
+$\forall$\:\!convg $a_1,a_2,\cdots\in F,\,\forall\varepsilon>0,\exists\,\delta>0,\exists\,m,\forall j,k\geqslant m,\:a_j\in B\Par{a_k,\delta},\;f\Par{a_j}\in B\BigPar{\,f\Par{a_k},\varepsilon}.$\parSol{}
+By Exe\;\!(33), $\,f\Par{a_1},\,f\Par{a_2},\cdots$ convg to some $L$ for all continu $\,f.$\parSol{}
+(How to?)Construct an $\,f$ suth $L=\supf\Par{F}\Rightarrow\exists\,a_M\in F$ suth $a_M=\lim_{k\rightarrow\infty}a_k.$\PfEnd
 \SepLine
 
 \ProblemN{27}{
 	\TextA{Supp $\,f\in\RbbP{\Rbb}$ is incre. Prove $\exists$ countable $A\subseteq\Rbb$ suth $\,f\mmid_{\Rbb\text{\small\backslash}A}$ is continu.}
-}Asum $\forall$\:\!countable $A\subseteq\Rbb,$\;$\,f\mmid_{\Rbb\text{\small\backslash}A}$ is not continu at some $b\in\Rbb\Backslash A.$\parSol{}
-Then $\exists\,\varepsilon>0,\forall\delta>0,\exists\,a\in\Rbb\Backslash A$ suth $\aMid{a-b}<\delta,$\;$\aXMid{\,f\Par{a}-f\Par{b}}\geqslant\varepsilon.$\parSol{}
-
+}Asum $\forall$\:\!countable $A\subseteq\Rbb,$\;$\,f\mmid_{\Rbb\text{\small\backslash}A}$ is not continu at an uncountable set $B$ of elem in $\Rbb\Backslash A.$\parSol{}
+$\forall b\in B,\exists\,\varepsilon>0,\forall k\in\Nbp,\exists\,a_k\in\Rbb\Backslash A$\;suth\;$\aMid{a_k-b}<1\big/k,$\;$\aXMid{\,f\Par{a_k}-f\Par{b}}\geqslant\varepsilon.$\parSol{}
+Now $a_1,a_2,\cdots$ convg to $b.$
+%Let $\varsigma=b\big/\aMid{b}\Rightarrow\varsigma\aMid{a_1},\varsigma\aMid{a_2},\cdots$ is monotone and convg to $b.$
 \SepLine
 
 \ProblemN{29}{
@@ -546,7 +552,7 @@ Then $\exists\,\varepsilon>0,\forall\delta>0,\exists\,a\in\Rbb\Backslash A$ suth
 \Blind{{\tgbf Step m}\; }If $\,f\Par{b_{m-1}}<t<f\Par{a_{m-1}}.$ Let $\Par{a_m,b_m}=\MathLeftBrace{l}{\!\!\Par{c_m,b_{m-1}},\;\text{if }t<f\Par{c_m},\\\!\!\Par{a_{m-1},c_m},\;\text{if }\,f\Par{c_m}<t.}$\vspace{8pt}\parSol{}
 Either we stop at some $m$ and done or we get a seq $\Interval{(}{)}{a_1,b_1}\supsetneq\Interval{(}{)}{a_2,b_2}\supsetneq\cdots$\parSol{}
 suth $\forall\varepsilon>0,\exists\,m\in\Nbp,\forall k\geqslant m,$ $b_k-a_k<\varepsilon\Longrightarrow\lim_{k\rightarrow\infty}a_k=\lim_{k\rightarrow\infty}b_k,$ let it be $c\in\Interval{(}{)}{a_0,b_0}.$\parSol{}
-Now $\forall\varepsilon>0,\exists\,m\in\Nbp,\forall k\geqslant m,\:\aXMid{t-f\Par{a_k}}<\varepsilon\Longrightarrow\lim_{k\rightarrow\infty}\,f\Par{a_k}=t=f\Par{c}.$\PfEnd
+Now $\forall\varepsilon>0,\exists\,m\in\Nbp,\forall k\geqslant m,\:\aXMid{t-f\Par{a_k}}<\varepsilon\Longrightarrow\lim_{k\rightarrow\infty}\,f\Par{a_k}=t=\;\!f\Par{c}.$\PfEnd
 \SepLine
 
 %\ProblemN{30}{
