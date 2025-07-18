@@ -378,10 +378,10 @@ By [0.59], $G=\Interval{(}{)}{{-\infty,-n}}\cup\Interval{(}{)}{{n,\infty}}\cup I
 \SepLine
 
 \Anchor{0D21}\ProblemN{21}{
-	\TextA{Supp $X$ is an open subset of $\Rbb.$ Prove $\exists\,a_k,b_k\in\Rbb$ suth $X=\bigcup_{k=1}^\infty\Interval{[}{]}{a_k,b_k}.$}
-}Let $X=\bigcup_{k=1}^\infty\Interval{(}{)}{c_k,d_k},$ where each $d_k<c_{k+1}.$ \,Let $I_k=\Interval{(}{)}{c_k,d_k}.$\parSol{}
+	\TextA{Supp $X$ is an open subset of $\Rbb.$ Prove $\exists\,a_k,b_k\in\Rbb$ suth $X=\bigcup_{k=1}^\infty{\!\Interval{[}{]}{a_k,b_k}}.$}
+}Let $X=\bigcup_{k=1}^\infty{\!\Interval{(}{)}{c_k,d_k}},$ where each $d_k<c_{k+1}.$ \,Let $I_k=\Interval{(}{)}{c_k,d_k}.$\parSol{}
 Let $a_{1,k},a_{2,k},\dots$ be convg of lim $c_k.$ Simlr, let $b_{1,k},b_{2,k},\dots$ of lim $d_k.$ \,Let $E_{j,k}=\Interval{[}{]}{a_{j,k},b_{j,k}}.$\parSol{}
-Now $\bigcup_{k=1}^\infty\bigcup_{j=1}^\infty E_{j,k}=\bigcup_{k=1}^\infty I_k=X.$ \,Rearrange the order of $E_{j,k}$'s.\PfEnd
+Now $\bigcup_{k=1}^\infty\bigcup_{j=1}^\infty E_{j,k}=\bigcup_{k=1}^\infty I_k=X.$ \,Rearrange the order of the $E$'s.\PfEnd
 \SepLine
 
 \Anchor{0D23}\ProblemN{23}{
@@ -464,12 +464,12 @@ $P\Rightarrow Q:$ \;Supp $b_1,b_2,\cdots\in A$ suth $\forall\delta>0,\,\exists\,
 %}
 %\SepLine
 
-\ProblemN{8}{
-	\TextA{Supp $\,f\in\RbbP{\Rbb}$ is bounded continu. Prove $\,f$ uniformly continu.}
-}Asum $\exists\,\varepsilon>0,\forall k\in\Nbp,\,\aXMid{\,f\Par{a_k}-f\Par{b_k}}\geqslant\varepsilon$ for some $a_k,b_k\in\Rbb$ suth $\aMid{a_k-b_k}<1\big/k.$\parSol{}
-Becs $\,f\Par{a_1},\,f\Par{a_2},\cdots$ bounded $\Rightarrow\exists\,\,f\Par{a_{k_1}\:\!\!},\,f\Par{a_{k_2}\:\!\!},\cdots$ convg to $A.$\parSol{}
-Now $\aXMid{A-f\Par{b_{k_j}}}\leqslant\aXMid{A-f\Par{a_{k_j}}}+\aXMid{\,f\Par{a_{k_j}}-f\Par{b_{k_j}}}\Longrightarrow\,f\Par{b_{k_1}},\,f\Par{b_{k_2}},\cdots$ convg to $A.$\PfEnd
-\SepLine
+%\ProblemN{8}{
+%	\TextA{Supp $\,f\in\RbbP{\Rbb}$ is bounded continu. Prove $\,f$ uniformly continu.}
+%}Asum $\exists\,\varepsilon>0,\forall k\in\Nbp,\,\aXMid{\,f\Par{a_k}-f\Par{b_k}}\geqslant\varepsilon$ for some $a_k,b_k\in\Rbb$ suth $\aMid{a_k-b_k}<1\big/k.$\parSol{}
+%Becs $\,f\Par{a_1},\,f\Par{a_2},\cdots$ bounded $\Rightarrow\exists\,\,f\Par{a_{k_1}\:\!\!},\,f\Par{a_{k_2}\:\!\!},\cdots$ convg to $A.$\parSol{}
+%Now $\aXMid{A-f\Par{b_{k_j}}}\leqslant\aXMid{A-f\Par{a_{k_j}}}+\aXMid{\,f\Par{a_{k_j}}-f\Par{b_{k_j}}}\Longrightarrow\,f\Par{b_{k_1}},\,f\Par{b_{k_2}},\cdots$ convg to $A.$\PfEnd
+%\SepLine
 
 \ProblemN{10}{
 	\TextA{Supp bounded $A\subseteq\Rbbm$ and uniformly continu \;\!$f\in\RbbP{A}.$ Prove $\,f$ is bounded.}
@@ -486,6 +486,14 @@ If incre, then let $k_1$ suth $\,f\Par{b_{k_1}}>0\Rightarrow\,f\Par{b_{k_{i+1}}\
 %%$f\apostrophe\Par{a}=\lim_{k\rightarrow\infty}\;\!${\FontSmall\Large$\frac{\,\;f\Par{a\,+\,\Delta_k}\,-\;f\Par{a}\;}{\Delta_k}$}, where $\Delta_1,\Delta_2,\cdots\in\Rbp$ convg to $0.$\parSol{}
 %\SepLine
 
+\ProblemN{17}{
+	\TextA{Supp uniformly continu $\;\!f\!\!\:,g:\RbbP{\Rbb}.$ Prove $\,f\!\!\:\circ g\in\RbbP{\Rbb}$ is uniformly continu.}
+}$\forall\varepsilon>0,\exists\,\delta>0,\,\aXMid{\,f\Par{t_1}-f\Par{t_2}},\,\forall t_1,t_2\in g\Par{\Rbb}$ suth $\aXMid{t_1-t_2}<\delta.$\parSol{}
+%suth $t_1=g\Par{a},t_2=g\Par{b},$
+Then $\exists\,\rho>0,\forall a,b$ suth $\aMid{a-b}<\rho,$ we have $\aXMid{g\Par{a}-g\Par{b}}<\delta.$\parSol{}
+These $g\Par{a},g\Par{b}$ is contained in the set of all pairs of $t_1,t_2.$\PfEnd
+\SepLine
+
 \ProblemN{18}{
 	\TextA{Supp $h:\Rbbm\rightarrow\Rbbn.$ Prove $h$ continu $\Longleftrightarrow h^{-1}\Par{G}$ is open for all open $G\subseteq\Rbbn.$}
 }Supp $h$ continu and open $G\subseteq\Rbbn.$ We show $\Rbbm\Backslash h^{-1}\Par{G}=\Bra{t\in\Rbbm:h\Par{t}\notin G}$ is closed.\parSol{}
@@ -500,6 +508,11 @@ $\exists\,t_1,t_2,\cdots\in\Rbbm\Backslash h^{-1}\Par{G}$ convg to $L\in h^{-1}\
 %%\Or Supp $h$ continu and closed $F\subseteq\Rbbn.$ We show $\Rbbm\Backslash h^{-1}\Par{F}=\Bra{t\in\Rbbm:h\Par{t}\notin F}$ is open.\parSol{}
 %%Supp $h\Par{t}\notin F\Rightarrow\exists\,\delta>0,\forall s$ suth $\BigDvert{h\Par{s}-h\Par{t}}{_\infty}<\delta,$ we have $h\Par{s}\notin F.$
 %\SepLine
+
+%\BulletPointX\NoteForSmall{[0.82]}\;\;Supp closed bounded $F\subseteq\Rbbm$ and continu $g:F\rightarrow\Rbbn.$\TextB{}
+%Let $g_1,\dots,g_n\in\RbbP{F}$ be suth $\forall a\in F,\,g\Par{a}=\BigPar{g_1\Par{a},\dots,g_n\Par{a}}.$ Then each $g_k$ continu becs $\aXMid{g\Par{a}-g\Par{b}}\leqslant\BigDvert{g\Par{a}-g\Par{b}}{_\infty}.$
+%\SepLine
+
 \pagebreak
 
 \def\Finf{F_{\:\!\!\!\infty}}
@@ -507,7 +520,7 @@ $\exists\,t_1,t_2,\cdots\in\Rbbm\Backslash h^{-1}\Par{G}$ convg to $L\in h^{-1}\
 \ProblemN{22}{
 	\TextA{Supp decre seq $F_{\!1}\supsetneq F_{\!2}\supsetneq\cdots$ non-$\emptySet$ closed bounded subsets of $\;\!\Rbbn.$ Prove $\Finf=\bigcap_{k=1}^\infty F_{\!k}\neq\emptySet.$}
 }Define $\Dvert{F}{_\infty}=\Sup\Bra{\Dvert{a}{_\infty}:a\in F}$ and $\Dvert{F}\subZero=\Inf\Bra{\Dvert{a}{_\infty}:a\in F}$ for all bounded $F\subseteq\Rbbn.$\parSol{}
-Note that $\Dvert{F}{_\infty}=-\infty\Longleftrightarrow\Dvert{F}\subZero=\infty\Longleftrightarrow\Dvert{F}{_\infty}\:\!\!<\Dvert{F}\subZero\Longleftrightarrow F=\emptySet.$\parSol{}
+Note that by def of sup and inf, \,$\Dvert{F}{_\infty}=-\infty\Longleftrightarrow\Dvert{F}\subZero=\infty\Longleftrightarrow\Dvert{F}{_\infty}\:\!\!<\Dvert{F}\subZero\Longleftrightarrow F=\emptySet.$\parSol{}
 Now $\Dvert{F_{\!1}}{_\infty},\Dvert{F_{\!2}}{_\infty},\cdots$ bounded decre, and $\Dvert{F_{\!1}}\subZero,\Dvert{F_{\!2}}\subZero,\cdots$ bounded incre.\parSol{}
 %\Inf\Bra{\Dvert{F_{\!k}}{_\infty}:k\in\Nbp},\Sup\Bra{\Dvert{F_{\!k}}\subZero:k\in\Nbp}
 Consider $\Dvert{\Finf}{_\infty}=\lim_{k\rightarrow\infty}\Dvert{F_{\!k}}{_\infty},$ and\;$\Dvert{\Finf}\subZero=\lim_{k\rightarrow\infty}\Dvert{F_{\!k}}\subZero.$\parSol{}
@@ -522,15 +535,14 @@ Note that $\Dvert{\Finf}{_\infty}-\Dvert{\Finf}\subZero=\lim_{k\rightarrow\infty
 %\SepLine
 
 \ProblemN{26}{
-	\TextA{Supp $F\subseteq\Rbbn$ suth every continu $\,f\in\RbbP{F}$ attains a max. Prove $F$ is closed bounded.}
-	%Let $\,f\Par{a_M}=\Sup\Bra{\,f\Par{a}:a\in F}.$\parSol{}
-	%$\forall k\in\Nbp,\exists\,\delta_k>0,\forall b_k\in F\cap B\Par{a_M,\delta_k},\,\,f\Par{b_k}\in B\BigPar{\,f\Par{a_M},1\big/k}.$\parSol{}
-	%Then $\delta_1,\delta_2,\cdots$ is decre and of lim $0.$ Thus $b_1,b_2,\cdots$ convg to $a_M.$\parSol{}
-}Asum $\Delta>0$ and $\exists\,a_1,a_2,\cdots\in F$ suth each $\Dvert{a_{k+1}-a_k}\geqslant\Dvert{a_{k+1}}-\Dvert{a_k}\geqslant\Delta.$\parSol{}
-Then $\exists$ subseq $\,f\Par{a_{k_1}\:\!\!},\,f\Par{a_{k_2}\:\!\!},\cdots$ convg to some $L.$ Define $\,f\Par{a}=\Dvert{a}{_\infty}.$ Ctradic.\vspace{3pt}\parSol{}
-$\forall$\:\!convg $a_1,a_2,\cdots\in F,\,\forall\varepsilon>0,\exists\,\delta>0,\exists\,m,\forall j,k\geqslant m,\:a_j\in B\Par{a_k,\delta},\;f\Par{a_j}\in B\BigPar{\,f\Par{a_k},\varepsilon}.$\parSol{}
-By Exe\;\!(33), $\,f\Par{a_1},\,f\Par{a_2},\cdots$ convg to some $L$ for all continu $\,f.$\parSol{}
-(How to?)Construct an $\,f$ suth $L=\supf\Par{F}\Rightarrow\exists\,a_M\in F$ suth $a_M=\lim_{k\rightarrow\infty}a_k.$\PfEnd
+	\TextA{Supp $F\subseteq\Rbbn$ suth every continu $\,f\in\RbbP{F}$ attains a max. Prove $F$ is closed bounded.\vspace{-2pt}}
+%{\FontSmall Note that $\forall$\:\!continu $-\,f\in\RbbP{F}$ attains a max ${-\,f\Par{a_M}}\Longrightarrow\,f$ attains a min $\,f\Par{a_M}.$}\vspace{-2pt}\parSol{}
+%{\FontSmall Thus the asum is equiv to\hspace{1pt}: every continu $\,f:F\rightarrow\Rbbm$ is bounded, where $m$ doesn't matter.}\vspace{-2pt}\parSol{}
+%{\FontSmall Asum $\exists$ continu $\,f:F\rightarrow\Rbbm$ suth $\exists\,\,f\Par{a_1},\,f\Par{a_2},\cdots$ convg to $L\notin\,f\Par{F}.$}\vspace{2pt}\parSol{}
+%{\FontSmall Let $\,f\Par{a}$}\vspace{-2pt}\parSol{}
+%{\FontSmall}\vspace{2pt}\parSol{}
+}Asum $F$ not bounded. Define $\,f\Par{a}=\Dvert{a}{_\infty}.$ Ctradic.\parSol{}
+Asum $\exists\,a_1,a_2,\cdots\in F$ convg to $L\notin F.$ Define $\,f\Par{a}=1\big/\Dvert{a-L}{_\infty}.$ Ctradic.\PfEnd
 \SepLine
 
 \ProblemN{27}{
@@ -568,13 +580,13 @@ Now $\forall\varepsilon>0,\exists\,m\in\Nbp,\forall k\geqslant m,\:\aXMid{t-f\Pa
 $\forall\varepsilon>0,\exists\,\delta_M>0,\forall\delta$ suth $\aMid{\delta}<\delta_M,\:\aXMid{p\Par{x_0+\delta}-p\Par{x_0}}=\aXMid{\delta\cdot q\Par{x_0,\delta}}<\varepsilon\Longleftrightarrow \aXMid{q\Par{x_0,\delta}}<\aMid{\varepsilon\big/\delta}$\vspace{2pt}\parSol{}
 where \;\!$q\Par{x_0,\delta}=\sum_{k=1}^m\!\BigBigPar{{\sum_{i=1}^k}\,a_k\:\!\mathC_k^i\,\delta^{k-i-1}\:\!x_0^{i}}\Rightarrow\aXMid{q\Par{x_0,\delta}}\leqslant\sum_{k=1}^m\!{\sum_{i=1}^k}\:\!\aMid{\delta}{^{k-i-1}}\aXMid{a_k\:\!\mathC_k^i\:\!x_0^{i}}.$\vspace{3pt}\parSol{}
 Let $\aMid{\delta}<1$ suth \:\!$\max\!\Bra{\aMid{a_k\:\!\mathC_k^i\:\!x_0^{i}}:i,k\in\Nbp,\,1\leqslant k\leqslant m,\,1\leqslant i\leqslant k}\cdot\aMid{\delta}\leqslant\aMid{\varepsilon}<\aMid{\varepsilon\big/\delta}.$\PfEnd
-\SepLine
+\SepLine\pagebreak
 
 \ProblemN{31}{
 	\TextA{Supp $p\in\RbbP{\Rbb}$ is a poly with odd deg. Prove $\exists\,b\in\Rbb$ suth $p\Par{b}=0.$}
 }Write $p\Par{x}=a_0+a_1x+\dots+a_mx^m$ with $a_m\neq0.$ Supp $a_m>0.$ \Sbra{If $a_m<0,$ then apply to $-p.$}\vspace{3pt}\parSol{}
 Now $p\Par{x}=x^m\XSbra{${\small$\Frac{a_0}{\:x^m}+\Frac{a_1}{\,\,x^{m-1}}+\dots+\Frac{\,a_{m-1}\,}{x}+a_m$}$}$ for all $x\in\Rbb\nonzero.$\vspace{3pt}\parSol{}
-While $\aXXMid{${\small$\Frac{a_0}{\:x^m}+\Frac{a_1}{\,\,x^{m-1}}+\dots+\Frac{\,a_{m-1}\,}{x}$}$}\leqslant\delta^m\;\!\aMid{a_0}+\delta^{m-1}\aMid{a_1}+\dots+\delta\;\!\aMid{a_{m-1}}\:\!;$\;let $\delta=\aMid{x}.$\vspace{5pt}\parSol{}
+While $\aXXMid{${\small$\Frac{a_0}{\:x^m}+\Frac{a_1}{\,\,x^{m-1}}+\dots+\Frac{\,a_{m-1}\,}{x}$}$}\leqslant\delta^m\;\!\aMid{a_0}+\delta^{m-1}\aMid{a_1}+\dots+\delta\;\!\aMid{a_{m-1}}\:\!;$\;let $\delta=1\big/\aMid{x}.$\vspace{5pt}\parSol{}
 Let $x$ be suth $\delta<1$ and $\;\!\max\!\Bra{\aMid{a_0},\aMid{a_1},\dots,\aMid{a_{m-1}}}\cdot\delta\leqslant\aMid{a_m}\big/m.$ \,Thus $p\Par{{-\aMid{x}}}<0<p\Par{\aMid{x}}.$\PfEnd
 %By induc on $\deg p=2k+1,\:\!k\in\Nbp.$ (i) $k=0.$ Immed. (ii) $k\geqslant 0.$ Asum true for $k.$\parSol{}
 %Let $p=q+r,$ where $q\Par{x}=a_0+a_1x+\dots+a_{\deg q}x^{2k+1},r\Par{x}=a_{\deg q+1}x^{2k+2}+a_{\deg p}x^{2\SmallPar{k+1}+1}.$\parSol{}
@@ -589,8 +601,8 @@ Let $x$ be suth $\delta<1$ and $\;\!\max\!\Bra{\aMid{a_0},\aMid{a_1},\dots,\aMid
 
 \ProblemN{33}{
 	\TextA{Supp $a_1,a_2,\cdots\in\Rbbn$ is Cauchy seq and $\exists$ subseq convg to $L.$ Prove the seq convg to $L.$}
-}Supp subseq $a_{j_1},a_{j_2},\cdots$ convg to $L.$ Then $\forall\varepsilon>0,\exists\,j_m,\forall j_k\in\;\!\!\Bra{\;\!j_m,j_{m+1},\cdots},\:\Dvert{a_{j_k}-L}<\varepsilon,$\vspace{1pt}\parSol{}
-and $\exists\,n\in\Nbp,\forall i\geqslant n,\:\Dvert{a_i-L}=\BigDvert{\Par{a_i-a_{j_k}}+\Par{a_{j_k}-L}}\leqslant\Dvert{a_i-a_{j_k}}+\Dvert{a_{j_k}-L}<2\:\!\varepsilon.$\PfEnd
+}Supp subseq $a_{j_1},a_{j_2},\cdots$ convg to $L.$ Then $\forall\varepsilon>0,\,$\uline{$\exists\,j_m,$}$\,\forall j_k\in\;\!\!\Bra{\;\!j_m,j_{m+1},\cdots},\:\Dvert{a_{j_k}-L}<\varepsilon,$\vspace{1pt}\parSol{}
+and \uuline{$\exists\,n\in\Nbp,$}$\,\forall i\geqslant n,\:\Dvert{a_i-L}=\BigDvert{\Par{a_i-a_{j_k}}+\Par{a_{j_k}-L}}\leqslant\Dvert{a_i-a_{j_k}}+\Dvert{a_{j_k}-L}<2\:\!\varepsilon.$\PfEnd
 \SepLine
 
 \ProblemN{34}{
@@ -598,7 +610,7 @@ and $\exists\,n\in\Nbp,\forall i\geqslant n,\:\Dvert{a_i-L}=\BigDvert{\Par{a_i-a
 }Asum $\exists$ convg $a_1,a_2,\cdots\in F_{\!1}+F_{\!2}$ with lim $L\notin F_{\!1}+F_{\!2}.$ \,Let each $a_k=x_k+y_k,$ and $z_k=L-x_k.$\parSol{}
 $\forall\varepsilon>0,\exists\,m\in\Nbp,\forall k\geqslant m,\:\Dvert{a_k-L}=\Dvert{x_k+y_k-L}=\Dvert{y_k-z_k}<\varepsilon.$\parSol{}
 Supp subseq \;\!$y_{j_1},y_{j_2},\cdots$ convg to $L_y\in F_{\!2}.$ Then $\forall\varepsilon>0,\exists\,j_m,\forall j_k\in\;\!\!\Bra{\;\!j_m,j_{m+1},\cdots},$\parSol{}
-$\Dvert{z_{j_k}-L_y}=\Dvert{\Par{z_{j_k}-y_{j_k}}+\Par{y_{j_k}-L_y}}<\varepsilon.$ \,Now $x_{j_1},x_{j_2},\cdots\in F_{\!1}$ convg to $L-L_y\notin F_{\!1}.$\PfEnd
+$\Dvert{z_{j_k}-L_y}=\BigDvert{\Par{z_{j_k}-y_{j_k}}+\Par{y_{j_k}-L_y}}<\varepsilon.$ \,Now $x_{j_1},x_{j_2},\cdots\in F_{\!1}$ convg to $L-L_y\notin F_{\!1}.$\PfEnd
 \SepLine
 
 \ChEnd
