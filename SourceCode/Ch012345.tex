@@ -446,12 +446,11 @@ Thus every subseq is unbounded $\Rightarrow$ not convg. Ctradic.\PfEnd
 
 \ProblemB{
 	\TextB{Supp $b\in A\subseteq\Rbbm,\,f:A\rightarrow\Rbbn.$ Prove}
-	\TextB{[P] \;\!$f$ is continu at $b\Longleftrightarrow\forall b_1,b_2,\cdots\in A$ suth $\lim_{k\rightarrow\infty}b_k=b,$ $\lim_{k\rightarrow\infty}f\Par{b_k}=\;\!f\Par{b}.$ [Q]\vspace{1pt}}
-}$Q\Rightarrow P:$ \;Supp $\varepsilon>0$ suth $\forall\delta>0,\exists\,a\in A$ with $\Dvert{a-b}{_\infty}<\delta$ and $\BigDvert{\,f\Par{a}-f\Par{b}}{_\infty}\geqslant\varepsilon.$\parSol{}
-\Blind{$P\Rightarrow Q:$ \;}Fix a $\delta.$ \,Define $\delta_k=\delta\big/k\Rightarrow\exists\,a_k$ for each. \,Now $\lim_{k\rightarrow\infty}a_k=b.$\parSol{}
-\Blind{$P\Rightarrow Q:$ \;}Thus $\forall m,\forall k\geqslant m,\,\BigDvert{\,f\Par{a_k}-f\Par{b}}{_\infty}\geqslant\varepsilon.$ \,Ctradic $Q$.\vspace{4pt}\parSol{}
-$P\Rightarrow Q:$ \;Supp $b_1,b_2,\cdots\in A$ suth $\forall\delta>0,\,\exists\,m,\forall k\geqslant m,\,\Dvert{b_k-b}{_\infty}<\delta.$\parSol{}
-\Blind{$P\Rightarrow Q:$ \;}Asum $\varepsilon>0$ suth $\forall m,\forall k\geqslant m,\,\BigDvert{\,f\Par{b_k}-f\Par{b}}{_\infty}\geqslant\varepsilon.$ \,Ctradic $P.$\PfEnd 
+	\TextB{[P] \;\!$f$ is continu at $b\Longleftrightarrow\forall b_1,b_2,\cdots\in A$ suth $\lim_{k\rightarrow\infty}b_k=b,\,\lim_{k\rightarrow\infty}f\Par{b_k}=\;\!f\Par{b}.$ [Q]\vspace{1pt}}
+}${^\neg}P\Rightarrow{^\neg}Q:$ \;$\exists\,\varepsilon>0,\forall k\in\Nbp,\exists\,b_k\in A$ suth $\Dvert{b_k-b}{_\infty}<1\big/k$ and $\BigDvert{\,f\Par{b_k}-f\Par{b}}{_\infty}\geqslant\varepsilon.$\parSol{}
+\Blind{${^\neg}P\Rightarrow{^\neg}Q:$ \;}Now $\lim_{k\rightarrow\infty}b_k=b$ while $\exists\,\varepsilon>0,\forall m,\exists\,k\geqslant m,\,\BigDvert{\,f\Par{b_k}-f\Par{b}}{_\infty}\geqslant\varepsilon.$\vspace{3pt}\parSol{}
+${^\neg}Q\Rightarrow{^\neg}P:$ \;Supp $b_1,b_2,\cdots\in A$ suth $\forall\delta>0,\,\exists\,m,\forall k\geqslant m,\,\Dvert{b_k-b}{_\infty}<\delta.$\parSol{}
+\Blind{${^\neg}P\Rightarrow{^\neg}Q:$ \;}Asum $\exists\,\varepsilon>0,\forall m\;\!\Sbra{{\Rightarrow\forall\delta>0}},\exists\,k\geqslant m,\,\BigDvert{\,f\Par{b_k}-f\Par{b}}{_\infty}\geqslant\varepsilon.$ \,Immed.\PfEnd
 \SepLine
 
 %\ProblemN{}{
@@ -476,7 +475,7 @@ $P\Rightarrow Q:$ \;Supp $b_1,b_2,\cdots\in A$ suth $\forall\delta>0,\,\exists\,
 }Asum $\forall\Delta>0,\exists\,a_1,a_2,\cdots\in A$ suth each $\aXMid{\,f\Par{a_{k+1}}-f\Par{a_k}}\geqslant\aXMid{\,f\Par{a_{k+1}}}-\aXMid{\,f\Par{a_k}}\geqslant\Delta.$\parSol{}
 $\exists$ subseq $a_{j_1},a_{j_2},\cdots$ convg to $L\Rightarrow\forall\delta>0,\exists\,j_m,\forall j_x,j_y\in\;\!\!\Bra{\;\!j_m,j_{m+1},\cdots},\:\Dvert{a_{j_x}-a_{j_y}}<\delta.$\parSol{}
 $\forall\varepsilon>0,\exists\,\delta>0,\forall a,b\in A$ suth $\Dvert{a-b}<\delta,$ we have $\,f\Par{a}\in\Interval{(}{)}{\,f\Par{b}-\varepsilon,\;f\Par{b}+\varepsilon}.$\parSol{}
-Let $b_{k_i}=a_{j_{k_i}}\!.$ \,Becs $\exists\,k_1<k_2<\cdots$ suth $\,f\Par{b_{k_1}},f\Par{b_{k_2}},\cdots$ is monotone.\parSol{}
+Let $b_{k_i}=a_{j_{k_i}}\!.$ \,Becs $\exists\,k_1<k_2<\cdots$ suth $\,f\Par{b_{k_1}\:\!\!},f\Par{b_{k_2}\:\!\!},\cdots$ is monotone.\parSol{}
 If incre, then let $k_1$ suth $\,f\Par{b_{k_1}}>0\Rightarrow\,f\Par{b_{k_{i+1}}\!}>f\Par{b_{k_i}\:\!\!}+\Delta.$ Ctradic. Simlr for decre.\PfEnd
 \SepLine
 
