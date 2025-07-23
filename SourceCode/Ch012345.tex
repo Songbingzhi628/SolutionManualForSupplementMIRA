@@ -612,6 +612,22 @@ Supp subseq \;\!$y_{j_1},y_{j_2},\cdots$ convg to $L_y\in F_{\!2}.$ Then $\foral
 $\Dvert{z_{j_k}-L_y}=\BigDvert{\Par{z_{j_k}-y_{j_k}}+\Par{y_{j_k}-L_y}}<\varepsilon.$ \,Now $x_{j_1},x_{j_2},\cdots\in F_{\!1}$ convg to $L-L_y\notin F_{\!1}.$\PfEnd
 \SepLine
 
+\ProblemB{
+	\TextB{Supp $a_k\leqslant a_{k+1}<b_{k+1}\leqslant b_k$ for all $k\in\Nbp$ and $\lim_{k\rightarrow\infty}\!\BigPar{b_k-a_k}=0.$}
+	\TextB{Prove {\tgnr\large(a)} $\lim_{k\rightarrow\infty}a_k=\lim_{k\rightarrow\infty}b_k=L,$ \,{\tgnr\large(b)} if $c$ suth $\forall k\in\Nbp,\,a_k\leqslant c\leqslant b_k,$ then $c=L.$}
+}
+\SepLine
+
+\ProblemB{
+	\TextB{}
+}
+\SepLine
+
+\ProblemB{
+	\TextB{}
+}
+\SepLine
+
 \ChEnd
 \pagebreak
 
@@ -622,5 +638,76 @@ $\Dvert{z_{j_k}-L_y}=\BigDvert{\Par{z_{j_k}-y_{j_k}}+\Par{y_{j_k}-L_y}}<\varepsi
 % 0.B:  18.25 + 5.25h
 % 0.C:  7     +    2h
 % 0.D:  7.25  + 1.75h
-% 0.E:  6     +  1.5h
+% 0.E:  12    +    3h
+% 后面复习 0.5h
+%
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ChDecl{Ch1}{1}{}
+
+\vspace{4pt}
+
+%\ProblemN{3}{
+%	\TextA{Supp bounded $\,f:\Interval{[}{]}{a,b}\rightarrow\Rbb.$}
+%	\TextA{Prove $\,f$ Riemann integ $\Longleftrightarrow\forall\varepsilon>0,\exists\,P$ suth $U\Par{\,f,P}-L\Par{\,f,P}\leqslant\varepsilon.$}
+%}Supp $\,f$ Riemann integ. Asum $\exists\,\varepsilon,\forall P,\,U\Par{\,f,P}-L\Par{\,f,P}>\varepsilon.$ Ctradic.\parSol{}
+%Convly, becs $U\Par{\,f}-L\Par{\,f}\leqslant U\Par{\,f,P}-L\Par{\,f,P}\leqslant\varepsilon.$\PfEnd
+%\SepLine
+
+\Anchor{1T1}\BulletPointX\TipsN{1}\,\,\,Supp $I=\Interval{[}{]}{a,b}$ and $\,f,g:I\rightarrow\Rbb$ is bounded and $P$ is a partition. Then\vspace{1pt}\TextB{}
+(a) $\Inf_{I}\,\,f+\Inf_{I}\,g\leqslant\Inf_{I}\Par{\,f+g}\leqslant\Sup_{I}\Par{\,f+g}\leqslant\Sup_{I}\,\,f+\Sup_{I}\,g$\TextB{}
+\Ha$\Longrightarrow L\Par{\,f,P}+L\Par{g,P}\leqslant L\Par{\,f+g,P}\leqslant L\Par{\,f+g}\leqslant U\Par{\,f+g}\leqslant U\Par{\,f+g,P}\leqslant U\Par{\,f,P}+U\Par{g,P}.$\vspace{3pt}\TextB{}
+(b) $-L\Par{\,f,P}=U\Par{{-}\,f,P},$ 又 $-\Par{{-f}}=\;\!f.$\TextB{}
+\Hb$\Longrightarrow U\Par{\,f}=\Inf\Bra{U\Par{\,f,P}:\forall P}=-\Sup\Bra{{-U}\Par{\,f,P}=L\Par{{-}\,f,P}:\forall P}=-L\Par{{-\,f}}.$
+\SepLine
+
+\ProblemN{4}{
+	\TextA{Supp Riemann integ $\,f,g:\Interval{[}{]}{a,b}\rightarrow\Rbb.$}
+	\TextA{Prove $\,f+g$ Riemann integ and $\int_a^b\!\BigPar{\,f+g}=\int_a^b\:\!f+\int_a^bg.$\vspace{2pt}}
+}$U\Par{\,f}+U\Par{g}\leqslant U\Par{\,f,P}+U\Par{g,P}.$\parSol{}
+
+\SepLine
+
+\ProblemN{6}{
+	\TextA{Supp Riemann integ $\,f:\Interval{[}{]}{a,b}\rightarrow\Rbb.$ \,Supp $g:\Interval{[}{]}{a,b}\rightarrow\Rbb$ suth $g\Par{x}=\;\!f\Par{x}$}
+	\TextA{\,for all $x\in\Interval{[}{]}{a,b}\Backslash\Bra{r_{\:\!\!1},\dots,r_{\:\!\!n}}.$ \,Prove $g$ is Riemann integ and $\int_a^bg=\int_a^b\:\!f.$}
+}
+\SepLine
+
+\ProblemN{7}{
+	\TextA{Supp bounded $\,f:\Interval{[}{]}{a,b}\rightarrow\Rbb.$ {\FontNorm Let $P_{\!n}$ be the partition that divides $\Interval{[}{]}{a,b}$ into $2^n$ intervals of equal size.}}
+	\TextA{Prove $L\Par{\,f}=\lim_{n\rightarrow\infty}L\Par{\,f,P_{\!n}}$ and $U\Par{\,f}=\lim_{n\rightarrow\infty}U\Par{\,f,P_{\!n}}.$}
+}
+\SepLine
+
+\ProblemN{8}{
+	\TextA{Supp Riemann integ $\,f:\Interval{[}{]}{a,b}\rightarrow\Rbb.$ Prove $\int_a^b f=\lim\limits_{k\rightarrow\infty}{}${\LARGE$\frac{\:b\,-\,a\:}{n}$}${}\sum\limits_{j=1}^n\,f\BigPar{a+{}${\FontSmall\LARGE$\frac{\;j\Par{b\,-\,a}\:}{n}$}$}.$}
+}
+\SepLine
+
+\ProblemN{}{
+	\TextA{}
+}
+\SepLine
+
+\ProblemN{}{
+	\TextA{}
+}
+\SepLine
+
+\ProblemN{}{
+	\TextA{}
+}
+\SepLine
+
+\ProblemN{}{
+	\TextA{}
+}
+\SepLine
+
+\ProblemN{}{
+	\TextA{}
+}
+\SepLine
+\ChEnd
