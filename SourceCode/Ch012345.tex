@@ -241,7 +241,7 @@ Thus (5) $\Rightarrow$ (2) in distr. Convly as well.\par\vspace{4pt}\quad
 \def\supf{\sup\,f}
 
 \Anchor{0C2}\ProblemN{2}{
-	\TextA{Supp nonempty $U\subseteq V\subseteq\Rbb.$\;Show\;$\supU\leqslant\supV.$
+	\TextA{Supp non-$\emptySet$ $U\subseteq V\subseteq\Rbb.$\;Show\;$\supU\leqslant\supV.$
 %	and {\tgnr\large(b)} $\inf U\geqslant\inf V.$
 	}
 }Asum $\supU>\supV\Rightarrow\exists\,t\in U\cap\Interval{(}{]}{{\supV,\supU}}\Rightarrow \supV<t\in V,$ ctradic.\PfEnd
@@ -256,7 +256,7 @@ After at most $n$ steps, we must have $a_{m}$ with $m>n.$ Thus $\forall a_{n+i},
 \SepLine
 
 \ProblemB[]{
-	\TextB{Supp nonempty $A\subseteq\Rbb.$}
+	\TextB{Supp non-$\emptySet$ $A\subseteq\Rbb.$}
 }
 \Anchor{0CT1}\ProblemBX{\TipsN{1}}{
 	\TextA{Define $-A=\Bra{{-a}:a\in A}\Rightarrow{-\Par{{-A}}}=A.$ \,Prove $\Sup\Par{{-A}}=-\inf A.$}
@@ -275,7 +275,7 @@ Thus \,$-b_M=\Sup\Par{{-A}}\Longleftrightarrow-b_M\leqslant -b\Longleftrightarro
 \pagebreak
 
 \Anchor{0C6}\ProblemN{6}{
-	\TextA{Supp nonempty $A,B\subseteq\Rbb.$ Prove $\Sup\Par{A+B}=\sup A+\sup B,$\FontNorm\;and\;$\Inf\Par{A+B}=\inf A+\inf B.$}
+	\TextA{Supp non-$\emptySet$ $A,B\subseteq\Rbb.$ Prove $\Sup\Par{A+B}=\sup A+\sup B,$\FontNorm\;and\;$\Inf\Par{A+B}=\inf A+\inf B.$}
 }$\inf A+\inf B\leqslant a+b\leqslant\sup A+\sup B\Rightarrow\Sup\Par{A+B}\leqslant\sup A+\sup B,\,\inf A+\inf B\leqslant\Inf\Par{A+B}.$\vspace{2pt}\parSol{}
 $\sup A+\sup B>\Sup\Par{A+B}\Longleftrightarrow\sup A>\Sup\Par{A+B}-\sup B$\parSol{}
 $\Longleftrightarrow\exists\,a+\sup B>\Sup\Par{A+B}\Longleftrightarrow\sup B>\Sup\Par{A+B}-a\Longleftrightarrow\exists\,a+b>\Sup\Par{A+B}.$ Ctradic.\vspace{2pt}\parSol{}
@@ -341,7 +341,7 @@ Thus\;$ab\geqslant\varphi_1\Par{t}>\varphi_1\Sbra{\Par{t+sq}\big/2}>\varphi_1\Pa
 \vspace{4pt}
 
 \Anchor{0DN065}\ProblemB{
-	\TextA{Supp nonempty $A$ is closed and open subsets of $\Rbbn.$ Prove $A=\Rbbn.$}
+	\TextA{Supp non-$\emptySet$ $A$ is closed and open subsets of $\Rbbn.$ Prove $A=\Rbbn.$}
 }Asum $A\neq\Rbbn.$ \,Let\;$a\in A,\,b\in\Rbbn\Backslash A.$ \,Define \,$f\Par{t}=\Par{1-t}\:\!a+t\:\!b.$\par\quad
 If $\;\!f\Par{t_1}=\;\!f\Par{t_2}\Rightarrow\Par{t_1-t_2}\Par{b-a}=0\Rightarrow t_1=t_2.$ \,Inje.\par\quad
 Let $\mA=\Bra{t\in\Interval{[}{)}{0,1}:\,f\Par{t}\in A},$ and \,$\sup\mA=t_M\in\Interval{[}{]}{0,1}.$ \,Let $c=\;\!f\Par{t_M}.$\vspace{2pt}\par\quad
@@ -439,7 +439,7 @@ Which means $\forall t\in\Rbp,\forall m\in\Nbp,\exists\,k\geqslant m,\,\max\!\Br
 
 \ProblemN{3}{
 	\TextA{Supp $F\subseteq\Rbbn,$ every seq in $F$ has a convg subseq with lim in $F.$ Prove $F$ is closed bounded.}
-}Supp $a_1,a_2,\cdots\in F$ convg with lim $L.$ Becs $\exists$ subseq with lim in $F.$ By \TIPSN{1}, $L\in F.$\parSol{}
+}Supp $a_1,a_2,\cdots\in F$ convg with lim $L.$ Becs $\exists$\;\!subseq with lim in $F.$ By \TIPSN{1}, $L\in F.$\parSol{}
 Asum $\sup\Bra{\Dvert{a}{_\infty}:a\in F}=\infty\Rightarrow\forall\Delta>0,\exists\,a_1,a_2,\cdots\in F$ with each $\Dvert{a_{k+1}}{_\infty}\geqslant\Dvert{a_k}{_\infty}+\Delta.$\parSol{}
 Thus every subseq is unbounded $\Rightarrow$ not convg. Ctradic.\PfEnd
 \SepLine
@@ -473,7 +473,7 @@ ${^\neg}Q\Rightarrow{^\neg}P:$ \;Supp $b_1,b_2,\cdots\in A$ suth $\forall\delta>
 \ProblemN{10}{
 	\TextA{Supp bounded $A\subseteq\Rbbm$ and uniformly continu \;\!$f\in\RbbP{A}.$ Prove $\,f$ is bounded.}
 }Asum $\forall\Delta>0,\exists\,a_1,a_2,\cdots\in A$ suth each $\aXMid{\,f\Par{a_{k+1}}-f\Par{a_k}}\geqslant\aXMid{\,f\Par{a_{k+1}}}-\aXMid{\,f\Par{a_k}}\geqslant\Delta.$\parSol{}
-$\exists$ subseq $a_{j_1},a_{j_2},\cdots$ convg to $L\Rightarrow\forall\delta>0,\exists\,j_m,\forall j_x,j_y\in\;\!\!\Bra{\;\!j_m,j_{m+1},\cdots},\:\Dvert{a_{j_x}-a_{j_y}}<\delta.$\parSol{}
+$\exists$\;\!subseq $a_{j_1},a_{j_2},\cdots$ convg to $L\Rightarrow\forall\delta>0,\exists\,j_m,\forall j_x,j_y\in\;\!\!\Bra{\;\!j_m,j_{m+1},\cdots},\:\Dvert{a_{j_x}-a_{j_y}}<\delta.$\parSol{}
 $\forall\varepsilon>0,\exists\,\delta>0,\forall a,b\in A$ suth $\Dvert{a-b}<\delta,$ we have $\,f\Par{a}\in\Interval{(}{)}{\,f\Par{b}-\varepsilon,\;f\Par{b}+\varepsilon}.$\parSol{}
 Let $b_{k_i}=a_{j_{k_i}}\!.$ \,Becs $\exists\,k_1<k_2<\cdots$ suth $\,f\Par{b_{k_1}\:\!\!},f\Par{b_{k_2}\:\!\!},\cdots$ is monotone.\parSol{}
 If incre, then let $k_1$ suth $\,f\Par{b_{k_1}}>0\Rightarrow\,f\Par{b_{k_{i+1}}\!}>f\Par{b_{k_i}\:\!\!}+\Delta.$ Ctradic. Simlr for decre.\PfEnd
@@ -524,7 +524,8 @@ Now $\Dvert{F_{\!1}}{_\infty},\Dvert{F_{\!2}}{_\infty},\cdots$ bounded decre, an
 %\Inf\Bra{\Dvert{F_{\!k}}{_\infty}:k\in\Nbp},\Sup\Bra{\Dvert{F_{\!k}}\subZero:k\in\Nbp}
 Consider $\Dvert{\Finf}{_\infty}=\lim_{k\rightarrow\infty}\Dvert{F_{\!k}}{_\infty},$ and\;$\Dvert{\Finf}\subZero=\lim_{k\rightarrow\infty}\Dvert{F_{\!k}}\subZero.$\parSol{}
 Note that $\Dvert{\Finf}{_\infty}-\Dvert{\Finf}\subZero=\lim_{k\rightarrow\infty}\!{\Sbra{\Dvert{F_{\!k}}{_\infty}-\Dvert{F_{\!k}}\subZero}}\geqslant0.$\parSol{}
-\又 For a closed bounded $F,$ $\Dvert{F}{_\infty}=\Dvert{a}$ for some $a\in F,$ \:\!simlr for $\Dvert{F}\subZero.$\PfEnd
+\又 For a closed bounded $F,$ $\Dvert{F}{_\infty}=\Dvert{a}$ for some $a\in F,$ \:\!simlr for $\Dvert{F}\subZero.$\PfEnd\vspace{3pt}\parSol{}
+\Or Pick $a_k\in F_{\!k}$ for each $\Rightarrow\exists$\;\!subseq $a_{j_1},a_{j_2},\cdots$ convg to $a\in\bigcap_{k=1}^\infty F_{\!k}.$
 \PfEnd
 \SepLine
 
@@ -599,7 +600,7 @@ Let $x$ be suth $\delta<1$ and $\;\!\max\!\Bra{\aMid{a_0},\aMid{a_1},\dots,\aMid
 %\SepLine
 
 \ProblemN{33}{
-	\TextA{Supp $a_1,a_2,\cdots\in\Rbbn$ is Cauchy seq and $\exists$ subseq convg to $L.$ Prove the seq convg to $L.$}
+	\TextA{Supp $a_1,a_2,\cdots\in\Rbbn$ is Cauchy seq and $\exists$\;\!subseq convg to $L.$ Prove the seq convg to $L.$}
 }Supp subseq $a_{j_1},a_{j_2},\cdots$ convg to $L.$ Then $\forall\varepsilon>0,\,$\uline{$\exists\,j_m,$}$\,\forall j_k\in\;\!\!\Bra{\;\!j_m,j_{m+1},\cdots},\:\Dvert{a_{j_k}-L}<\varepsilon,$\vspace{1pt}\parSol{}
 and \uuline{$\exists\,n\in\Nbp,$}$\,\forall i\geqslant n,\:\Dvert{a_i-L}=\BigDvert{\Par{a_i-a_{j_k}}+\Par{a_{j_k}-L}}\leqslant\Dvert{a_i-a_{j_k}}+\Dvert{a_{j_k}-L}<2\:\!\varepsilon.$\PfEnd
 \SepLine
@@ -611,28 +612,10 @@ $\forall\varepsilon>0,\exists\,m\in\Nbp,\forall k\geqslant m,\:\Dvert{a_k-L}=\Dv
 Supp subseq \;\!$y_{j_1},y_{j_2},\cdots$ convg to $L_y\in F_{\!2}.$ Then $\forall\varepsilon>0,\exists\,j_m,\forall j_k\in\;\!\!\Bra{\;\!j_m,j_{m+1},\cdots},$\parSol{}
 $\Dvert{z_{j_k}-L_y}=\BigDvert{\Par{z_{j_k}-y_{j_k}}+\Par{y_{j_k}-L_y}}<\varepsilon.$ \,Now $x_{j_1},x_{j_2},\cdots\in F_{\!1}$ convg to $L-L_y\notin F_{\!1}.$\PfEnd
 \SepLine
-
-\ProblemB{
-	\TextB{Supp $a_k\leqslant a_{k+1}<b_{k+1}\leqslant b_k$ for all $k\in\Nbp$ and $\lim_{k\rightarrow\infty}\!\BigPar{b_k-a_k}=0.$}
-	\TextB{Prove {\tgnr\large(a)} $\lim_{k\rightarrow\infty}a_k=\lim_{k\rightarrow\infty}b_k=L,$ \,{\tgnr\large(b)} if $c$ suth $\forall k\in\Nbp,\,a_k\leqslant c\leqslant b_k,$ then $c=L.$}
-}
-\SepLine
-
-\ProblemB{
-	\TextB{}
-}
-\SepLine
-
-\ProblemB{
-	\TextB{}
-}
-\SepLine
-
 \ChEnd
-\pagebreak
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 累计用时：思考学习的时长+整理代码的时长(h)
+% 累计用时(h)：(思考学习的时长)+(整理代码的时长)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 0.A:  1.25  +    0h
 % 0.B:  18.25 + 5.25h
@@ -650,39 +633,48 @@ $\Dvert{z_{j_k}-L_y}=\BigDvert{\Par{z_{j_k}-y_{j_k}}+\Par{y_{j_k}-L_y}}<\varepsi
 
 %\ProblemN{3}{
 %	\TextA{Supp bounded $\,f:\Interval{[}{]}{a,b}\rightarrow\Rbb.$}
-%	\TextA{Prove $\,f$ Riemann integ $\Longleftrightarrow\forall\varepsilon>0,\exists\,P$ suth $U\Par{\,f,P}-L\Par{\,f,P}\leqslant\varepsilon.$}
-%}Supp $\,f$ Riemann integ. Asum $\exists\,\varepsilon,\forall P,\,U\Par{\,f,P}-L\Par{\,f,P}>\varepsilon.$ Ctradic.\parSol{}
+%	\TextA{Prove $\,f$ Rieman integ $\Longleftrightarrow\forall\varepsilon>0,\exists\,P$ suth $U\Par{\,f,P}-L\Par{\,f,P}\leqslant\varepsilon.$}
+%}Supp $\,f$ Rieman integ. Asum $\exists\,\varepsilon,\forall P,\,U\Par{\,f,P}-L\Par{\,f,P}>\varepsilon.$ Ctradic.\parSol{}
 %Convly, becs $U\Par{\,f}-L\Par{\,f}\leqslant U\Par{\,f,P}-L\Par{\,f,P}\leqslant\varepsilon.$\PfEnd
 %\SepLine
 
-\Anchor{1T1}\BulletPointX\TipsN{1}\,\,\,Supp $I=\Interval{[}{]}{a,b}$ and $\,f,g:I\rightarrow\Rbb$ is bounded and $P$ is a partition. Then\vspace{1pt}\TextB{}
-(a) $\Inf_{I}\,\,f+\Inf_{I}\,g\leqslant\Inf_{I}\Par{\,f+g}\leqslant\Sup_{I}\Par{\,f+g}\leqslant\Sup_{I}\,\,f+\Sup_{I}\,g$\TextB{}
-\Ha$\Longrightarrow L\Par{\,f,P}+L\Par{g,P}\leqslant L\Par{\,f+g,P}\leqslant L\Par{\,f+g}\leqslant U\Par{\,f+g}\leqslant U\Par{\,f+g,P}\leqslant U\Par{\,f,P}+U\Par{g,P}.$\vspace{3pt}\TextB{}
-(b) $-L\Par{\,f,P}=U\Par{{-}\,f,P},$ 又 $-\Par{{-f}}=\;\!f.$\TextB{}
-\Hb$\Longrightarrow U\Par{\,f}=\Inf\Bra{U\Par{\,f,P}:\forall P}=-\Sup\Bra{{-U}\Par{\,f,P}=L\Par{{-}\,f,P}:\forall P}=-L\Par{{-\,f}}.$
+\Anchor{1T1}\BulletPointX\TipsN{1}\,\,\,Supp $I=\Interval{[}{]}{a,b}$ and $\,f,g:I\rightarrow\Rbb$ is bounded and $P$ is a parti. Then\vspace{1pt}\TextB{}
+(a) $\Inf_{I}\;f+\Inf_{I}\,g\leqslant\Inf_{I}\Par{\,f+g}\leqslant\Sup_{I}\Par{\,f+g}\leqslant\Sup_{I}\;f+\Sup_{I}\,g$\TextB{}
+\Ha(1) $L\Par{\,f,P}+L\Par{g,P}\leqslant L\Par{\,f+g,P}\leqslant L\Par{\,f+g}\Longrightarrow L\Par{\,f}+L\Par{g}\leqslant L\Par{\,f+g}.$\TextB{}
+\Ha(2) $U\Par{\,f+g}\leqslant U\Par{\,f+g,P}\leqslant U\Par{\,f,P}+U\Par{g,P}\Longrightarrow U\Par{\,f+g}\leqslant U\Par{\,f}+U\Par{g}.$
+%\TextB{}
+%\Ha\ACoro\Onumber{4}\quad$f,g$ Rieman integ $\Rightarrow\:\!f+g$ Rieman integ and $\int_a^b\!\BigPar{\,f+g}=\int_a^b\:\!f+\int_a^bg.$
+\vspace{3pt}\TextB{}
+(b) $-L\Par{\,f,P}=U\Par{{-}\,f,P},\,\Inf\Par{{-A}}=-\sup A,$ 又 $-\Par{{-f}}=\;\!f$ and $-\Par{{-A}}=A.$\TextB{}
+\Hb Let $U_{f}=\Bra{U\Par{\,f,P}=-L\Par{{-}\,f,P}:P\text{ is a parti}}=-L_{-f}$\TextB{}
+\Hb$\Longrightarrow U\Par{\,f}=\inf U_f=-\sup L_{-f}=-L\Par{{-\,f}}.$\vspace{3pt}\TextB{}
+%\Hb\ACoro\Onumber{A.5}\quad$f$ Rieman integ $\Rightarrow -L\Par{{-\,f}}=U\Par{\,f}=L\Par{\,f}=-U\Par{{-\,f}}\Rightarrow{-\,f}$ Rieman integ.
+(c) Let $P,P'$ be parti. Let $P''=P\cup P'.$ Then $U\Par{\,f,P}-L\Par{\,f,P'}\geqslant U\Par{\,f,P''}-L\Par{\,f,P''}.$\TextB{}
+\Hc Thus $\Inf\Bra{U\Par{\,f,P}-L\Par{\,f,P'}:P,P'}=\Inf\Bra{U\Par{\,f,P}-L\Par{\,f,P}:P}.$\TextB{}
+\Hc\AComm $LHS=\Inf\Bra{U\Par{\,f,P}-L\Par{\,f,P'}:P,P'}=U\Par{\,f}-L\Par{\,f}.$
 \SepLine
 
-\ProblemN{4}{
-	\TextA{Supp Riemann integ $\,f,g:\Interval{[}{]}{a,b}\rightarrow\Rbb.$}
-	\TextA{Prove $\,f+g$ Riemann integ and $\int_a^b\!\BigPar{\,f+g}=\int_a^b\:\!f+\int_a^bg.$\vspace{2pt}}
-}$U\Par{\,f}+U\Par{g}\leqslant U\Par{\,f,P}+U\Par{g,P}.$\parSol{}
-
+\ProblemN{A.3}{
+	\TextA{Supp bounded $\,f:\Interval{[}{]}{a,b}\rightarrow\Rbb.$}
+	\TextA{Prove [P] $\,f$ Rieman integ $\Longleftrightarrow\forall k\in\Nbp,\exists$ parti $P_{\!k}$ suth $U\Par{\,f,P_{\!k}}-L\Par{\,f,P_{\!k}}<1\big/k.$ [Q]}
+}$Q\Rightarrow P:$ \:$0=\Inf\Bra{U\Par{\,f,P}-L\Par{\,f,P'}:P,P'}=\Inf_P\:\!U\Par{\,f,P}+\Inf_P\:\!{-}L\Par{\,f,P}=U\Par{\,f}-L\Par{\,f}.$\parSol{}
+${^\neg}Q\Rightarrow{^\neg}P:$ \:$\exists\,k\in\Nbp,\forall P,\:\Inf\Bra{U\Par{\,f,P}-L\Par{\,f,P}:P}\geqslant 1\big/k.$ \,By \TIPSN{1}(c).\PfEnd
 \SepLine
 
-\ProblemN{6}{
-	\TextA{Supp Riemann integ $\,f:\Interval{[}{]}{a,b}\rightarrow\Rbb.$ \,Supp $g:\Interval{[}{]}{a,b}\rightarrow\Rbb$ suth $g\Par{x}=\;\!f\Par{x}$}
-	\TextA{\,for all $x\in\Interval{[}{]}{a,b}\Backslash\Bra{r_{\:\!\!1},\dots,r_{\:\!\!n}}.$ \,Prove $g$ is Riemann integ and $\int_a^bg=\int_a^b\:\!f.$}
+\ProblemN{A.6}{
+	\TextA{Supp Rieman integ $\,f:\Interval{[}{]}{a,b}\rightarrow\Rbb.$ \,Supp $g:\Interval{[}{]}{a,b}\rightarrow\Rbb$ suth $g\Par{x}=\;\!f\Par{x}$}
+	\TextA{\,for all $x\in\Interval{[}{]}{a,b}\Backslash\Bra{r_{\:\!\!1},\dots,r_{\:\!\!n}}.$ \,Prove $g$ is Rieman integ and $\int_a^bg=\int_a^b\:\!f.$}
 }
 \SepLine
 
-\ProblemN{7}{
-	\TextA{Supp bounded $\,f:\Interval{[}{]}{a,b}\rightarrow\Rbb.$ {\FontNorm Let $P_{\!n}$ be the partition that divides $\Interval{[}{]}{a,b}$ into $2^n$ intervals of equal size.}}
-	\TextA{Prove $L\Par{\,f}=\lim_{n\rightarrow\infty}L\Par{\,f,P_{\!n}}$ and $U\Par{\,f}=\lim_{n\rightarrow\infty}U\Par{\,f,P_{\!n}}.$}
+\ProblemN{A.7}{
+	\TextA{Supp bounded $\,f:\Interval{[}{]}{a,b}\rightarrow\Rbb.$ {\FontNorm Let $P_{\!n}$ be the parti that divides $\Interval{[}{]}{a,b}$ into $2^n$ intervals of equal size.}\vspace{2pt}}
+	\TextA{Prove $L\Par{\,f}=\lim_{n\rightarrow\infty}\;\!\!L\Par{\,f,P_{\!n}}$ and $U\Par{\,f}=\lim_{n\rightarrow\infty}\:\!\!U\Par{\,f,P_{\!n}}.$}
 }
 \SepLine
 
-\ProblemN{8}{
-	\TextA{Supp Riemann integ $\,f:\Interval{[}{]}{a,b}\rightarrow\Rbb.$ Prove $\int_a^b f=\lim\limits_{k\rightarrow\infty}{}${\LARGE$\frac{\:b\,-\,a\:}{n}$}${}\sum\limits_{j=1}^n\,f\BigPar{a+{}${\FontSmall\LARGE$\frac{\;j\Par{b\,-\,a}\:}{n}$}$}.$}
+\ProblemN{A.8}{
+	\TextA{Supp Rieman integ $\,f:\Interval{[}{]}{a,b}\rightarrow\Rbb.$ Prove $\int_a^b f=\lim\limits_{k\rightarrow\infty}{}${\LARGE$\frac{\:b\,-\,a\:}{n}$}${}\sum\limits_{j=1}^n\,f\BigPar{a+{}${\FontSmall\LARGE$\frac{\;j\Par{b\,-\,a}\:}{n}$}$}.$}
 }
 \SepLine
 
