@@ -239,6 +239,7 @@ Thus (5) $\Rightarrow$ (2) in distr. Convly as well.\par\vspace{4pt}\quad
 \def\supV{\sup\!\!\;V}
 
 \def\supf{\sup\,f}
+\def\inff{\inf\,f}
 
 \Anchor{0C2}\ProblemN{2}{
 	\TextA{Supp non-$\emptySet$ $U\subseteq V\subseteq\Rbb.$\;Show\;$\supU\leqslant\supV.$
@@ -627,74 +628,106 @@ $\Dvert{z_{j_k}-L_y}=\BigDvert{\Par{z_{j_k}-y_{j_k}}+\Par{y_{j_k}-L_y}}<\varepsi
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\ChDecl{Ch1}{1}{}
+\vfill\ChDecl{Ch1}{1}{}
 
 \vspace{4pt}
 
-%\ProblemN{3}{
-%	\TextA{Supp bounded $\,f:\Interval{[}{]}{a,b}\rightarrow\Rbb.$}
-%	\TextA{Prove $\,f$ Rieman integ $\Longleftrightarrow\forall\varepsilon>0,\exists\,P$ suth $U\Par{\,f,P}-L\Par{\,f,P}\leqslant\varepsilon.$}
-%}Supp $\,f$ Rieman integ. Asum $\exists\,\varepsilon,\forall P,\,U\Par{\,f,P}-L\Par{\,f,P}>\varepsilon.$ Ctradic.\parSol{}
-%Convly, becs $U\Par{\,f}-L\Par{\,f}\leqslant U\Par{\,f,P}-L\Par{\,f,P}\leqslant\varepsilon.$\PfEnd
-%\SepLine
+\ProblemN{A.1}{
+	\TextA{Supp bounded $\,f:\Interval{[}{]}{a,b}\rightarrow\Rbb$ and $P$ is a parti suth $L\BigPar{\,f,P,\Interval{[}{]}{a,b}}=U\BigPar{\,f,P,\Interval{[}{]}{a,b}}.$}
+	\TextA{Show $\,f$ is const.}
+}Note that \,$L\BigPar{\,f,\Interval{[}{]}{a,b}}\geqslant L\BigPar{\,f,P,\Interval{[}{]}{a,b}}=U\BigPar{\,f,P,\Interval{[}{]}{a,b}}\geqslant U\BigPar{\,f,\Interval{[}{]}{a,b}}.$\PfEnd\vspace{2pt}\parSol{}
+\Or Supp $a<b$ and $P:a=x_0<x_1<\cdots<x_{k+1}=b.$ \,We use induc on $k.$\parSol{}
+(i) $k=0\Rightarrow P:a=x_0,x_1=b.$ Becs $L\BigPar{\,f,P,\Interval{[}{]}{a,b}}=\inff\leqslant\,f\Par{x}\leqslant\supf=U\BigPar{\,f,P,\Interval{[}{]}{a,b}}.$\parSol{}
+(ii) $k>0.$ Asum if $g:\Interval{[}{]}{c,d}\rightarrow\Rbb$ with $c<d,$ and $Q:c=y_0<y_1<\cdots<y_k=d$\parSol{\Hii}
+suth $L\BigPar{g,Q,\Interval{[}{]}{c,d}}=U\BigPar{g,Q,\Interval{[}{]}{c,d}}$, then $g$ is const.\parSol{\Hii}
+Back to this $\,f$ and this $P_{\!1}\cup P_{\!2}=P$ with $P_{\!1}:a=x_0<x_1<\cdots<x_k$ and $P_{\!2}:x_k<x_{k+1}=b.$\parSol{\Hii}
+Let $A=\Interval{[}{]}{x_0,x_k},\,B=\Interval{[}{]}{x_k,x_{k+1}}.$ \,Then $\,f\mmid_A$ and $\,f\mmid_B$ are const by asum. Consider $\,f\Par{x_k}.$\PfEnd
+\SepLine
 
-\Anchor{1T1}\BulletPointX\TipsN{1}\,\,\,Supp $I=\Interval{[}{]}{a,b}$ and $\,f,g:I\rightarrow\Rbb$ is bounded and $P$ is a parti. Then\vspace{1pt}\TextB{}
-(a) $\Inf_{I}\;f+\Inf_{I}\,g\leqslant\Inf_{I}\Par{\,f+g}\leqslant\Sup_{I}\Par{\,f+g}\leqslant\Sup_{I}\;f+\Sup_{I}\,g$\TextB{}
-\Ha(1) $L\Par{\,f,P}+L\Par{g,P}\leqslant L\Par{\,f+g,P}\leqslant L\Par{\,f+g}\Longrightarrow L\Par{\,f}+L\Par{g}\leqslant L\Par{\,f+g}.$\TextB{}
-\Ha(2) $U\Par{\,f+g}\leqslant U\Par{\,f+g,P}\leqslant U\Par{\,f,P}+U\Par{g,P}\Longrightarrow U\Par{\,f+g}\leqslant U\Par{\,f}+U\Par{g}.$
+\ProblemN{A.2}{
+	\TextA{Supp $a\leqslant s<t\leqslant b.$ Define $\,f:\Interval{[}{]}{a,b}\rightarrow\Rbb$ by $\,f\Par{x}=\FontNorm\MathLeftBrace{l}{\!\!1,\;\;s<x<t,\\[-2pt]\!\!0,\hfill\text{othws.}}$\vspace{-8pt}}
+	\TextA{Prove $\,f$ is Rieman integ on $\Interval{[}{]}{a,b}$ and $\int_a^b\:\!f=t-s.$\vspace{4pt}}
+}Consider $P_{\:\!\!\!\varepsilon}:a,\;\!s-\varepsilon,\;\!s+\varepsilon,\;\!t-\varepsilon,\;\!t+\varepsilon,\;\!b$ with $0<\varepsilon<\min\!\Bra{s-a,\;\!2\Par{t-s},\;\!b-t}.$\parSol{}
+Now $ t-s-2\:\!\varepsilon=L\Par{\,f,P_{\:\!\!\!\varepsilon},\Interval{[}{]}{a,b}},$ and $U\Par{\,f,P_{\:\!\!\!\varepsilon},\Interval{[}{]}{a,b}}=
+%\BigPar{\Par{s+\varepsilon}-\Par{s-\varepsilon}}\cdot 1+\BigPar{\Par{t-\varepsilon}-\Par{s+\varepsilon}}\cdot 1+\BigPar{\Par{t+\varepsilon}-\Par{t-\varepsilon}}\cdot 1=
+t-s+2\:\!\varepsilon.$\parSol{}
+Thus $t-s\leqslant L\Par{\,f,\Interval{[}{]}{a,b}}\leqslant U\Par{\,f,\Interval{[}{]}{a,b}}\leqslant t-s.$\PfEnd
+\SepLine\pagebreak
+
+\Anchor{1Tips}\BulletPointX\Tips\,\,\,Supp $I=\Interval{[}{]}{a,b}$ and $\,f:I\rightarrow\Rbb$ is bounded and $P,P'$ are parti. Let $P''=P\cup P'.$ Then\vspace{1pt}\TextB{}
+(a) Supp $g:I\rightarrow\Rbb$ is bounded. Now $\Inf_{I}\;f+\Inf_{I}\,g\leqslant\Inf_{I}\Par{\,f+g}\leqslant\Sup_{I}\Par{\,f+g}\leqslant\Sup_{I}\;f+\Sup_{I}\,g.$\TextB{}
+\Ha(1) $L\Par{\,f,P}+L\Par{g,P}\leqslant L\Par{\,f+g,P}\leqslant L\Par{\,f+g},$ 又 $L\Par{\,f,P}+L\Par{g,P'}\leqslant L\Par{\,f,P''}+L\Par{g,P''}.$\TextB{}
+\Ha(2) $U\Par{\,f+g}\leqslant U\Par{\,f+g,P}\leqslant U\Par{\,f,P}+U\Par{g,P},$ 又 $U\Par{\,f,P''}+U\Par{g,P''}\leqslant U\Par{\,f,P}+U\Par{g,P'}.$\TextB{}
+\Ha Hence \,$L\Par{\,f}+L\Par{g}\leqslant L\Par{\,f+g}\leqslant U\Par{\,f+g}\leqslant U\Par{\,f}+U\Par{g}.$
 %\TextB{}
 %\Ha\ACoro\Onumber{4}\quad$f,g$ Rieman integ $\Rightarrow\:\!f+g$ Rieman integ and $\int_a^b\!\BigPar{\,f+g}=\int_a^b\:\!f+\int_a^bg.$
-\vspace{3pt}\TextB{}
+\vspace{-3pt}\SepLine[-3pt][\Blind{\BulletPointX} ]\TextB{}
 (b) $-L\Par{\,f,P}=U\Par{{-}\,f,P},\,\Inf\Par{{-A}}=-\sup A,$ 又 $-\Par{{-f}}=\;\!f$ and $-\Par{{-A}}=A.$\TextB{}
 \Hb Let $U_{f}=\Bra{U\Par{\,f,P}=-L\Par{{-}\,f,P}:P\text{ is a parti}}=-L_{-f}$\TextB{}
-\Hb$\Longrightarrow U\Par{\,f}=\inf U_f=-\sup L_{-f}=-L\Par{{-\,f}}.$\vspace{3pt}\TextB{}
+\Hb$\Longrightarrow U\Par{\,f}=\inf U_f=-\sup L_{-f}=-L\Par{{-\,f}}.$
+\vspace{-3pt}\SepLine[-3pt][\Blind{\BulletPointX} ]\TextB{}
 %\Hb\ACoro\Onumber{A.5}\quad$f$ Rieman integ $\Rightarrow -L\Par{{-\,f}}=U\Par{\,f}=L\Par{\,f}=-U\Par{{-\,f}}\Rightarrow{-\,f}$ Rieman integ.
-(c) Let $P,P'$ be parti. Let $P''=P\cup P'.$ Then $U\Par{\,f,P}-L\Par{\,f,P'}\geqslant U\Par{\,f,P''}-L\Par{\,f,P''}.$\TextB{}
-\Hc Thus $\Inf\Bra{U\Par{\,f,P}-L\Par{\,f,P'}:P,P'}=\Inf\Bra{U\Par{\,f,P}-L\Par{\,f,P}:P}.$\TextB{}
-\Hc\AComm $LHS=\Inf\Bra{U\Par{\,f,P}-L\Par{\,f,P'}:P,P'}=U\Par{\,f}-L\Par{\,f}.$
+(c) $U\Par{P}-L\Par{P'}\geqslant U\Par{P''}-L\Par{P''}\Longrightarrow U-L=\Inf\Bra{U\Par{P}-L\Par{P'}:P,P'}=\Inf\Bra{U\Par{P}-L\Par{P}:P}.$
+\vspace{-3pt}\SepLine[0pt][\Blind{\BulletPointX} ]\TextB{}
+%Becs $\forall\varepsilon>0,\exists\,P''$ suth $U\Par{\Interval{[}{]}{a,b}}+\varepsilon>U\Par{P'',\Interval{[}{]}{a,b}}.$\TextB{}
+%\Hd\又 $U\BigPar{P''\cup\Bra{c},\Interval{[}{]}{a,b}}=U\Par{P,\Interval{[}{]}{a,c}}+U\Par{P',\Interval{[}{]}{c,b}}.$ Thus $U\Par{\Interval{[}{]}{a,b}}+\varepsilon\geqslant U\Par{\Interval{[}{]}{a,c}}+U\Par{\Interval{[}{]}{c,b}}.$\TextB{}
+%\Hd And $\forall\varepsilon>0,\exists\,P,P'$ suth $U\Par{\Interval{[}{]}{a,c}}+U\Par{\Interval{[}{]}{c,b}}+\varepsilon>U\Par{P,\Interval{[}{]}{a,c}}+U\Par{P',\Interval{[}{]}{c,b}}=U\Par{P'',\Interval{[}{]}{a,b}}.$\TextB{}
+%\Hd Hence $U\Par{\Interval{[}{]}{a,b}}=U\Par{\Interval{[}{]}{a,c}}+U\Par{\Interval{[}{]}{c,b}}.$ Simlr for $L\Par{\Interval{[}{]}{a,b}}.$\TextB{}
+(d) $U\Par{\Interval{[}{]}{a,b}}\leqslant U\Par{P\cup P',\Interval{[}{]}{a,b}}=U\Par{P,\Interval{[}{]}{a,c}}+U\Par{P',\Interval{[}{]}{c,b}}\geqslant U\Par{\Interval{[}{]}{a,c}}+U\Par{\Interval{[}{]}{c,b}}$\TextB{}
+\Hd$\Longrightarrow U\Par{\Interval{[}{]}{a,b}}=U\Par{\Interval{[}{]}{a,c}}+U\Par{\Interval{[}{]}{c,b}}.$ Simlr for $L\Par{\Interval{[}{]}{a,b}}.$
+\SepLine
+
+\BulletPointX\NewNotation\;\;$\Delta_{\,f}\BigPar{\Interval{[}{]}{a,b}}=U\Par{\,f,\Interval{[}{]}{a,b}}-L\Par{\,f,\Interval{[}{]}{a,b}},$\,\,$\Delta_{\,f}\BigPar{P,\Interval{[}{]}{a,b}}=U\Par{\,f,P,\Interval{[}{]}{a,b}}-L\Par{\,f,P,\Interval{[}{]}{a,b}}.$
 \SepLine
 
 \ProblemN{A.3}{
 	\TextA{Supp bounded $\,f:\Interval{[}{]}{a,b}\rightarrow\Rbb.$}
-	\TextA{Prove [P] $\,f$ Rieman integ $\Longleftrightarrow\forall k\in\Nbp,\exists$ parti $P_{\!k}$ suth $U\Par{\,f,P_{\!k}}-L\Par{\,f,P_{\!k}}<1\big/k.$ [Q]}
-}$Q\Rightarrow P:$ \:$0=\Inf\Bra{U\Par{\,f,P}-L\Par{\,f,P'}:P,P'}=\Inf_P\:\!U\Par{\,f,P}+\Inf_P\:\!{-}L\Par{\,f,P}=U\Par{\,f}-L\Par{\,f}.$\parSol{}
-${^\neg}Q\Rightarrow{^\neg}P:$ \:$\exists\,k\in\Nbp,\forall P,\:\Inf\Bra{U\Par{\,f,P}-L\Par{\,f,P}:P}\geqslant 1\big/k.$ \,By \TIPSN{1}(c).\PfEnd
+	\TextA{Prove $\,f$ Rieman integ $\Longleftrightarrow\forall\varepsilon>0,\exists$ parti $P$ suth $U\Par{\,f,P}-L\Par{\,f,P}<\varepsilon.$}
+}\Lpf $0\leqslant U-L\leqslant\Inf\Bra{U\Par{P}-L\Par{P'}:P,P'}\leqslant\Inf\Bra{U\Par{P}-L\Par{P}:P}=0.$\parSol{}
+\Rpf Immed by \TIPSN{c}. \,\Or $\forall\varepsilon>0,\exists\,P_{\:\!\!\!1},P_{\:\!\!\!2}$ suth $U\Par{P_{\:\!\!\!1}}<U+\varepsilon,\;L-\varepsilon<L\Par{P_{\:\!\!\!2}}$\parSol{\HRpf}
+$\Longrightarrow\forall\varepsilon>0,\exists\,P=P_{\:\!\!\!1}\cup P_{\:\!\!\!2}$ suth $U\Par{P}-L\Par{P}\leqslant U\Par{P_{\:\!\!\!1}}-L\Par{P_{\:\!\!\!2}}<2\:\!\varepsilon.$\PfEnd
 \SepLine
 
-\ProblemN{A.6}{
-	\TextA{Supp Rieman integ $\,f:\Interval{[}{]}{a,b}\rightarrow\Rbb.$ \,Supp $g:\Interval{[}{]}{a,b}\rightarrow\Rbb$ suth $g\Par{x}=\;\!f\Par{x}$}
-	\TextA{\,for all $x\in\Interval{[}{]}{a,b}\Backslash\Bra{r_{\:\!\!1},\dots,r_{\:\!\!n}}.$ \,Prove $g$ is Rieman integ and $\int_a^bg=\int_a^b\:\!f.$}
+%\ProblemN{A.6}{
+%	\TextA{Supp Rieman integ $\,f:\Interval{[}{]}{a,b}\rightarrow\Rbb,$ \,and $a<b.$ \,Supp $T\subseteq\Interval{[}{]}{a,b}$ is non-$\emptySet$ countable.\vspace{3pt}}
+%	\TextA{Supp $g:\Interval{[}{]}{a,b}\rightarrow\Rbb$ suth $g\Par{x}=\;\!f\Par{x}$\;for all $x\in\Interval{[}{]}{a,b}\Backslash T.$\vspace{1.5pt}}
+%	\TextA{Prove $g$ Rieman integ and $\int_a^bg=\int_a^b\:\!f.$\vspace{4pt}}
+%}Becs $T$ countable. Let $\aMid{T}=n.$ Asum true for (i) $n=1.$\parSol{}
+%(ii) $n>1.$ Asum true for $\Par{n-1}.$ Define $h\Par{x}=\;\!f\Par{x}$ for all $x\in\Interval{[}{]}{a,b}\Backslash\Bra{t_2,t_3,\dots}.$
+%\SepLine
+
+%\ProblemN{A.7}{
+%	\TextA{Supp bounded $\,f:\Interval{[}{]}{a,b}\rightarrow\Rbb.$ {\FontNorm Let $P_{\!n}$ be the parti that divides $\Interval{[}{]}{a,b}$ into $2^n$ intervals of equal size.}\vspace{2pt}}
+%	\TextA{Prove $L\Par{\,f}=\lim_{n\rightarrow\infty}\;\!\!L\Par{\,f,P_{\!n}}$ and $U\Par{\,f}=\lim_{n\rightarrow\infty}\:\!\!U\Par{\,f,P_{\!n}}.$}
+%}
+%\SepLine
+
+%\ProblemN{A.8}{
+%	\TextA{Supp Rieman integ $\,f:\Interval{[}{]}{a,b}\rightarrow\Rbb.$ Prove $\int_a^b f=\lim\limits_{k\rightarrow\infty}{}${\LARGE$\frac{\:b\,-\,a\:}{n}$}${}\sum\limits_{j=1}^n\,f\BigPar{a+{}${\FontSmall\LARGE$\frac{\;j\Par{b\,-\,a}\:}{n}$}$}.$}
+%}
+%\SepLine
+
+%\ProblemN{A.9}{
+%	\TextA{Supp Rieman integ $\,f:\Interval{[}{]}{a,b}\rightarrow\Rbb,$ and $a\leqslant c<d\leqslant b.$ Prove $\,f$ Rieman integ on $\Interval{[}{]}{c,d}.$}
+%}$U\Par{\,f,\Interval{[}{]}{c,d}}-L\Par{\,g,\Interval{[}{]}{c,d}}\leqslant U\Par{\,f,P,\Interval{[}{]}{c,d}}-L\Par{\,g,P,\Interval{[}{]}{c,d}}\leqslant U\Par{\,f,P,\Interval{[}{]}{a,b}}-L\Par{\,g,P,\Interval{[}{]}{a,b}}.$\PfEnd
+%\SepLine
+
+%\ProblemN{A.10}{
+%	\TextA{Supp bounded $\,f:\Interval{[}{]}{a,b}\rightarrow\Rbb$ and $c\in\Interval{(}{)}{a,b}.$ Supp $\,f$ Rieman integ on $\Interval{[}{]}{a,c}$ and $\Interval{[}{]}{c,b}.$}
+%	\TextA{Prove $\,f$ Rieman integ on $\Interval{[}{]}{a,b},$ and $\int_a^b\:\!f=\int_a^c\:\!f+\int_c^b\:\!f.$}
+%}Denote $P_{\!\!\!\:1}$ as any parti of $\Interval{[}{]}{a,c},$ and $P_{\!\!\!\:2}$ as any parti of $\Interval{[}{]}{c,b}.$ Let $P=P_{\!\!\!\:1}\cup P_{\!\!\!\:2}.$\parSol{}
+%Then $\forall\varepsilon>0,\exists\;\!$corres parti,\;$\Delta\BigPar{P,\Interval{[}{]}{a,b}}\leqslant\Delta\BigPar{P_{\!\!\!\:1},\Interval{[}{]}{a,c}}+\Delta\BigPar{P_{\!\!\!\:2},\Interval{[}{]}{c,b}}<\varepsilon.$\parSol{}
+%\PfEnd
+%\SepLine
+
+\ProblemN{A.12}{
+	\TextA{Supp Rieman integ $\,f:\Interval{[}{]}{a,b}\rightarrow\Rbb.$ Prove $\aMid{\,f}$ Rieman integ and $\aXMid{\!\int_a^b\:\!f}\leqslant\int_a^b\aMid{\,f}$}
 }
 \SepLine
 
-\ProblemN{A.7}{
-	\TextA{Supp bounded $\,f:\Interval{[}{]}{a,b}\rightarrow\Rbb.$ {\FontNorm Let $P_{\!n}$ be the parti that divides $\Interval{[}{]}{a,b}$ into $2^n$ intervals of equal size.}\vspace{2pt}}
-	\TextA{Prove $L\Par{\,f}=\lim_{n\rightarrow\infty}\;\!\!L\Par{\,f,P_{\!n}}$ and $U\Par{\,f}=\lim_{n\rightarrow\infty}\:\!\!U\Par{\,f,P_{\!n}}.$}
-}
-\SepLine
-
-\ProblemN{A.8}{
-	\TextA{Supp Rieman integ $\,f:\Interval{[}{]}{a,b}\rightarrow\Rbb.$ Prove $\int_a^b f=\lim\limits_{k\rightarrow\infty}{}${\LARGE$\frac{\:b\,-\,a\:}{n}$}${}\sum\limits_{j=1}^n\,f\BigPar{a+{}${\FontSmall\LARGE$\frac{\;j\Par{b\,-\,a}\:}{n}$}$}.$}
-}
-\SepLine
-
-\ProblemN{}{
-	\TextA{}
-}
-\SepLine
-
-\ProblemN{}{
-	\TextA{}
-}
-\SepLine
-
-\ProblemN{}{
-	\TextA{}
-}
-\SepLine
-
-\ProblemN{}{
-	\TextA{}
+\ProblemN{A.14}{
+	\TextA{Supp $\,f_1,\,f_2,\cdots$ Rieman integ seq and convg uniformly on $\Interval{[}{]}{a,b}$ to $\,f:\Interval{[}{]}{a,b}\rightarrow\Rbb.$}
+	\TextA{Prove $\,f$ Rieman integ and $\int_a^b\:\!f=\lim_{n\rightarrow\infty}\!\int_a^b\:\!f_n.$}
 }
 \SepLine
 
