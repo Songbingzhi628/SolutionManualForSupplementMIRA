@@ -1,5 +1,5 @@
 % Copyright (C) 2024 Songbingzhi628. This work is licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
-% Email: 13012057210@163.com
+% Email: bingzhi2025@163.com
 
 \def\allfiles{}
 
@@ -12,7 +12,7 @@
 \footnotesize
 $\MathRightMid{r}{$
 {\tgbf Copyright \textcopyright\ 2024 Songbingzhi628}$\\$
-{\tgbf Email: 13012057210@163.com}$\\[-10pt]\\$
+{\tgbf Email: bingzhi2025@163.com}$\\[-10pt]\\$
 \includegraphics[width=120pt]{./by-nc-sa.png}$\\}$\scriptsize
 $\hText{$
 This work is licensed under the terms of the CC BY-NC-SA 4.0 International License$\\$ (\url{https://creativecommons.org/licenses/by-nc-sa/4.0}). This license requires that$\\$
@@ -22,7 +22,7 @@ If others modify or adapt the material, they must license the modified material 
 identical terms. {\tgsl All images except for `by-nc-sa.png' in this manual are licensed under CC0.}$}$\par\vspace{10pt}
 \SepLine[4pt]
 
-{\footnotesize 这是我个人挑战自学「 {\tgsc Measure, Integration {\&} Real Analysis, by Sheldon Axler} 」的学习笔记，包括课文补注和部分习题。\par
+{\footnotesize 这是我个人纯业余挑战自学「 {\tgsc Measure, Integration {\&} Real Analysis, by Sheldon Axler} 」的学习笔记，包括课文补注和部分习题。\par
 我先从{\tgsc Supplement}即第0章开始。我当时并没有学过数学分析，以为学完Axler的这个Supplement就能具备所有必要的知识基础。\par\vspace{2pt}
 0.B节是我碰到的第一个挫折。本来课文非常温顺，但习题做起来却让我感到知识的桀骜不训。\par
 的确，\!\!它们不需要硬性知识门槛，\!\!可以用初中学过的不等式和高中学过的集合与量词来推导$\mathcal{D}$的一切。如你所见，\!\!字越少事越大。\par\vspace{2pt}
@@ -30,10 +30,13 @@ identical terms. {\tgsl All images except for `by-nc-sa.png' in this manual are 
 虽然这只是极个别的习题，\!\!但我还是有一丝怯懦要不要无视空缺的实分析基础而贸然开始MIRA的学习。Mr. Seek为我加油打气：\par
 \texttt{{\textrm{MIRA}\!\,}的设计本就是为绕过传统微积分、\!\!直击分析核心——你已握有实数的语言和{\textrm{Axler}\!\,}的船票，\!\!启航正是此时。}\par\vspace{4pt}
 接下来，我不再要求自己独立做出一切，而是在全力思考后学习\!\!（照搬）\!\!别人的解答，如\,\href{https://samylahlou.com/textbook\_solutions/MIRA\_Axler/MIRA\_solutions\_samy.pdf}{Samy Lahlou Kamal}。\par
-{\scriptsize 我没有任何前置的分析学训练\!\!（就连中学微积分都不会算的那种）\!\!，所以很多题目自然难以给出正确解答；即便我给出解答后自认为没有问题。我想这个情况也是原书作者Axler教授始料未及的。来自网络的习题解答能让苦思冥想而不得的我学到很多。}
+{\scriptsize 我没有任何前置的分析学训练，所以很多题目自然难以给出正确的或符合学科直觉的解答；即便我给出解答后自认为没有问题。我想这个情况也是原书作者Axler教授始料未及的。来自网络的习题解答能让苦思冥想而不得的我学到很多。}\hfill——\Blind{~}2025年7月
+\par\vspace{4pt}
+但是，额，我没有时间了，我的专业领域里没有多少地方留给这个分支的数学，我做MIRA只是出于纯爱好，它作为爱好的优先级也不高。论纯数学对我专业领域的启发价值，我想抽象代数、范畴论、图论、形式逻辑等要更有意义。
+\par\vspace{2pt}
+这份八年内基本不可能完成的学习笔记，且以SolutionManualForSupplementMIRA发布在GitHub和Gitee上。\hfill——\Blind{~}2026年2月
 }
-
-\pagebreak
+\vspace{20pt}
 
 \footnotesize
 \def\formGap{$\\\;\\$}
@@ -45,11 +48,11 @@ $\hMath{c}{\left.}{\right.}{$
 			| >{\raggedright\arraybackslash}X | }
 		\hline
 		abs&			absolute						\\
-		add&			addi(tion)(tive)				\\
-		adj&			adjoint							\\
-		algo&			algorithm						\\
+%		add&			addi(tion)(tive)				\\
+%		adj&			adjoint							\\
+%		algo&			algorithm						\\
 		arb&			arbitrary						\\
-		assoc&			associa(tive)(tivity)			\\
+%		assoc&			associa(tive)(tivity)			\\
 		asum&			assum(e)(ption)					\\
 		\hline
 		%\end{tabularx}\formGap
@@ -83,21 +86,21 @@ $\hMath{c}{\left.}{\right.}{$
 	expr&			expression					\\
 	\hline
 \end{tabularx}\formGap
-{\tgbf\normalsize L}$\\$
-\begin{tabularx}{0.2\textwidth}{
-		| r |
-		| >{\raggedright\arraybackslash}X | }
-	\hline
-	liney&			linear(ly)				\\
-	linity&			linearity				\\
-	len&			length					\\
-	low-&			lower-					\\
-	\hline
-\end{tabularx}\formGap
-{\tgbf\normalsize R}$\\$
+{\tgbf\normalsize L R}$\\$
 \begin{tabularx}{0.3\textwidth}{
 		| r |
 		| >{\raggedright\arraybackslash}X | }
+	\hline
+%	liney&			linear(ly)				\\
+%	linity&			linearity				\\
+	len&			length					\\
+%	low-&			lower-					\\
+%	\hline
+%\end{tabularx}\formGap
+%{\tgbf\normalsize R}$\\$
+%\begin{tabularx}{0.3\textwidth}{
+%		| r |
+%		| >{\raggedright\arraybackslash}X | }
 	\hline
 	recurly&		recursively				\\
 	repeti&			repetition(s)			\\
@@ -117,17 +120,17 @@ $}\hMath{c}{\left.}{\right.}{$
 		| >{\raggedright\arraybackslash}X | }
 	\hline
 %	ch&				characteristic					\\
-	closd&			closed under					\\
+%	closd&			closed under					\\
 	coeff&			coefficient						\\
 %	col&			column							\\
-	combina&		combination						\\
+%	combina&		combination						\\
 	commu&			commut(es)(ing)(ativity)		\\
 	cond&			condition						\\
 %	conjug&			conjugat(e)(ing)(ion)			\\
 	continu&		countinu(ous)(ity)				\\
 	corres&			correspond(s)(ing)				\\
 	const&			constant						\\
-	conveni&		convenience						\\
+%	conveni&		convenience						\\
 	convly&			conversely						\\
 	countexa&		counterexample					\\
 	ctradic&		contradict(s)(ion)				\\
@@ -140,8 +143,8 @@ $}\hMath{c}{\left.}{\right.}{$
 		| >{\raggedright\arraybackslash}X | }
 	\hline
 	factoriz&		factorizaion				\\
-	fini&			finite(ly)					\\
-	finide&			finite-dimensional			\\
+%	fini&			finite(ly)					\\
+%	finide&			finite-dimensional			\\
 	\hline
 	%\end{tabularx}\formGap
 	%	{\tgbf\normalsize G}$\\$
@@ -158,7 +161,7 @@ $}\hMath{c}{\left.}{\right.}{$
 %		| r |
 %		| >{\raggedright\arraybackslash}X | }
 %	\hline
-homo&			homogeneity					\\
+%homo&			homogeneity					\\
 hypo&			hypothesis					\\
 \hline
 \end{tabularx}\formGap
@@ -192,8 +195,8 @@ multi&			multipl(e)(icati-on/ve)	\\
 %	\hline
 %nilp&			nilpotent				\\
 non0&			nonzero					\\
-nonC&			nonconstant				\\
-notat&			notation(al)			\\
+%nonC&			nonconstant				\\
+%notat&			notation(al)			\\
 \hline
 \end{tabularx}\formGap
 {\tgbf\normalsize S}$\\$
@@ -205,11 +208,11 @@ seq&			sequence				\\
 simlr&			similar(ly)				\\
 %singval&		singular value			\\
 solus&			solution				\\
-sp&				space					\\
-stmt&			statement				\\
-std&			standard				\\
+%sp&				space					\\
+%stmt&			statement				\\
+%std&			standard				\\
 supp&			suppose					\\
-surj&			surjectiv(e)(ity)		\\
+%surj&			surjectiv(e)(ity)		\\
 suth&			such that				\\
 %symm&			symmetry				\\
 \hline
@@ -228,11 +231,11 @@ deg&			degree							\\
 deri&			derivative(s)					\\
 %diag&			diagonal(iza-ble/ility/tion)	\\
 diff&			differentia(ble)(l)(ting)(tion)		\\
-dim&			dimension(al)					\\
+%dim&			dimension(al)					\\
 disj&			disjoint						\\
 disti&			distinct						\\
 distr&			distributive propert(ies)(ty)	\\
-div&			div(ide)(ision)					\\
+%div&			div(ide)(ision)					\\
 \hline
 \end{tabularx}\formGap
 {\tgbf\normalsize I}$\\$
@@ -240,18 +243,18 @@ div&			div(ide)(ision)					\\
 | r |
 | >{\raggedright\arraybackslash}X | }
 \hline
-id&				identity					\\
+%id&				identity					\\
 immed&			immediately					\\
 induc&			induct(ion)(ive)			\\
 infily&			infinitely					\\
-inje&			injectiv(e)(ity)			\\
+%inje&			injectiv(e)(ity)			\\
 integ&			integra(l)(tion)(ble)		\\
-inv&			inver(se)(tib-le/ility)		\\
+%inv&			inver(se)(tib-le/ility)		\\
 %invar&			invariant					\\
 %invard&			invariant under				\\
 %invarsp&		invariant subspace			\\
 %invarspd&		invariant subspace under	\\
-iso&			isomorph(ism)(ic)			\\
+%iso&			isomorph(ism)(ic)			\\
 %isomet&			isometry					\\
 \hline
 \end{tabularx}\formGap
@@ -262,8 +265,8 @@ iso&			isomorph(ism)(ic)			\\
 \hline
 %optor&			operator				\\
 othws&			otherwise				\\
-orthog&			orthogonal				\\
-orthon&			orthonormal				\\
+%orthog&			orthogonal				\\
+%orthon&			orthonormal				\\
 \hline
 %\end{tabularx}\formGap
 %	{\tgbf\normalsize P}$\\$
@@ -275,22 +278,20 @@ parti&			partition				\\
 poly&			polynomial				\\
 posi&			positive				\\
 prod&			product					\\
-\hline
 %\end{tabularx}\formGap
 %	{\tgbf\normalsize Q}$\\$
 %\begin{tabularx}{0.2\textwidth}{
 %		| r |
 %		| >{\raggedright\arraybackslash}X | }
 %	\hline
-quad&			quadratic				\\
-quotient&		quot					\\
+%quad&			quadratic				\\
+%quotient&		quot					\\
 \hline
 \end{tabularx}\formGap
 {\tgbf\normalsize T U V W X Y Z}$\\$
 \begin{tabularx}{0.22\textwidth}{
 | r |
 | >{\raggedright\arraybackslash}X | }
-\hline
 %trig&			triangular				\\
 %trslate&		translate				\\
 %trspose&		transpose				\\
@@ -304,7 +305,7 @@ quotient&		quot					\\
 uniq&			unique					\\
 uniqnes&		uniqueness				\\
 %unit&			unitary					\\
-up-&			upper-					\\
+%up-&			upper-					\\
 \hline
 %\end{tabularx}\formGap
 %	{\tgbf\normalsize V}$\\$
@@ -313,16 +314,15 @@ up-&			upper-					\\
 %		| >{\raggedright\arraybackslash}X | }
 %	\hline
 val&			value					\\
-\hline
 %\end{tabularx}\formGap
 %	{\tgbf\normalsize W}$\\$
 %\begin{tabularx}{0.2\textwidth}{
 %		| r |
 %		| >{\raggedright\arraybackslash}X | }
 %	\hline
--wd&			-ward					\\
--ws&			-wise					\\
-wrto&			with respect to			\\
+%-wd&			-ward					\\
+%-ws&			-wise					\\
+%wrto&			with respect to			\\
 \hline
 \end{tabularx}\formGap
 %	{\tgbf\normalsize X}$\\$
@@ -372,7 +372,7 @@ $}$
 %}
 
 \include{Ch012345}
-\include{Ch6789-10-11-12}
+%\include{Ch6789-10-11-12}
 
 \end{large}
 \end{document}
