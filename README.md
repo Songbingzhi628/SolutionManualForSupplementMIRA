@@ -55,9 +55,6 @@ The purpose of me uploading these materials, is to communicate with as many lear
 
 You are free to (re)distribute, modify, or copy any part or whole of those files, as long as in non-commerical use, and as long as you release your Derivative Work under the same License. See **LICENSE** for more details.
 
-> The license of this repo had a major change on December 30, 2024. The version prior to this change, in terms of the (A)GPLv3/GFDL authorization for users, was invalid in terms of commercial usability because it violated the NonCommerical clause of the original work SupplementMIRA and MIRA from which it was derived.
-
----
 
 # About the files:
 
