@@ -6,6 +6,8 @@
 
 我上传这些资料，旨在和广大学习者自由交流讨论。该库文件中：至少包括**SolusMan-SupplementMIRA.pdf**和**SourceCode**目录下的**png, jpg, ggb**文件，除去‘by-nc-sa.png’，都是在**CC0**协议下的。至少包括**SourceCode**目录下的**SolusMan-SupplementMIRA.tex**、**Ch012345.tex**、**Settings.tex**，是在**CC BY NC SA**条款约束下的，仅允许非商业用途的修改、复制、转发、衍生等，并且需要为副本/衍生作品使用与原作相同的协议（传染性）。这是因为原作SupplementMIRA和MIRA是在**CC BY NC**下发布的。所以其衍生作品允许（哪怕是一点点）商用是非法的，其许可证也是无效的。
 
+目前因为个人原因不会做完整的MIRA笔记了，所以且公开分享之前做好的SupplementMIRA笔记。
+
 > 该仓库是GitHub与Gitee双向同步的；这是因为对国人来说，访问Gitee比访问GitHub容易。
 
 
@@ -52,6 +54,8 @@
 # About this repo:
 
 The purpose of me uploading these materials, is to communicate with as many learners, teachers, scholars, etc. as possible. The files in this repo, at least containing **SolusMan-SupplementMIRA.pdf** and **.png, .jpg, .gbb** files under the **SourceCode** directory, except for `by-nc-sa.png', are all licensed under **CC0**; files at least containing **SolusMan-SupplementMIRA.tex**, **Ch012345.tex**, **Settings.tex** in the **SourceCode** directory, are licensed under **CC BY NC SA**.
+
+Due to my own personal reason, I've got no time for the entire MIRA notes. I hereby publish the notes for SupplementMIRA.
 
 You are free to (re)distribute, modify, or copy any part or whole of those files, as long as in non-commerical use, and as long as you release your Derivative Work under the same License. See **LICENSE** for more details.
 
